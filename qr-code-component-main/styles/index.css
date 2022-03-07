@@ -1,0 +1,129 @@
+/* Imports Outfit font 400 & 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+  }
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    background-color: hsl(212, 45%, 89%);
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Effects all H1 elements */
+h1 {
+    color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    padding: 4% 2% 0% 2%;
+    font-size: 0.8em;
+}
+
+/* Effects all P elements */
+p {
+    color: hsl(220, 15%, 55%);
+    padding: 0% 5% 5% 5%;
+    font-weight: 400;
+    font-size: 0.5em;
+    visibility: hidden;
+}
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+/* Code by FrontEndMentor.io */
+/* Formats the footer */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+/* Code by FrontEndMentor.io */
+/* Formats the links */
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Formats a 100vh box for structure */
+#vhbox {
+    height: 100vh;
+    padding-top: 15vh;
+
+}
+/* Formats the main container */
+#whitebox {
+    /* Sets aspect ratio of container */
+    aspect-ratio: 1 / 1.6;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 2vh;
+    margin: auto;
+    padding: 2vh;
+    height: 70vh;
+}
+
+/* Formats the OR code  */
+#qrcode {
+    border: 1px solid white;
+    border-radius: 2vh;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Formats the text boxt below the picture */
+#textbox {
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Responsive CSS */
+
+/* Adjusts view at different screen sizes */
+/* Starts with H1 at 0.8ems and p at 0.5 and invisible */
+/* At 350px, p becomes visible */
+@media only screen and (min-height: 350px) { 
+    p {
+        visibility: visible;
+    }
+}
+
+/* At 450px, the text elements grow slightly */
+@media only screen and (min-height: 450px) { 
+    h1 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.6em;
+    }
+}
+
+/* At 600px, the text elements grow slightly */
+@media only screen and (min-height: 600px) { 
+    h1 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+/* At 800px, the text elements grow slightly */
+@media only screen and (min-height: 800px) { 
+    h1 {
+        font-size: 1.9em;
+    }
+    p {
+        font-size: 1.3em;
+    }
+}
