@@ -20,34 +20,22 @@ html {
 h1 {
     color: hsl(218, 44%, 22%);
     font-weight: 700;
-    padding: 4% 2% 0% 2%;
-    font-size: 0.8em;
+    padding: 1vh 1vh 0vh 1vh;
+    font-size: 3.5vh;
 }
 
 /* Effects all P elements */
 p {
     color: hsl(220, 15%, 55%);
-    padding: 0% 5% 5% 5%;
+    padding: 0.5vh 2vh 1vh 2vh;
     font-weight: 400;
-    font-size: 0.5em;
-    visibility: hidden;
+    font-size: 2.4vh;
 }
 
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
 
-/* Code by FrontEndMentor.io */
-/* Formats the footer */
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-}
-    
-/* Code by FrontEndMentor.io */
-/* Formats the links */
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
+
 
 /* ID FORMATTING */
 /* Place all id formatting here. */
@@ -55,7 +43,7 @@ p {
 /* Formats a 100vh box for structure */
 #vhbox {
     height: 100vh;
-    padding-top: 15vh;
+    padding-top: 14vh;
 
 }
 /* Formats the main container */
@@ -64,10 +52,10 @@ p {
     aspect-ratio: 1 / 1.6;
     background-color: hsl(0, 0%, 100%);
     border: 1px solid hsl(0, 0%, 100%);
-    border-radius: 2vh;
+    border-radius: 3vh;
     margin: auto;
-    padding: 2vh;
-    height: 70vh;
+    padding: 2.1vh;
+    height: 75vh;
 }
 
 /* Formats the OR code  */
@@ -88,42 +76,15 @@ p {
     margin: auto;
 }
 
-/* Responsive CSS */
-
-/* Adjusts view at different screen sizes */
-/* Starts with H1 at 0.8ems and p at 0.5 and invisible */
-/* At 350px, p becomes visible */
-@media only screen and (min-height: 350px) { 
-    p {
-        visibility: visible;
-    }
+/* Code by FrontEndMentor.io */
+/* Formats the footer */
+#attribution { 
+    font-size: 1.3vh; 
+    text-align: center; 
 }
-
-/* At 450px, the text elements grow slightly */
-@media only screen and (min-height: 450px) { 
-    h1 {
-        font-size: 1em;
-    }
-    p {
-        font-size: 0.6em;
-    }
-}
-
-/* At 600px, the text elements grow slightly */
-@media only screen and (min-height: 600px) { 
-    h1 {
-        font-size: 1.3em;
-    }
-    p {
-        font-size: 1em;
-    }
-}
-/* At 800px, the text elements grow slightly */
-@media only screen and (min-height: 800px) { 
-    h1 {
-        font-size: 1.9em;
-    }
-    p {
-        font-size: 1.3em;
-    }
+    
+/* Code by FrontEndMentor.io */
+/* Formats the footer links */
+#attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
