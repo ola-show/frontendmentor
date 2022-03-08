@@ -14,7 +14,7 @@ html {
     background-color: hsl(217, 54%, 11%);
     font-size: 18px;
     font-family: 'Outfit', sans-serif;
-    color: hsl(215, 51%, 70%);
+    
 }
 
 /* Effects all P elements */
@@ -24,31 +24,32 @@ p {
     
 }
 
-/*  */
+/* Makes hr opaque and light blue  */
 hr {
     color: hsl(215, 51%, 70%);
+    opacity: 0.2;
 }
 
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
 
-/*  */
+/* Raises text */
 .up {
     padding-bottom: 2vh;
     vertical-align: top;
 }
 
-/*  */
+/* Aligns text right */
 .right {
     padding-left: 7vh;
 }
 
-/*  */
+/* Aligns text left */
 .left {
     padding-right: 8vh;
 }
 
-/*  */
+/* Makes text cyan */
 .cyan {
     font-weight: 400;
     color: hsl(178, 100%, 50%);
@@ -57,12 +58,13 @@ hr {
 /* Code by FrontEndMentor.io */
 /* Formats the footer */
 .attribution { 
+    color: hsl(215, 51%, 70%);
     font-size: 11px; 
     text-align: center; 
 }
     
 /* Code by FrontEndMentor.io */
-/* Formats the links */
+/* Formats the footer links */
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
@@ -70,6 +72,7 @@ hr {
 /* ID FORMATTING */
 /* Place all id formatting here. */
 
+/* Makes a foundation the size of the view height */
 #vhbox {
     height: 100vh;
     padding-top: 8.5vh;
@@ -87,7 +90,16 @@ hr {
     height: 82vh;
 }
 
-/*  */
+/* Formats the eye icon */
+#view {
+    color: hsl(0, 0%, 100%) !important;
+    visibility: hidden;
+    z-index: 5;
+    min-width: 7vh;
+    padding: 19vh;
+}
+
+/* Formats the box with the cub in it */
 #cubebox {
     background-image: url("../images/image-equilibrium.jpg");
     background-size: cover;
@@ -98,44 +110,80 @@ hr {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
-#view {
-    visibility: hidden;
-    width: 100%;
-    padding: 20vh;
-    background-color: hsl(178, 100%, 50%);
-    opacity: 0.5;
+/* Makes the framework for the color change */
+#cubebox:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: none;
+    transition: background .3s linear;
 }
+
+/* Makes the color change */
+#cubebox:hover:before {
+    background: hsla(178, 100%, 50%, 0.5);
+    transition: background .3s linear;
+    z-index: 1;
+}
+
+/* Makes the eye become visible */
+#cubebox:hover > #view {
+    visibility: visible;
+}
+
+
 
 
 /* Formats the text box below the picture */
 #textbox {
+    color: hsl(215, 51%, 70%);
     max-width: 100%;
     margin: auto auto 0 auto;
 }
 
+/* Formats the ETH symbol */
 #eth {
     width: 1.7vh;
     height: 2.6vh;  
 }
 
+/* Formats the clock symbol */
 #clock {
     width: 2.5vh;
     height: 2.5vh;
 }
 
+/* Formats the creator's name */
 #creator {
     color: hsl(0, 0%, 100%);
 }
 
+/* Turns the creator name cyan when hovered over */
+#creator:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+/* Formats the name of the object */
 #name {
     margin-top: 3vh;
     font-weight: 600;
     font-size: 3.3vh;
     color: hsl(0, 0%, 100%);
 }
+/* Turns the name cyan when hovered over */
+#name:hover {
+    color: hsl(178, 100%, 50%);
+}
 
+/* Formats the avatar picture */
 #avatar {
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
@@ -144,41 +192,8 @@ hr {
     margin-right: 2vh;
 }
 
-/* Adjusts view at different screen sizes */
-/* Starts with H1 at 0.8ems and p at 0.5 and invisible */
-/* At 350px, p becomes visible */
-/*@media only screen and (min-height: 350px) { 
-    p {
-        visibility: visible;
-    }
-}*/
 
-/* At 450px, the text elements grow slightly */
-/*@media only screen and (min-height: 450px) { 
-    h1 {
-        font-size: 1em;
-    }
-    p {
-        font-size: 0.6em;
-    }
-}*/
 
-/* At 600px, the text elements grow slightly */
-/*@media only screen and (min-height: 600px) { 
-    h1 {
-        font-size: 1.3em;
-    }
-    p {
-        font-size: 1em;
-    }
-}*/
-
-/* At 800px, the text elements grow slightly */
-/*@media only screen and (min-height: 800px) { 
-    h1 {
-        font-size: 1.9em;
-    }
-    p {
-        font-size: 1.3em;
-    }
-}*/
+#creator:hover {
+    color: hsl(178, 100%, 50%);
+}
