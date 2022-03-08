@@ -2,32 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <!-- Imports the CSS for the page --> 
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!-- Icon and Title: Shows up in browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+  <title>Frontend Mentor | NFT preview card component | Katie Fox</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <!-- Makes an invisible box that is 100% of the view height -->
+  <div id="vhbox">
 
-  Equilibrium #3429
+    <!-- Makes lighter blue box around content -->
+    <div id="bluebox">
+      <!-- Displays cube image -->
+      <div class="cubebox">
+        <img src="images/icon-view.svg" alt="Picture of eye" id="view">
+      </div>
+      
+      <!-- Makes text box below image -->
+      <div id="textbox">
 
-  Our Equilibrium collection promotes balance and calm.
+        <!-- Bold heading under image -->
+        <h1 id="name">Equilibrium #3429</h1>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+        <!-- Text under heading -->
+        <p>
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div>
+        <p>        
+          <span class="left cyan">
+            <span>
+              <img src="images/icon-ethereum.svg" alt="Picture of ETH" id="eth">
+            </span>
+            <span>
+             0.041 ETH
+            </span>
+          </span>
+          <span class="right">
+            <span>
+              <img src="images/icon-clock.svg" alt="Picture of clock" id="clock">
+            </span>
+            <span>
+              3 days left
+            </span>
+          </span> 
+        </p>
+        </div>
+        <hr color="#192F4D">
+        <div>
+        <p>
+          <span>
+            <img src="images/image-avatar.png" alt="Avatar picture" id="avatar">
+          </span>
+          <span class="up">
+          Creation of 
+          </span>
+          <span id="creator" class="up">
+            Jules Wyvern
+          </span>
+        </p>
+        </div>
+      </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <!-- Creator Information at bottom -->
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/KaitlynLilith">Katie Fox</a>.
+    </div>
   </div>
+
 </body>
 </html>
