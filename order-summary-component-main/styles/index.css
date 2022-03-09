@@ -1,0 +1,163 @@
+/* Imports Outfit font 300, 400, & 600 weight */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    background-color: hsl(225, 100%, 94%);
+    font-size: 18px;
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+
+/* Effects all P elements */
+p {
+    font-weight: 300;
+    font-size: 2.4vh;
+    
+}
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+/* Aligns text right */
+.right {
+    padding-left: 7vh;
+}
+
+/* Aligns text left */
+.left {
+    padding-right: 8vh;
+}
+
+
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation the size of the view height */
+#vhbox {
+    height: 100vh;
+    padding-top: 9vh;
+
+}
+/* Formats the main container */
+#bigbox {
+    /* Sets aspect ratio of container */
+    aspect-ratio: 1 / 1.8;
+    background-color: white;
+    border: 1px solid hsl(225, 100%, 94%);
+    border-radius: 3vh;
+    margin: auto;
+    padding: 0vh 0vh 0vh 0vh;
+    height: 80vh;
+}
+
+/* Formats the top box */
+#topbox {
+    background-image: url("../images/illustration-hero.svg");
+    background-size: cover;
+    aspect-ratio: 2 / 1;
+    border: 1px 0 0 0 solid hsl(216, 50%, 16%);
+    border-radius: 3vh 3vh 0vh 0vh;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+/* Formats the text box below the picture */
+#textbox {
+    color: hsl(215, 51%, 70%);
+    max-width: 100%;
+    margin: 4vh;
+}
+
+/* Formats the name of the object */
+#name {
+    margin-top: 4vh;
+    font-weight: 900;
+    font-size: 3.2vh;
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+}
+
+#blurb {
+    font-weight: 500;
+    font-size: 2.2vh;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+#three {
+    background-color: hsl(225, 100%, 98%);
+    border: 1px solid hsl(225, 100%, 98%);
+    border-radius: 3vh;
+    margin: auto;
+}
+
+#notes {
+
+}
+
+#plan {
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+}
+
+#year {
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+#change {
+
+}
+
+#change:hover {
+
+}
+
+#button {
+    background-color: hsl(245, 75%, 52%);
+    border: 1px solid hsl(225, 100%, 98%);
+    border-radius: 1.5vh;
+    margin: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+#button:hover {
+
+}
+
+#cancel {
+    text-align: center;
+}
+
+#cancel:hover {
+
+}
+
+/* Code by FrontEndMentor.io */
+/* Formats the footer */
+#attribution { 
+    color: hsl(215, 51%, 70%);
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+/* Code by FrontEndMentor.io */
+/* Formats the footer links */
+#attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

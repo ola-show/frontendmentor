@@ -2,32 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <!-- Imports the CSS for the page --> 
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!-- Icon and Title: Shows up in browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Frontend Mentor | Order summary card | Katie Fox</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <!-- Makes an invisible box that is 100% of the view height -->
+  <div id="vhbox">
 
-  Order Summary
+    <!-- Makes lighter blue box around content -->
+    <div id="bigbox">
+      <!-- Displays top image -->
+      <div id="topbox">
+        <!-- <img src="images/illustration-hero.svg" alt="Picture of hero" id="toppic"> -->
+      </div>
+      
+      <!-- Makes text box below image -->
+      <div id="textbox">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+        <!-- Bold heading under image -->
+        <h1 id="name">Order Summary</h1>
 
-  Annual Plan
-  $59.99/year
+        <!-- Text under heading -->
+        <p id="blurb">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </p>
+        <div id="three">
 
-  Change
+          <div>
+            <img src="images/icon-music.svg" alt="Picture of notes" id="notes">
+          </div>
+          <div>
+            <p>
+            <span id="plan">
+              Annual Plan
+            </span>
+            <br>
+            <span id="year">
+              $59.99/year
+            </span>
+            </p>
+          </div>
+          <div id="change">
+            <a href="">Change</a>
+          </div>         
+        </div>
+        <div id="button">
+            Proceed to Payment
+        </div>
+        <div id="cancel">
+            Cancel Order
+        </div>      
+      </div>
+    </div>
 
-  Proceed to Payment
-  Cancel Order
+    <!-- Creator Information at bottom -->
+    <div id="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/KaitlynLilith">Katie Fox</a>.
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+
+  
+
+  
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
