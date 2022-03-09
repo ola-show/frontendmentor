@@ -1,4 +1,4 @@
-/* Imports Outfit font 300, 400, & 600 weight */
+/* Imports Red Hat font 500, 700, & 900 weight */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 /* Makes every element into a box that includes margins and padding. */
@@ -11,31 +11,25 @@
 
 /* Effects all elements */
 html {
+    /* Background sized for mobile first  */
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
     background-color: hsl(225, 100%, 94%);
-    font-size: 18px;
+    background-size: 100vw;
+    font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
     
 }
 
 /* Effects all P elements */
 p {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 2.4vh;
     
 }
 
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
-
-/* Aligns text right */
-.right {
-    padding-left: 7vh;
-}
-
-/* Aligns text left */
-.left {
-    padding-right: 8vh;
-}
 
 
 
@@ -45,19 +39,18 @@ p {
 /* Makes a foundation the size of the view height */
 #vhbox {
     height: 100vh;
-    padding-top: 9vh;
-
+    padding-top: 10vh;
 }
+
 /* Formats the main container */
 #bigbox {
     /* Sets aspect ratio of container */
-    aspect-ratio: 1 / 1.8;
+    aspect-ratio: 1 / 1.75;
     background-color: white;
     border: 1px solid hsl(225, 100%, 94%);
     border-radius: 3vh;
     margin: auto;
-    padding: 0vh 0vh 0vh 0vh;
-    height: 80vh;
+    height: 82vh;
 }
 
 /* Formats the top box */
@@ -68,10 +61,6 @@ p {
     border: 1px 0 0 0 solid hsl(216, 50%, 16%);
     border-radius: 3vh 3vh 0vh 0vh;
     width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
 }
 
 /* Formats the text box below the picture */
@@ -90,62 +79,101 @@ p {
     text-align: center;
 }
 
+/* Formats the text under the name */
 #blurb {
+    font-weight: 500;
+    font-size: 2.2vh;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    line-height: 1.6;
+    padding: 1vh;
+}
+
+/* Makes a box containing 3 divs */
+#three {
+    background-color: hsl(225, 100%, 98%);
+    border: 1px solid hsl(225, 100%, 98%);
+    border-radius: 3vh;
+    margin: auto;    
+}
+
+/* Formats note icon in "three" box */
+#note {
+    min-width: 7.5vh;
+    min-height: 7.5vh;
+}
+
+/* Formats upper text in "three" box */
+#plan {
+    font-weight: 900;
+    font-size: 2.2vh;
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+}
+
+/* Formats lower text in "three" box */
+#year {
     font-weight: 500;
     font-size: 2.2vh;
     color: hsl(224, 23%, 55%);
     text-align: center;
 }
 
-#three {
-    background-color: hsl(225, 100%, 98%);
-    border: 1px solid hsl(225, 100%, 98%);
-    border-radius: 3vh;
-    margin: auto;
+/* Formats link in "three" box */
+#change a {
+    font-weight: 700;
+    font-size: 2vh;
+    color: hsl(245, 75%, 52%);
 }
 
-#notes {
-
+/* Formats link in "three" box on hover */
+#change a:hover {
+    color: hsl(251, 68%, 62%);
+    text-decoration: none;
 }
 
-#plan {
-    color: hsl(223, 47%, 23%);
-    text-align: center;
-}
-
-#year {
-    color: hsl(224, 23%, 55%);
-    text-align: center;
-}
-
-#change {
-
-}
-
-#change:hover {
-
-}
-
+/* Formats checkout button */
 #button {
     background-color: hsl(245, 75%, 52%);
     border: 1px solid hsl(225, 100%, 98%);
     border-radius: 1.5vh;
-    margin: auto;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    margin: 3.1vh auto auto auto;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
     text-align: center;
+    box-shadow: 0vh 3vh 25px hsl(244, 84%, 93%);
 }
 
+/* Formats checkout link */
+#button a {
+    font-weight: 900;
+    font-size: 2.1vh;
+    color:hsl(225, 100%, 98%);
+    text-decoration: none;
+}
+
+/* Formats checkout button on hover */
 #button:hover {
-
+    background-color: hsl(251, 68%, 62%);
 }
 
+/* Formats cancel */
 #cancel {
+    padding-top: 3.5vh;
     text-align: center;
 }
 
-#cancel:hover {
+/* Formats cancel link */
+#cancel a {
+    font-weight: 900;
+    font-size: 2.1vh;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
 
+/* Formats cancel link on hover */
+#cancel a:hover {
+    color: hsl(223, 47%, 23%);
 }
 
 /* Code by FrontEndMentor.io */
@@ -160,4 +188,20 @@ p {
 /* Formats the footer links */
 #attribution a { 
     color: hsl(228, 45%, 44%); 
+    
 }
+
+/* Responsive CSS */
+/* Changes background image at 768px screen size */
+@media only screen and (min-width: 768px) {
+    html {
+        background-image: url("../images/pattern-background-desktop.svg");
+    }
+}
+
+/* Makes a flex container */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
