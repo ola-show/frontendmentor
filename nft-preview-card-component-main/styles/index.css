@@ -33,20 +33,10 @@ hr {
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
 
-/* Raises text */
-.up {
-    padding-bottom: 2vh;
-    vertical-align: top;
-}
-
-/* Aligns text right */
-.right {
-    padding-left: 7vh;
-}
-
-/* Aligns text left */
-.left {
-    padding-right: 8vh;
+/* Makes elements like P elements */
+.p {
+    font-weight: 300;
+    font-size: 2.4vh;
 }
 
 /* Makes text cyan */
@@ -138,39 +128,6 @@ hr {
     visibility: visible;
 }
 
-
-
-
-/* Formats the text box below the picture */
-#textbox {
-    color: hsl(215, 51%, 70%);
-    max-width: 100%;
-    margin: auto auto 0 auto;
-}
-
-/* Formats the ETH symbol */
-#eth {
-    width: 1.7vh;
-    height: 2.6vh;  
-}
-
-/* Formats the clock symbol */
-#clock {
-    width: 2.5vh;
-    height: 2.5vh;
-}
-
-/* Formats the creator's name */
-#creator {
-    color: hsl(0, 0%, 100%);
-}
-
-/* Turns the creator name cyan when hovered over */
-#creator:hover {
-    color: hsl(178, 100%, 50%);
-}
-
-
 /* Formats the name of the object */
 #name {
     margin-top: 3vh;
@@ -183,6 +140,42 @@ hr {
     color: hsl(178, 100%, 50%);
 }
 
+/* Formats the text box below the picture */
+#textbox {
+    color: hsl(215, 51%, 70%);
+    max-width: 100%;
+    margin: auto auto 0 auto;
+}
+
+/* Aligns text right */
+#right {
+    margin-bottom: 1vh;
+    padding-left: 15vh;
+}
+
+/* Aligns text left */
+#left {
+    margin-bottom: 1vh;
+}
+
+/* Formats the ETH symbol */
+#eth {
+    width: 1.7vh;
+    height: 2.6vh;  
+    margin-right: 1vh;
+}
+
+/* Formats the clock symbol */
+#clock {
+    width: 2.5vh;
+    height: 2.5vh;
+    margin-right: 1vh;
+}
+
+#bottom {
+    margin-top: 2vh;
+}
+
 /* Formats the avatar picture */
 #avatar {
     border: 1px solid hsl(0, 0%, 100%);
@@ -192,8 +185,22 @@ hr {
     margin-right: 2vh;
 }
 
+/* Formats the creator's name */
+#creator {
+    margin-left: 0.5vh;
+    color: hsl(0, 0%, 100%);
+}
 
-
+/* Turns the creator name cyan when hovered over */
 #creator:hover {
     color: hsl(178, 100%, 50%);
 }
+
+/* Responsive CSS */
+
+/* Makes a flex container */
+.flex-container {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+  }
