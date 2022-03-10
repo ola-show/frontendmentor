@@ -1,0 +1,163 @@
+/* Imports Kumbh Sans font 400 and 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    /* Background sized for mobile first  */
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    /* background-size: cover, cover; */
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Effects all H1 elements */
+h1 {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Effects all P elements */
+p {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+.k {
+    color: hsl(229, 23%, 23%);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.what {
+    color: hsl(227, 10%, 46%);
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation the size of the view height */
+#vhbox {
+    height: 100vh;
+    padding-top: 10rem;
+}
+
+/* Formats the main container */
+#bigbox {   
+    height: 28rem; 
+    aspect-ratio: 1 / 1.2;
+    border: 1px solid hsl(185, 75%, 39%);
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    
+
+}
+
+#topbox {
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid hsl(185, 75%, 39%);
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 12rem; 
+}
+
+#namebox {
+    background-color: white;
+    width: 100%;
+    height: 12rem;
+    border-bottom: 1px solid hsla(227, 10%, 46%, 0.2);
+}
+
+#victor {
+    border: 0.3rem solid white;
+    border-radius: 50%;
+    position: relative;
+}
+
+#name {
+
+}
+
+#age {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+#kbox {
+    background-color: white;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 0 0 15px 15px ;
+    height: 7rem;
+}
+
+/* Code by FrontEndMentor.io */
+/* Formats the footer */
+#attribution { 
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem; 
+    text-align: center; 
+}
+    
+/* Code by FrontEndMentor.io */
+/* Formats the footer links */
+#attribution a { 
+    color: hsl(228, 45%, 44%); 
+    
+}
+
+/* Responsive CSS */
+
+/* Makes a flex container for the 3 main areas */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+/* Makes a flex container inside the main areas */
+.flex-containerc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+/* Changes settings at 768px screen size */
+@media only screen and (min-width: 768px) {
+    /* Changes relative size (rem base) */
+    html {
+        /* font-size: 12px; */
+    }
+    
+    /* Moves the big box down */
+    #vhbox {
+        /* padding-top: 15rem; */
+    }
+}
