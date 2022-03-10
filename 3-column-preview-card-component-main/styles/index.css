@@ -1,0 +1,233 @@
+/* Imports Big Shoulders Display font 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* Imports Lexend Deca font 400 weight */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    /* Background sized for mobile first  */
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+/* Effects all H1 elements */
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 3.9rem;
+    text-transform: uppercase;
+}
+
+/* Effects all P elements */
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* Effects all A elements */
+a {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+/* Formats car icons */
+.icons {
+    min-width: 6rem;
+}
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation the size of the view height */
+#vhbox {
+    padding-top: 6rem;
+}
+
+/* Formats the main container */
+#bigbox {    
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 15px;
+    margin: auto;
+}
+
+/* Formats the left box */
+#leftbox {
+    background-color: hsl(31, 77%, 52%);
+    border: 1px 0 0 0 solid hsl(31, 77%, 52%);
+    border-radius: 15px 15px 0 0;
+    width: 24rem;
+    height: 40rem;
+    padding: 3rem;  
+}
+
+/* Formats left Learn More button */
+#lbutton {
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    margin: auto;
+    padding: 1rem 2.2rem 1rem 2.2rem;   
+}
+
+/* Formats left Learn More link */
+#lbutton a {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: hsl(31, 77%, 52%);
+    text-decoration: none;
+}
+
+/* Formats left Learn More button on hover */
+#lbutton:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+/* Formats left Learn More link on hover */
+#lbutton:hover > a {
+    color: hsl(0, 0%, 95%);
+}
+
+/* Formats the center box */
+#centerbox {
+    background-color: hsl(184, 100%, 22%);
+    border: 1px 0 0 0 solid hsl(184, 100%, 22%);
+    border-radius: 0 0 0 0;
+    width: 24rem;
+    height: 40rem;
+    padding: 3rem; 
+}
+
+/* Formats center Learn More button */
+#cbutton {
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    margin: auto;
+    padding: 1rem 2.2rem 1rem 2.2rem;       
+}
+
+/* Formats center Learn More link */
+#cbutton a {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: hsl(184, 100%, 22%);
+    text-decoration: none;
+}
+
+/* Formats center Learn More button on hover */
+#cbutton:hover {
+    background-color: hsl(184, 100%, 22%);;
+}
+
+/* Formats center Learn More link on hover */
+#cbutton:hover > a {
+    color: hsl(0, 0%, 95%);
+}
+
+/* Formats the right box */
+#rightbox {
+    background-color: hsl(179, 100%, 13%);
+    border: 1px 0 0 0 solid hsl(179, 100%, 13%);
+    border-radius: 0 0 15px 15px;
+    width: 24rem;
+    height: 40rem;
+    padding: 3rem; 
+}
+
+/* Formats right Learn More button */
+#rbutton {
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    margin: auto;
+    padding: 1rem 2.2rem 1rem 2.2rem;   
+}
+
+/* Formats right Learn More link */
+#rbutton a {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: hsl(179, 100%, 13%);
+    text-decoration: none;
+}
+
+/* Formats right Learn More button on hover */
+#rbutton:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+/* Formats right Learn More link on hover */
+#rbutton:hover > a {
+    color: hsl(0, 0%, 95%);
+}
+
+/* Code by FrontEndMentor.io */
+/* Formats the footer */
+#attribution { 
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem; 
+    text-align: center; 
+}
+    
+/* Code by FrontEndMentor.io */
+/* Formats the footer links */
+#attribution a { 
+    color: hsl(228, 45%, 44%); 
+    
+}
+
+/* Responsive CSS */
+
+/* Makes a flex container for the 3 main areas */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+/* Makes a flex container inside the main areas */
+.flex-containerc {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Changes settings at 768px screen size */
+@media only screen and (min-width: 768px) {
+    /* Changes relative size (rem base) */
+    html {
+        font-size: 12px;
+    }
+    
+    /* Moves the big box down */
+    #vhbox {
+        padding-top: 15rem;
+    }
+
+    /* Changes the rounded corners on left box */
+    #leftbox {
+        border-radius: 15px 0 0 15px;
+    }
+
+    /* Changes the rounded corners on right box */
+    #rightbox {
+        border-radius: 0 15px 15px 0;
+    }
+}
+
