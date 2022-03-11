@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Imports the CSS for the page --> 
-    <link rel="stylesheet" href="styles/universal.css">
     <link rel="stylesheet" href="styles/index.css">
 
   <!-- Icon and Title: Shows up in browser tab -->
@@ -21,7 +20,7 @@
       <div class="row">
 
         <!-- Big text box on top left-->
-        <div class="col-5" id="textarea">
+        <div class="col-6" id="textarea">
 
           <!-- Heading text -->
           <h1>
@@ -35,7 +34,7 @@
         </div>
 
         <!-- Ratings info box on top right -->
-        <div class="col-5" id="stararea">
+        <div class="col-6" id="stararea">
 
           <!-- Top ratings box -->
           <div class="starratings" id="topratings">
@@ -47,10 +46,12 @@
               <img src="images/icon-star.svg" alt="Star" class="star"/>
               <img src="images/icon-star.svg" alt="Star" class="star"/>
             </div>
+            <!-- Rating text -->
             <div class="rating">
               Rated 5 Stars in Reviews
             </div>
           </div>
+
           <!-- Middle ratings box -->
           <div class="starratings" id="middleratings">
             <div class="starbox">
@@ -60,10 +61,12 @@
               <img src="images/icon-star.svg" alt="Star" class="star"/>
               <img src="images/icon-star.svg" alt="Star" class="star"/>
             </div>
+            <!-- Rating text -->
             <div class="rating">
               Rated 5 Stars in Report Guru
             </div>
           </div>
+
           <!-- Bottom ratings box -->
           <div class="starratings" id="bottomratings">
             <div class="starbox">
@@ -73,25 +76,31 @@
               <img src="images/icon-star.svg" alt="Star" class="star"/>
               <img src="images/icon-star.svg" alt="Star" class="star"/>
             </div>
+            <!-- Rating text -->
             <div class="rating">
               Rated 5 Stars in BestTech
             </div>
           </div>
         </div>
       </div>
-      <!-- Bottom row of review cards -->
+
+      <!-- Bottom row review cards -->
       <div class="row">
         <!-- Left review card -->
-        <div class="col-3 card flexc" id="leftcard">
-          <!-- Flex box holding avatar and name -->
+        <div class="col-4 card flexc" id="leftcard">
+          <!-- Flex box holding avatar image, name, and status -->
           <div class="flexr avatarbox">
+            <!-- Avatar image or reviewer -->
             <img src="images/image-colton.jpg" alt="Colton" class="avatar" />
+            <!-- Box holding name and status -->
             <div class="namebox">
+              <!-- Name of reviewer -->
               <span class="name">
                 Colton Smith
               </span>
               <br>
-              <span class="buyer">
+              <!-- Reviewer status -->
+              <span class="status">
                 Verified Buyer
               </span>
             </div>
@@ -101,17 +110,21 @@
             "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"
           </div>
         </div>
+
         <!-- Center review card -->
-        <div class="col-3 card flexc" id="centercard">
-          <!-- Flex box holding avatar and name -->
+        <div class="col-4 card flexc" id="centercard">
+          <!-- Flex box holding avatar image, name, and status -->>
           <div class="flexr avatarbox">
+            <!-- Avatar image or reviewer -->
             <img src="images/image-irene.jpg" alt="Irene" class="avatar" />
             <div class="namebox">
+              <!-- Name of reviewer -->
               <span class="name">
                 Irene Roberts 
               </span>
               <br>
-              <span class="buyer">
+              <!-- Reviewer status -->
+              <span class="status">
                 Verified Buyer
               </span>
             </div>
@@ -121,17 +134,22 @@
             "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
           </div>
         </div>
+
         <!-- Right review card -->
-        <div class="col-3 card flexc" id="rightcard">
-          <!-- Flex box holding avatar and name -->
+        <div class="col-4 card flexc" id="rightcard">
+          <!-- Flex box holding avatar image, name, and status -->
           <div class="flexr avatarbox">
+            <!-- Avatar image -->
             <img src="images/image-anne.jpg" alt="Anne" class="avatar" />
+            <!-- Avatar image or reviewer -->
             <div class="namebox">
+              <!-- Name of reviewer -->
               <span class="name">
                 Anne Wallace
               </span>
               <br>
-              <span class="buyer">
+              <!-- Reviewer status -->
+              <span class="status">
                 Verified Buyer
               </span>
             </div>
@@ -141,12 +159,11 @@
             "Put an order with this company and can only praise them for the very high  standard. Will definitely use them again and recommend them to everyone!"
           </div>
         </div>
-      </div>    
+      </div>
+
+      <!-- Code by FrontEndMentor.io -->
       <div id="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        Challenge by<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Katie Fox</a>.
       </div>
     </div>
   </body>

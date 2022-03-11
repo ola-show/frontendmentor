@@ -1,72 +1,102 @@
-/*MAIN CONTAINER FORMATTING*/
-/*universal.css will load first*/
-/*Only use ID and CLASS elements in the section*/
+/* Imports Spartan font 400, 500, and 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
+/* Sets universal CSS variables */
 :root {
     --primary-color: hsl(300, 43%, 22%);
     --secondary-color: hsl(300, 24%, 96%);
     --text-pink: hsl(333, 80%, 67%);
     --text-purple: hsl(303, 10%, 53%);
-    --border-radius: 10px;
+}
+
+/* Build for mobile first */
+
+/* Makes every element into a box that includes margins and padding. Resets browser default margin and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formating here. */
+  
+/* Effects all elements */
+html {
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-origin: padding-box, padding-box;
+    background-color: white;
+    font-family: 'Spartan', sans-serif;
+    color: black;
+    font-size: 15px;
 }
 
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
 
-
+/* Formats boxes around stars and ratings */
 .starratings {
 display: flex;
 flex-direction: column;
 justify-items: space-around;
 align-items: center;
 background-color: var(--secondary-color);
-border-radius: var(--border-radius);
+border-radius: 10px;
 margin: 1em auto;
 padding: 0.7em;
 }
 
+/* Formats boxes around stars */
 .starbox {
     padding: 0.4em 1.2em 0.4em 1.2em;
-
 }
 
+/* Formats boxes around rated */
 .rating {
     color: var(--primary-color);
     font-weight: 700;
     padding: 0.4em 1.2em 0.4em 1.2em;
 }
 
+/* Formats the review cards along the bottom */
 .card {
+    border: 1em solid white;
+    border-radius: 30px;
     background-color: var(--primary-color);
-    border-radius: var(--border-radius);
     padding: 2em;
     line-height: 2;
-    
 }
 
+/* Formats boxes around avatar and namebox */
 .avatarbox {
     border-radius: 50%;
-
 }
 
+/* Formats avatar images */
 .avatar {
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     padding: 1em;
 }
 
+/* Formats boxes around name and status */
 .namebox {
     padding: 1.5em;
 }
 
+/* Formats reviewers' names */
 .name {
     color: white;
 }
 
-.buyer {
+/* Formats reviewers' status  */
+.status {
     color: var(--text-pink);
 }
 
+/* Formats reviewers' text */
 .review {
     color: white;
     font-size: 1.2em;
@@ -75,120 +105,193 @@ padding: 0.7em;
 /* ID FORMATTING */
 /* Place all id formatting here. */
 
+/* Formats box around everything */
 #bigbox {
-    margin-right: 5%;
-    margin-left: 7%;
+    margin-right: 8%;
+    margin-left: 8%;
 }
 
+/* Formats top left box around text */
 #textarea {
     text-align: center;
 }
 
+/* Formats heading hext in textarea box */
 #textarea h1 {
     color: var(--primary-color);
-    font-size: 2.8em;
+    font-size: 3em;
     font-weight: 700;
     padding: 1.4em 1.4em 0 1.4em;
 }
 
+/* Formats paragraph text in textarea box */
 #textarea p {
     font-size: 1.2em;
     font-weight: 500;
     color: var(--text-purple);
-    line-height: 2;
+    line-height: 1.5;
     padding: 0 1.4em 0 1.4em;
 }
 
+/* Formats top right box around starratings boxes */
 #stararea {
  margin: 0;
 }
 
+/* Formats the top ratings box */
 #topratings {
     margin: 1em auto;
 }
 
+/* Formats the middle ratings box */
 #middleratings {
     margin: 1em auto;
 }
 
+/* Formats the bottom ratings box */
 #bottomratings {
     margin: 1em auto;
 }
 
+/* Formats the left review card box */
 #leftcard {
-    margin: 1em auto 1em auto;
+    margin: 0 auto;
 }
 
+/* Formats the center review card box */
 #centercard {
-    margin: 1em auto;
+    margin: 0 auto;
 }
 
+/* Formats the right review card box */
 #rightcard {
-    margin: 1em auto;
+    margin: 0 auto;
+}
+
+/* Code by FrontEndMentor.io */
+/* Formats the footer */
+#attribution { 
+    color: hsl(215, 51%, 70%);
+    font-size: .5rem; 
+    text-align: center; 
+}
+    
+/* Code by FrontEndMentor.io */
+/* Formats the footer links */
+#attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
 
 /* Responsive CSS */
 
+/* Makes column flex boxes */
 .flexc {
     display: flex;
     flex-direction: column;
 }
 
+/* Makes row flex boxes */
 .flexr {
     display: flex;
     flex-direction: row;
 }
 
-/* Adjusts elements at 768px screen size */
-@media only screen and (min-width: 768px) {  
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* Makes the page load on Mobile devices faster */
+/* Formats columns */
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
 
+
+
+/* Adjusts to a 12 column view at 768px screen size */
+@media only screen and (min-width: 768px) {  
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    /* Changes background images */
+    html {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-origin: padding-box, padding-box;
+    }
+
+    /* Changes textarea formatting */
     #textarea {
         text-align: left;
+        padding: 1em 10em 2em 0;
     }
 
+    /* Changes heading format in text area  */
     #textarea h1 {
-        padding: 1.4em 1.4em 0 1em;
+        padding: 1.4em 3em 0.3em 0.4em;
     }
     
+    /* Changes paragraph text format in text area  */
     #textarea p {
         padding: 0 1.4em 0 1em;
     }
 
+    /* Changes stararea formatting */
     #stararea {
-        margin-top: 4em;
+        margin-top: 5em;
     }
 
+    /* Changes flex direction and alignment in starratings box */
     .starratings {
         flex-direction: row;
         justify-items: space-around;
         align-items: center;
     }
 
+    /* Changes ratings boxes to make a staggered effect */
     #topratings {
         margin-right: 10em;
+        padding: 1em 0 1em 1em;
     }
 
+    /* Changes ratings boxes to make a staggered effect */
     #middleratings {
         margin-left: 5em;
         margin-right: 5em;
     }
     
+    /* Changes ratings boxes to make a staggered effect */
     #bottomratings {
         margin-left: 10em;
     }
 
+    /* Changes card boxes to make a staggered effect */
     #leftcard {
-        margin: 2em 1em 6em 1em;
+        margin: 2em 0 6em 0;
     }
 
+    /* Changes card boxes to make a staggered effect */
     #centercard {
-        margin: 4em 1em 4em 1em;
+        margin: 4em 0 4em 0;
     }
     
+    /* Changes card boxes to make a staggered effect */
     #rightcard {
-        margin: 6em 1em 2em 1em;
+        margin: 6em 0 2em 0;
     }
-
-    
-    
 }

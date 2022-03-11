@@ -16,7 +16,7 @@ html {
     background-position: left -630px top -660px, right -740px bottom -470px;
     background-repeat: no-repeat, no-repeat;
     background-color: hsl(185, 75%, 39%);
-  background-origin: padding-box, padding-box;
+    background-origin: padding-box, padding-box;
     font-size: 18px;
     font-family: 'Kumbh Sans', sans-serif;
 }
@@ -39,12 +39,14 @@ p {
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
 
+/* Formats numbers in status box */
 .k {
     color: hsl(229, 23%, 23%);
     font-size: 1.2em;
     font-weight: 700;
 }
 
+/* Formats words in status box */
 .what {
     color: hsl(227, 10%, 46%);
     font-size: 0.7em;
@@ -52,11 +54,10 @@ p {
     letter-spacing: 1px;
 }
 
-
 /* ID FORMATTING */
 /* Place all id formatting here. */
 
-/* Makes a foundation the size of the view height */
+/* Makes a foundation the height of the view height */
 #vhbox {
     height: 100vh;
     padding-top: 9rem;
@@ -72,6 +73,7 @@ p {
     text-align: center;
 }
 
+/* Formats top box with image */
 #topbox {
     background-image: url(../images/bg-pattern-card.svg);
     background-repeat: no-repeat;
@@ -82,6 +84,7 @@ p {
     height: 10rem; 
 }
 
+/* Formats the box with name, age, and location */
 #namebox {
     background-color: white;
     width: 100%;
@@ -90,6 +93,7 @@ p {
     padding-top: 3.5rem;
 }
 
+/* Formats the image of Victor */
 #victor {
     min-width: 7rem;
     display: inline-block;
@@ -100,11 +104,13 @@ p {
     bottom: -6rem;
 }
 
+/* Formats the age text */
 #age {
     color: hsl(227, 10%, 46%);
     font-weight: 400;
 }
 
+/* Formats the bottom status container */
 #kbox {
     background-color: white;
     width: 100%;
@@ -130,8 +136,8 @@ p {
 
 /* Responsive CSS */
 
-/* Makes a flex container for the 3 main areas */
-.flex-container {
+/* Makes a column flex container for the 3 main areas */
+.flexc {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,8 +146,8 @@ p {
     flex-wrap: nowrap;
   }
 
-/* Makes a flex container inside the main areas */
-.flex-containerc {
+/* Makes a row flex container inside the main areas */
+.flexr {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -151,12 +157,16 @@ p {
 
 /* Changes settings at 768px screen size */
 @media only screen and (min-width: 768px) {
-    /* Changes relative size (rem base) */
+    /* Changes text size and background properties */
     html {
         font-size: 14.55px;
+        background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+        background-position: left -200px top -500px, right -200px bottom -400px;
+        background-repeat: no-repeat, no-repeat;
+        background-origin: padding-box, padding-box;
     }
     
-    /* Moves the big box down */
+    /* Moves bigbox down */
     #vhbox {
         padding-top: 12rem;
     }

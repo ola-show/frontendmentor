@@ -228,5 +228,20 @@ a {
     #rightbox {
         border-radius: 0 15px 15px 0;
     }
+
+    /* Changes margin on left button */
+    #lbutton {
+        margin-left: 0;
+    }
+
+    /* Changes margin on center button */
+    #cbutton {
+        margin-left: 0;
+    }
+
+    /* Changes margin on right button */
+    #rbutton {
+        margin-left: 0;
+    }
 }
 
