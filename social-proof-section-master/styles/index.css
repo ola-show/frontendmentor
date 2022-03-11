@@ -1,0 +1,98 @@
+/*MAIN CONTAINER FORMATTING*/
+/*universal.css will load first*/
+/*Only use ID and CLASS elements in the section*/
+
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+
+.starratings {
+display: flex;
+flex-direction: column;
+}
+
+.starbox {
+
+}
+
+.star {
+
+}
+
+.rating {
+
+}
+
+.card {
+
+}
+
+.avatarbox {
+
+}
+
+.avatar {
+
+}
+
+.namebox {
+
+}
+
+.name {
+
+}
+
+.buyer {
+
+}
+
+.review {
+
+}
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+
+#textarea {
+
+}
+
+#stararea {
+
+}
+
+#leftcard {
+
+}
+
+#centercard {
+
+}
+
+#rightcard {
+
+}
+
+/* Responsive CSS */
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexr {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Adjusts elements at 768px screen size */
+@media only screen and (min-width: 768px) {  
+    .starratings {
+        flex-direction: row;
+        }
+
+
+}
