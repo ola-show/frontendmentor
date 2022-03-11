@@ -40,7 +40,7 @@ html {
 /* Formats the footer */
 #attribution { 
     color: hsl(215, 51%, 70%);
-    font-size: 1rem; 
+    font-size: .5rem; 
     text-align: center; 
 }
     

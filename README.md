@@ -16,6 +16,7 @@ X https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU6
   *Background transition
 
   https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA
+  *Background needed.
 
   https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK
 

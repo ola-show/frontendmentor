@@ -2,6 +2,13 @@
 /*universal.css will load first*/
 /*Only use ID and CLASS elements in the section*/
 
+:root {
+    --primary-color: hsl(300, 43%, 22%);
+    --secondary-color: hsl(300, 24%, 96%);
+    --text-pink: hsl(333, 80%, 67%);
+    --text-purple: hsl(303, 10%, 53%);
+    --border-radius: 10px;
+}
 
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
@@ -10,70 +17,114 @@
 .starratings {
 display: flex;
 flex-direction: column;
+justify-items: space-around;
+align-items: center;
+background-color: var(--secondary-color);
+border-radius: var(--border-radius);
+margin: 1em auto;
+padding: 0.7em;
 }
 
 .starbox {
-
-}
-
-.star {
+    padding: 0.4em 1.2em 0.4em 1.2em;
 
 }
 
 .rating {
-
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 0.4em 1.2em 0.4em 1.2em;
 }
 
 .card {
-
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 2em;
+    line-height: 2;
+    
 }
 
 .avatarbox {
+    border-radius: 50%;
 
 }
 
 .avatar {
-
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    padding: 1em;
 }
 
 .namebox {
-
+    padding: 1.5em;
 }
 
 .name {
-
+    color: white;
 }
 
 .buyer {
-
+    color: var(--text-pink);
 }
 
 .review {
-
+    color: white;
+    font-size: 1.2em;
 }
 
 /* ID FORMATTING */
 /* Place all id formatting here. */
 
+#bigbox {
+    margin-right: 5%;
+    margin-left: 7%;
+}
 
 #textarea {
+    text-align: center;
+}
 
+#textarea h1 {
+    color: var(--primary-color);
+    font-size: 2.8em;
+    font-weight: 700;
+    padding: 1.4em 1.4em 0 1.4em;
+}
+
+#textarea p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--text-purple);
+    line-height: 2;
+    padding: 0 1.4em 0 1.4em;
 }
 
 #stararea {
+ margin: 0;
+}
 
+#topratings {
+    margin: 1em auto;
+}
+
+#middleratings {
+    margin: 1em auto;
+}
+
+#bottomratings {
+    margin: 1em auto;
 }
 
 #leftcard {
-
+    margin: 1em auto 1em auto;
 }
 
 #centercard {
-
+    margin: 1em auto;
 }
 
 #rightcard {
-
+    margin: 1em auto;
 }
 
 /* Responsive CSS */
@@ -90,9 +141,54 @@ flex-direction: column;
 
 /* Adjusts elements at 768px screen size */
 @media only screen and (min-width: 768px) {  
+
+    #textarea {
+        text-align: left;
+    }
+
+    #textarea h1 {
+        padding: 1.4em 1.4em 0 1em;
+    }
+    
+    #textarea p {
+        padding: 0 1.4em 0 1em;
+    }
+
+    #stararea {
+        margin-top: 4em;
+    }
+
     .starratings {
         flex-direction: row;
-        }
+        justify-items: space-around;
+        align-items: center;
+    }
 
+    #topratings {
+        margin-right: 10em;
+    }
 
+    #middleratings {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+    
+    #bottomratings {
+        margin-left: 10em;
+    }
+
+    #leftcard {
+        margin: 2em 1em 6em 1em;
+    }
+
+    #centercard {
+        margin: 4em 1em 4em 1em;
+    }
+    
+    #rightcard {
+        margin: 6em 1em 2em 1em;
+    }
+
+    
+    
 }
