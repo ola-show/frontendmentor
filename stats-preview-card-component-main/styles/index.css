@@ -1,0 +1,250 @@
+/* Imports Inter font 400 and 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Imports Lexend Deca font 400 weight */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    --primary-color: hsl(244, 38%, 16%);
+    --secondary-color: hsl(277, 64%, 61%);
+    --text-head-num: hsl(0, 0%, 100%);
+    --text-main: hsla(0, 0%, 100%, 0.75);
+    --text-stat: hsla(0, 0%, 100%, 0.6);
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    /* Background sized for mobile first  */
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+/* Formats boxes containing numbers and labels */
+.stats {
+    margin: 1.4em;
+}
+
+/* Formats numbers in stats box */
+.k {
+    color: var(--text-head-num);
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    padding-bottom: 0.4em;
+}
+
+/* Formats words in stats box */
+.what {
+    color: var(--text-stat);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation the size of the view height */
+#showbox {
+    padding: 8em 0;
+}
+
+/* Formats the main container */
+#bigbox {    
+    margin: auto;
+    width: 85%;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+/* Formats the top box */
+#topbox {
+    aspect-ratio: 1.3 / 1;
+    background-image: url(../images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+/* Makes the tint over the picture */
+#topbox:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: hsla(290, 90%, 30%, 0.404);
+    z-index: 1;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Formats the bottom box */
+#bottombox {
+    border-radius: 0 0 15px 15px;
+    padding: 1.5em; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Formats text area */
+#textarea {
+    margin-bottom: 2em;
+}
+
+/* Formats heading in text area */
+#textarea h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 1em 0 0.6em 0;
+}
+
+/* Highlights word */
+#highlight {
+    color: var(--secondary-color);
+}
+
+/* Formats paragraph in text area */
+#textarea p {
+    color: var(--text-main);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1.45em;
+    line-height: 1.5;
+}
+
+/* Formats box holding 3 stats containers */
+#statsbox {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Code by FrontEndMentor.io */
+/* Formats the footer */
+#attribution { 
+    color: white;
+    font-size: 1em; 
+    text-align: center; 
+}
+    
+/* Code by FrontEndMentor.io */
+/* Formats the footer links */
+#attribution a { 
+    color: hsl(228, 45%, 44%);   
+}
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Changes settings at 768px screen size */
+@media only screen and (min-width: 768px) {
+    /* Changes relative size (rem base) */
+    html {
+        font-size: 14px;
+    }
+    
+    /* Moves the big box down */
+    #showbox {
+        height: 100vh;
+        padding: 20vh 4vw 0 4vw;
+    }
+
+    /* Changes the orientation of the main container */
+    #bigbox {    
+        flex-direction: row-reverse;
+    }
+
+    /* Changes the image and rounded corners on top box */
+    #topbox {
+        width: 50%;
+        background-image: url(../images/image-header-desktop.jpg);
+        border-radius: 0 15px 15px 0;
+    }
+
+    /* Changes the rounded corners on tint of top box */
+    #topbox:before {
+        border-radius: 0 15px 15px 0;
+    }
+
+    /* Changes the rounded corners on the bottom box */
+    #bottombox {
+        width: 50%;
+        border-radius:  15px 0 0 15px;
+        padding: 2em 6em; 
+        text-align: left;
+    }
+
+    /* Changes the padding in the text area */
+    #textarea {
+        padding: 0 2em 2em 0;
+    }
+
+    /* Changes the margin of the heading in the text area */
+    #textarea h1 {
+        margin: 1.1em 0 0.8em 0;
+    }
+
+    /* Changes the size and spacing of the paragraph text in the text area */
+    #textarea p {
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+
+    /* Changes the orientation of the stats */
+    #statsbox {
+        flex-direction: row;
+    }
+
+    /* Changes the margin and padding in stats */
+    .stats {
+        margin: 1.4em 0 1.4em 0;
+        padding: 0 5em 0 0;
+    }
+    
+    /* Changes size and padding of numbers in stats box */
+    .k {
+        font-size: 1.8em;
+        padding-bottom: 0.4em;
+    }
+    
+    /* Changes size of words in stats box */
+    .what {
+        font-size: .8em;
+    }
+}

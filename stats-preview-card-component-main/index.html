@@ -2,32 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+    <!-- Imports the CSS for the page --> 
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- Icon and Title: Shows up in browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+  <title>Frontend Mentor | Stats preview card component | Katie Fox</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <!-- Makes an invisible box around everything -->
+  <div id="showbox"  class="row">
+    <!-- Holds 2 main boxes -->
+    <div id="bigbox">
+      <!-- Top Box: Holds image of workers -->
+      <div id="topbox">
+      </div>
+      <!-- Bottom Box: Holds text and stats containers -->
+      <div id="bottombox">
+        <div id="textarea">
+          <!-- Text inside box -->
+          <h1>
+            Get <span id="highlight">insights</span> that help your business grow.
+          </h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </div>
+        <div id="statsbox">
+          <!-- Left stats container -->
+          <div class="stats">
+            <div class="k">
+              10k+
+            </div>
+            <div class="what">
+              Companies
+            </div>
+          </div>
+          <!-- Center stats container -->
+          <div class="stats">
+            <div class="k">
+              314
+            </div>
+            <div class="what">
+              Templates
+            </div>
+          </div>
+          <!-- Right stats container -->
+          <div class="stats">
+            <div class="k">
+              12M+
+            </div>
+            <div class="what">
+              Queries
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
+  <!-- Code by FrontEndMentor.io -->
+  <div id="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Katie Fox</a>.
   </div>
 </body>
 </html>
