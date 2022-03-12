@@ -1,0 +1,255 @@
+/* Imports Poppins font 200, 400, and 600 weight */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    --primary-color: hsl(234, 12%, 34%);
+    --secondary-color: hsl(229, 6%, 66%);
+    --card-color: hsl(0, 0%, 100%);
+    --card-left: hsl(180, 62%, 55%);
+    --card-top: hsl(0, 78%, 62%);
+    --card-bottom: hsl(34, 97%, 64%);
+    --card-right: hsl(212, 86%, 64%);
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+/* Formats side columns of cards */
+.sidecolumn {
+    margin: 0;
+}
+
+/* Formats center column of cards */
+.centercolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formats cards */
+.card {
+    aspect-ratio: 1.35 / 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
+    margin: 1em 0;
+    padding: 1.5em 2em;
+    position: relative;
+}
+
+/* Formats heading on cards */
+.cardh1 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: 600;
+    padding: 0.2em 0;
+}
+
+/* Formats paragraph text on cards */
+.cardp {
+    color: var(--secondary-color);
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+/* Formats icon box on card */
+.iconbox {
+    position: absolute;
+    bottom: 2em;
+    right: 2.5em;
+}
+
+/* Formats icon on card */
+.icon {
+    min-width: 5em;
+}
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation the size of the view height */
+#showbox {
+    padding: 0;
+}
+
+/* Formats the main container */
+#bigbox {    
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 7em auto;
+}
+
+/* Formats the top box */
+#topbox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 5.4em;
+
+}
+
+/* Formats the first line of text at the top */
+#first {
+    color: var(--secondary-color);
+    font-size: 1.95em;
+    font-weight: 400;
+}
+
+/* Formats the second line of text at the top */
+#second {
+    color: var(--primary-color);
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Formats the third line of text at the top */
+#third {
+    color: var(--secondary-color);
+    font-size: 1.3em;
+    font-weight: 400;
+    padding: 1em 0;
+}
+
+/* Formats the big box of cards */
+#boxofcards {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Formats the left card */
+#card1 {
+    border-top: 0.3em solid var(--card-left);
+}
+
+/* Formats the top card */
+#card2 {
+    border-top: 0.3em solid var(--card-top);
+}
+
+/* Formats the bottom card */
+#card3 {
+    border-top: 0.3em solid var(--card-bottom);
+}
+
+/* Formats the right card */
+#card4 {
+    border-top: 0.3em solid var(--card-right);
+}
+
+/* Code by FrontEndMentor.io */
+/* Formats the footer */
+#attribution { 
+    color: rgb(70, 68, 68);
+    font-size: 1em; 
+    text-align: center; 
+
+}
+    
+/* Code by FrontEndMentor.io */
+/* Formats the footer links */
+#attribution a { 
+    color: hsl(228, 45%, 44%);   
+}
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Changes settings at 768px screen size */
+@media only screen and (min-width: 768px) {
+    /* Changes the foundation to the size of the view height */
+    #showbox {
+        height: 100vh;
+    }
+
+    /* Changes the margin of the main container */
+    #bigbox {    
+        margin: 4em auto;
+    }
+
+    /* Changes padding between the text and the cards */
+    #topbox {
+        padding-bottom: 1em;
+    }
+
+    /* Changes the first line of text at the top */
+    #first {
+        font-size: 2.3em;
+    }
+
+    /*Changes the second line of text at the top */
+    #second {
+        font-size: 2.4em;
+    }
+
+    /* Changes the third line of text at the top */
+    #third {
+        font-size: 1em;
+        width: 60%;
+        padding: 0;
+        margin: 0.5em auto;
+    }
+
+    /* Puts 3 card columns into rows */
+    #boxofcards {
+        flex-direction: row;
+        position: relative;
+    }
+
+    /* Changes side columns of cards */
+    .sidecolumn {
+        margin: 15% 1.5%;
+        width: 30%;
+    }
+    
+    /* Changes center column of cards */
+    .centercolumn {
+        margin: 1.5% 1.5%;
+        width: 30%;
+    }
+
+    /* Changes heading on cards */
+    .cardh1 {
+        font-size: 1.4em;
+    }
+
+    /* Changes paragraph text on cards */
+    .cardp {
+        font-size: 0.9em;
+    }
+
+    /* Changes icon box on card */
+    .iconbox {
+        bottom: 1.5em;
+    }
+
+    /* Changes icon on card */
+    .icon {
+        min-width: 3em;
+    }
+}

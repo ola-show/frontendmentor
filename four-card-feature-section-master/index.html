@@ -2,43 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <!-- Imports the CSS for the page --> 
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!-- Icon and Title: Shows up in browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
+  <title>Frontend Mentor | Four card feature section | Katie Fox</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
+  <!-- Makes an invisible box around everything -->
+  <div id="showbox"  class="row">
+    <!-- Holds 2 main boxes -->
+    <div id="bigbox">
+      <!-- Top Box: Holds title text -->
+      <div id="topbox">
+        <!-- Holds first line of text -->
+        <h2 id="first">
+          Reliable, efficient delivery
+        </h2>
+        <!-- Holds second line of text -->
+        <h1 id="second">
+          Powered by Technology
+        </h1>
+        <!-- Holds third line of text -->
+        <div id="third">
+          Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+        </div>
+      </div>
+      <!-- Bottom box: holds 4 cards -->
+      <div id="boxofcards">
+        <!-- Left column of cards -->
+        <div class="sidecolumn">
+          <!-- One card -->
+          <div id="card1" class="side card">
+            <!-- Card text -->
+            <div class="text">
+              <!-- Card heading -->
+              <h1 class="cardh1">
+                Supervisor
+              </h1>
+              <!-- Card paragraph -->
+              <p class="cardp">
+                Monitors activity to identify project roadblocks
+              </p>
+            </div>
+            <!-- Card icon box -->
+            <div class="iconbox">
+              <!-- Supervisor icon -->
+              <img src="images/icon-supervisor.svg" alt="Supervisor icon" class="icon">
+            </div>
+          </div>
+        </div>
+        <!-- Center column of cards -->
+        <div class="centercolumn">
+          <!-- One card -->
+          <div id="card2" class="center card">
+            <!-- Card text -->
+            <div class="text">
+              <!-- Card heading -->
+              <h1 class="cardh1">
+                Team Builder
+              </h1>
+              <!-- Card paragraph -->
+              <p class="cardp">
+                Scans our talent network to create the optimal team for your project
+              </p>
+            </div>
+            <!-- Card icon box -->
+            <div class="iconbox">
+              <!-- Team Builder icon -->
+              <img src="images/icon-team-builder.svg" alt="Team Builder icon" class="icon">
+            </div>
+          </div>
+          <!-- One card -->
+          <div id="card3" class="center card">
+            <!-- Card text -->
+            <div class="text">
+              <!-- Card heading -->
+              <h1 class="cardh1">
+                Karma
+              </h1>
+              <!-- Card paragraph -->
+              <p class="cardp">
+                Regularly evaluates our talent to ensure quality
+              </p>
+            </div>
+            <!-- Card icon box -->
+            <div class="iconbox">
+              <!-- Karma icon -->
+              <img src="images/icon-karma.svg" alt="Karma icon" class="icon">
+            </div>
+          </div>
+        </div>
+        <!-- Right column of cards -->
+        <div class="sidecolumn">
+          <!-- One card -->
+          <div id="card4" class="side card">
+            <!-- Card text -->
+            <div class="text">
+              <!-- Card heading -->
+              <h1 class="cardh1">
+                Calculator
+              </h1>
+              <!-- Card paragraph -->
+              <p class="cardp">
+                Uses data from past projects to provide better delivery estimates
+              </p>
+            </div>
+            <!-- Card icon box -->
+            <div class="iconbox">
+              <!-- Calculator icon -->
+              <img src="images/icon-calculator.svg" alt="Calculator icon" class="icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Code by FrontEndMentor.io -->
   <footer>
-    <p class="attribution">
+    <p id="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Katie Fox</a>.
     </p>
   </footer>
 </body>
