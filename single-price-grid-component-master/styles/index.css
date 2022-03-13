@@ -1,0 +1,324 @@
+/* Imports Karla font 400 and 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    --primary-color: hsl(179, 62%, 43%);
+    --secondary-color: hsl(71, 73%, 54%);
+    --tertiary-color: hsl(179, 85%, 63%);
+    --text-grey: hsl(218, 22%, 67%);
+    --bor-rad: 7px;
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+/* Formats both bottom boxes */
+.bottom {
+    padding: 2em;
+    color: white;
+}
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation for all other boxes */
+#showbox {
+    padding: 0;
+}
+
+/* Formats the main container */
+#bigbox {    
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    margin: 6em auto;
+    border-radius: var(--bor-rad);
+    box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
+}
+
+/* Formats the top box */
+#topbox {
+    border-radius: var(--bor-rad) var(--bor-rad) 0 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2em;
+}
+
+/* Formats the first line of text at the top */
+#tfirst {
+    color: var(--primary-color);
+    font-size: 1.7em;
+    font-weight: 700;
+    padding-bottom: 1.2em;
+}
+
+/* Formats the second line of text at the top */
+#tsecond {
+    color: var(--secondary-color);
+    font-size: 1.3em;
+    font-weight: 700;
+    padding-bottom: 1.3em;
+}
+
+/* Formats the third line of text at the top */
+#tthird {
+    color: var(--text-grey);
+    font-size: 1.15em;
+    font-weight: 400;
+    padding: 0 0 0 0;
+    line-height: 1.8;
+    padding-bottom: 1em;
+}
+
+/* Formats the whole bottom box */
+#bottombox {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 0 0 var(--bor-rad) var(--bor-rad);
+}
+
+/* Formats the left box at the bottom */
+#leftbox {
+    background-color: var(--primary-color);
+}
+
+/* Formats the first line of text in the bottom left box */
+#lfirst {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+/* Formats the second line of text in the bottom left box */
+#lsecond {
+    padding-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+}
+
+/* Formats the price in the second line of the bottom left box  */
+#dollar {
+    font-size: 2.75em;
+    font-weight: 600;
+}
+
+/* Formats "per month" in the second line */
+#month {
+    font-size: 1.3em;
+    font-weight: 400;
+    padding: 0 1em;
+    opacity: 0.5;
+}
+
+/* Formats the third line of text in the bottom left box */
+#lthird {   
+    font-size: 1.3em;
+    font-weight: 400;
+    padding-bottom: 1.8em;
+    opacity: 0.7;
+}
+
+/* Formats the signup button in the bottom left box */
+#signup {
+    padding: 1.4em 0;
+    text-align: center;
+    border-radius: var(--bor-rad);
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
+}
+
+/* Formats the link for the signup button */
+#signup a {
+    font-size: 1.3em;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+/* Formats the hover state for the signup button */
+#signup:hover {
+    background-color: white;
+}
+
+/* Formats the hover state for the link in the signup button */
+#signup:hover > a {
+    color: var(--primary-color);
+}
+
+/* Formats the right box at the bottom */
+#rightbox {
+    background-color: var(--primary-color);
+    opacity: 0.76;
+    border-radius: 0 0 var(--bor-rad) var(--bor-rad);
+}
+
+/* Formats the first line of text in the bottom right box */
+#rfirst {
+    padding-bottom: 1em;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+/* Formats the second group of text in the bottom right box */
+#rsecond {
+    line-height: 1.5;
+    font-size: 1.1em;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+/* Code by FrontEndMentor.io */
+/* Formats the footer */
+#attribution { 
+    color: rgb(70, 68, 68);
+    font-size: 1em; 
+    text-align: center; 
+}
+    
+/* Code by FrontEndMentor.io */
+/* Formats the footer links */
+#attribution a { 
+    color: hsl(228, 45%, 44%);   
+}
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Changes settings at 768px screen size */
+@media only screen and (min-width: 768px) {
+
+    /* Changes the em base */
+    html {
+        font-size: 13px;
+    }
+
+    /* Changes the foundation to the size of the view height */
+    #showbox {
+        height: 100vh;
+    }
+
+    /* Changes the margin and width of the main container */
+    #bigbox {  
+        width: 50%;  
+        margin: 10% auto;
+    }
+
+    /* Changes padding around the text */
+    #topbox {
+        padding: 3em 7em 2.5em 3em;
+    }
+
+    /* Changes the padding below the top first box */
+    #tfirst {
+        padding-bottom: 1em;
+    }
+   
+    /* Changes the padding below the top second box */
+    #tsecond {
+        padding-bottom: 0.5em;
+    }
+
+    /* Changes the padding below the top third box */
+    #tthird {
+        padding-bottom: 0;
+    }
+
+    /* Changes the orientation of the bottom box to row */
+    #bottombox {
+        flex-direction: row;
+    }
+
+    /* Changes the width and padding of the 2 bottom boxes */
+    .bottom {
+        padding: 3em;
+        width: 50%
+    }
+
+    /* Changes the border radius of the bottom left box */
+    #leftbox {
+        border-radius: 0 0 0 var(--bor-rad);
+    }
+
+    /* Changes the font size and padding of the text of the bottom left box */
+    #lfirst {
+        font-size: 1.3em;
+        padding-bottom: 0.8em;
+    }
+
+    /* Changes the padding of the text of the bottom left box */
+    #lsecond {
+        padding-bottom: 0.5em;
+    }
+
+    /* Changes the size of the price in the second line of the bottom left box */
+    #dollar {
+        font-size: 2.5em;
+    }
+
+    /* Changes the font size of the "per month" in the second line of the bottom left box */
+    #month {
+        font-size: 1.1em;
+        padding: 0 .5em;
+    }
+
+    /* Changes the third line of text in the bottom left box */
+    #lthird {
+        font-size: 1.2em;
+        padding-bottom: 1.8em;
+    }
+
+    /* Changes the padding of the signup button */
+    #signup {
+        padding: 1.2em 0;
+    }
+
+    /* Changes the size of the link font in the signup button */
+    #signup a {
+        font-size: 1.1em;
+    }
+
+    /* Changes the border radius of the bottom right box */
+    #rightbox {
+        border-radius: 0 0 var(--bor-rad) 0;
+    }
+    
+    /* Changes the font size and paddingof the first line of the text in the bottom right box */
+    #rfirst {
+        padding-bottom: 1em;
+        font-size: 1.3em;
+    }
+    
+    /* Changes the font size of the second line of text in the bottom right box */
+    #rsecond {
+        font-size: 1em;
+    }
+}

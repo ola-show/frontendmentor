@@ -19,6 +19,6 @@ X https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA
 
 X https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK
 
-  https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc
+X https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc
 
   https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0

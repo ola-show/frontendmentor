@@ -2,46 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <!-- Imports the CSS for the page --> 
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!-- Icon and Title: Shows up in browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Single Price Grid Component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
+  <!-- Makes an invisible box around everything -->
+  <div id="showbox"  class="row">
+    <!-- Holds 2 main boxes -->
+    <div id="bigbox">
+      <!-- Top Box: Holds title text -->
+      <div id="topbox">
+        <!-- Holds first line of text -->
+        <div id="tfirst">
+          Join our community
+        </div>
+        <!-- Holds second line of text -->
+        <div id="tsecond">
+          30-day, hassle-free money back guarantee
+        </div>
+        <!-- Holds third line of text -->
+        <div id="tthird">
+          Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.
+        </div>
+      </div>
+      <!-- Bottom box: holds 2 boxes -->
+      <div id="bottombox">
+        <!-- Left box: holds 3 boxes of text and a button -->
+        <div id="leftbox" class="bottom">
+          <!-- Holds first line of text -->
+          <div id="lfirst">
+            Monthly Subscription
+          </div>
+          <!-- Holds second line of text -->
+          <div id="lsecond">
+            <div id="dollar">
+              &dollar;29 
+            </div>
+            <div id="month">
+              per month
+            </div>
+          </div>
+          <!-- Holds third line of text -->
+          <div id="lthird">
+            Full access for less than &dollar;1 a day
+          </div>
+          <!-- Sign up button -->
+          <div id="signup">
+            <a href="">Sign Up</a>
+          </div>
+        </div>
+        <!-- Right box: holds 3 boxes of text -->
+        <div id="rightbox" class="bottom">
+          <!-- Holds first line of text -->
+          <div id="rfirst">
+            Why Us
+          </div>
+          <!-- Holds second line of text -->
+          <div id="rsecond">
+            Tutorials by industry experts
+            <br>
+            Peer &amp; expert code review
+            <br>
+            Coding exercises
+            <br>
+            Access to our GitHub repos
+            <br>
+            Community forum
+            <br>
+            Flashcard decks
+            <br>
+            New videos every week
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Code by FrontEndMentor.io -->
   <footer>
-    <p class="attribution">
+    <p id="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
