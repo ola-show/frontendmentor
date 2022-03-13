@@ -34,20 +34,39 @@
 html {
     background-image: url(../images/bg-mobile.svg) ;
     background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     font-size: 15px;
     
 }
 
-/* Loads the icon web font */
+/* Formats icons */
 i {
-    font-family: 'Socialico-Regular', Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 1.25em;
+    margin: 0.5em;
 }
 
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
 
+/* Formats icon borders in bottom right box */
 .icon {
+    height: 2.5em;
+    width: 2.5em;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0.5em;
+}
 
+/* Formats hover state of icon borders in bottom right box */
+.icon:hover {
+    border: 1px solid var(--secondary-color);
+}
+
+/* Formats hover state of icons in bottom right box */
+.icon:hover > a > i {
+    color: var(--secondary-color);
 }
 
 /* ID FORMATTING */
@@ -62,16 +81,18 @@ i {
 #bigbox {    
     display: flex;
     flex-direction: column; 
+    width: 80%;
+    margin: auto;
 }
 
 /* Formats the top box */
 #topbox {
-    padding: 2em;
+    padding: 3em 0 5em 0;
 }
 
 /* Formats logo image */
 #logo {
-
+    height: 2.8em;
 }
 
 /* Formats the whole bottom box */
@@ -83,92 +104,77 @@ i {
 
 /* Formats box around mockups image */
 #mockupsbox {
-
+    width: 100%;
+    padding-bottom: 5.5em;
 }
 
 /* Formats mockups image */
 #mockups {
-
+    width: 100%;
 }
 
 /* Formats the right box at the bottom */
 #rightbox {
-    background-color: var(--primary-color);
-    opacity: 0.76;
-    border-radius: 0 0 var(--bor-rad) var(--bor-rad);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* Formats the first line of text in the right box */
 #rfirst {
-    padding-bottom: 1em;
-    font-size: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 0.7em;
+    font-size: 2.1em;
     font-weight: 600;
 }
 
 /* Formats the second group of text in the right box */
 #rsecond {
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-    font-size: 1.1em;
+    font-size: 1.42em;
     font-weight: 400;
-    opacity: 0.7;
+    padding-bottom: 1.3em;
 }
 
 /* Formats the register button in the right box */
 #register {
-    padding: 1.4em 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 1em 7em;
+    margin: 0 auto 5em auto;
     text-align: center;
-    border-radius: var(--bor-rad);
-    background-color: var(--secondary-color);
-    box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Formats the link for the register button */
 #register a {
-    font-size: 1.3em;
-    font-weight: 700;
+    font-size: 1.1em;
+    font-weight: 400;
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
 }
 
 /* Formats the hover state for the register button */
 #register:hover {
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 
 /* Formats the hover state for the link in the register button */
 #register:hover > a {
-    color: var(--primary-color);
+    color: white;
 }
 
 /* Formats icon box at bottom of right box */
 #iconbox {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 4em 1em 0 0;
 }
-
-#ifirst {
-
-}
-
-#facebook {
-
-}
-
-#isecond {
-
-}
-
-#twitter {
-
-}
-
-#ithird {
-
-}
-
-#instagram {
-
-}
-
 
 /* Code by FrontEndMentor.io */
 /* Formats the footer */
@@ -196,10 +202,12 @@ i {
 /* Changes settings at 768px screen size */
 @media only screen and (min-width: 768px) {
 
-    /* Changes the em base */
+    /* Changes the em base and background image*/
     html {
         background-image: url(../images/bg-desktop.svg) ;
-        /* font-size: 13px; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 19px;
     }
 
     /* Changes the foundation to the size of the view height */
@@ -207,19 +215,17 @@ i {
         height: 100vh;
     }
 
-    /* Changes the margin and width of the main container */
+    /* Changes the margin, width, height, and padding of the main container */
     #bigbox {  
-        /* width: 50%;   */
-        /* margin: 10% auto; */
+        width: 92%;  
+        height: 90%;
+        padding-top: 3em;
+        margin: auto;
     }
 
     /* Changes padding around the text */
     #topbox {
-        /* padding: 3em 7em 2.5em 3em; */
-    }
-
-    #logo {
-
+        padding: 0 0 4em 0;
     }
 
     /* Changes the orientation of the bottom box to row */
@@ -227,66 +233,61 @@ i {
         flex-direction: row;
     }
 
+    /* Changes the size and padding of the bottom left box containing the mockups image */
     #mockupbox {
-
+        width: 40vw;
+        padding-bottom: 0;
     }
 
+    /* Changes the width of the mockups image */
     #mockups {
-
+        width: 90%;
     }
 
-    /* Changes the border radius of the bottom right box */
+    /* Changes the padding and width of the bottom right box */
     #rightbox {
-    
+        width: 60vw;
+        padding-top: 2.5em;
     }
     
-    /* Changes the font size and paddingof the first line of the text in the bottom right box */
+    /* Changes the text alignment and padding of the first line of the text in the bottom right box */
     #rfirst {
-        /* padding-bottom: 1em; */
-        /* font-size: 1.3em; */
+        text-align: left;
+        padding-bottom: 0.5em;
     }
     
-    /* Changes the font size of the second line of text in the bottom right box */
+    /* Changes the font size and text alignment of the second line of text in the bottom right box */
     #rsecond {
-        /* font-size: 1em; */
+        text-align: left;
+        font-size: .955em;
     }
     
-    /* Changes the padding of the signup button */
+    /* Changes the padding, margin, and text alignment of the register button */
     #register {
-        /* padding: 1.2em 0; */
+        text-align: left;
+        padding: .7em 3.5em;
+        margin: 0 auto 5em 0;
     }
 
-    /* Changes the size of the link font in the signup button */
+    /* Changes the size of the link font in the register button */
     #register a {
-        /* font-size: 1.1em; */
+        font-size: 0.95em;
     }
 
-    /* Formats icon box at bottom of right box */
+    /* Changes the justify to right in the icon box at the bottom of the right box */
     #iconbox {
-
+        justify-content: right;
     }
 
-    #ifirst {
-
+    /* Changes the margin and size of the icons at the bottom of the right box */
+    i {
+        font-size: 1em;
+        margin: 0.4em;
     }
 
-    #facebook {
-
-    }
-
-    #isecond {
-
-    }
-
-    #twitter {
-
-    }
-
-    #ithird {
-
-    }
-
-    #instagram {
-
+    /* Changes the size of the circles around the icons at the bottom of the right box */
+    .icon {
+        height: 2em;
+        width: 2em;
     }
 }
