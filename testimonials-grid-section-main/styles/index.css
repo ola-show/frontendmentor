@@ -3,8 +3,13 @@
 
 /* Sets universal CSS variables */
 :root {
-    --primary-color: hsl(257, 40%, 49%);
-    --secondary-color: hsl(300, 69%, 71%);
+    --primary-color: hsl(219, 29%, 14%);
+    --secondary-color: hsl(263, 55%, 52%);
+    --tertiary-color: hsl(217, 19%, 35%);
+    --very-light-color: hsl(210, 46%, 95%);
+    --grey-color: hsl(0, 0%, 81%);
+    --white: hsl(0, 0%, 100%);
+
 }
 
 /* Makes every element into a box that includes margins and padding. */
@@ -19,50 +24,69 @@
 
 /* Effects all elements */
 html {
-    background-color: var(--primary-color);
+    background-color: var(--very-light-color);
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
-    
 }
-
 
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
 
 .card {
-
+    border-radius: 10px;
+    padding: 8%;
 }
 
 .inside {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .first {
-
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
 }
 
 .avatarbox {
-
+    width: 11%;
 }
 
 .avatar {
-
+    border-radius: 50%;
+    width: 100%;
 }
 
 .namebox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
 
+}
+.name {
+    font-size: 100%;
+    font-weight: 600;
+    padding-bottom: 1%;
 }
 
 .grad {
-
+    font-size: 1.1rem;
+    opacity: 0.5;
 }
 
 .heading {
-
+font-size: 1.9rem;
+line-height: 1.3;
+font-weight: 500;
+padding: 0 16% 5% 0;
 }
 
 .para {
-
+    opacity: 0.75;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    padding-right: 14%;
+    letter-spacing: 1.3;
 }
 
 /* ID FORMATTING */
@@ -70,21 +94,35 @@ html {
 
 /* Makes a foundation for all other boxes */
 #showbox {
-    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
 }
 
 /* Formats the main container */
 #bigbox {    
-    display: flex;
-    flex-direction: column; 
-    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:    'card1' 'card2' 'card3' 'card4' 'card5';
+    gap: 3%;
+    width: 90%;
+    margin: 20%;
 }
 
 #card1 {
-
+    grid-area: card1;
+    position: relative;
+    background-color: var(--secondary-color);
+    color: var(--very-light-color);
 }
 
 #quotationbox {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 2rem;
 
 }
 
@@ -101,7 +139,9 @@ html {
 }
 
 #avatar1 {
-
+    border-width: 1%;
+    border-style: solid;
+    border-color:  hsl(278, 40%, 65%);
 }
 
 #namebox1 {
@@ -117,7 +157,7 @@ html {
 }
 
 #second1 {
-
+    z-index: 1;
 }
 
 #third1 {
@@ -125,7 +165,9 @@ html {
 }
 
 #card2 {
-
+    grid-area: card2;
+    background-color: var(--tertiary-color);
+    color: var(--white);
 }
 
 #first2 {
@@ -161,7 +203,9 @@ html {
 }
 
 #card3 {
-
+    grid-area: card3;
+    background-color: var(--white);
+    color: var(--primary-color);
 }
 
 #first3 {
@@ -197,7 +241,9 @@ html {
 }
 
 #card4 {
-
+    grid-area: card4;
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
 #first4 {
@@ -209,7 +255,9 @@ html {
 }
 
 #avatar4 {
-
+    border-width: 1%;
+    border-style: solid;
+    border-color: var(--secondary-color);
 }
 
 #namebox4 {
@@ -233,7 +281,9 @@ html {
 }
 
 #card5 {
-
+    grid-area: card5;
+    background-color: var(--white);
+    color: var(--primary-color);
 }
 
 #first5 {
@@ -268,21 +318,6 @@ html {
 
 }
 
-/* Code by FrontEndMentor.io */
-/* Formats the footer */
-#attribution { 
-    color: rgb(70, 68, 68);
-    font-size: 1em; 
-    text-align: center; 
-}
-    
-/* Code by FrontEndMentor.io */
-/* Formats the footer links */
-#attribution a { 
-    color: hsl(228, 45%, 44%);   
-}
-
-
 /* Responsive CSS */
 
 /* Allows elements to be stacked in rows without filling all 12 columns */
@@ -307,17 +342,27 @@ flex-direction: row;
 
     /* Changes the em base and background image*/
     html {
-        font-size: 19px;
+        /* font-size: 13px; */
     }
 
     /* Changes the foundation to the size of the view height */
     #showbox {
         height: 100vh;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
     }
 
     /* Changes the  of the main container */
     #bigbox {  
-        
+        grid-template-rows: 2(1fr);
+        grid-template-columns: 4(1fr);
+        grid-template-areas:    'card1 card1 card2 card5'
+                                'card3 card4 card4 card5';
+        gap: 3%;
+        width: 80%;
+        height: 80%;
     }
 
 
