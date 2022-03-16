@@ -4,16 +4,6 @@
 /* Imports Open Sans font 400 weight */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-/* Imports Social Media Font */
-@font-face {
-    font-family: 'Socialico-Regular';
-    src: url('../fonts/Socialico-Regular.eot');
-    src: url('../fonts/Socialico-Regular.otf') format('embedded-opentype'),
-    url('../fonts/Socialico-Regular.woff2') format('woff2'),
-    url('../fonts/Socialico-Regular.woff') format('woff'),
-    url('../fonts/Socialico-Regular.ttf') format('truetype');
-    }
-
 /* Sets universal CSS variables */
 :root {
     --primary-color: hsl(257, 40%, 49%);

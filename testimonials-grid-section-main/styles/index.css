@@ -1,0 +1,327 @@
+/* Imports Barlow Semi Condensed font 500 and 600 weight */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    --primary-color: hsl(257, 40%, 49%);
+    --secondary-color: hsl(300, 69%, 71%);
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    background-color: var(--primary-color);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    
+}
+
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+.card {
+
+}
+
+.inside {
+
+}
+
+.first {
+
+}
+
+.avatarbox {
+
+}
+
+.avatar {
+
+}
+
+.namebox {
+
+}
+
+.grad {
+
+}
+
+.heading {
+
+}
+
+.para {
+
+}
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation for all other boxes */
+#showbox {
+    padding: 0;
+}
+
+/* Formats the main container */
+#bigbox {    
+    display: flex;
+    flex-direction: column; 
+    margin: auto;
+}
+
+#card1 {
+
+}
+
+#quotationbox {
+
+}
+
+#quotation {
+
+}
+
+#first1 {
+
+}
+
+#avatarbox1 {
+
+}
+
+#avatar1 {
+
+}
+
+#namebox1 {
+
+}
+
+#name1 {
+
+}
+
+#grad1 {
+
+}
+
+#second1 {
+
+}
+
+#third1 {
+
+}
+
+#card2 {
+
+}
+
+#first2 {
+
+}
+
+#avatarbox2 {
+
+}
+
+#avatar2 {
+
+}
+
+#namebox2 {
+
+}
+
+#name2 {
+
+}
+
+#grad2 {
+
+}
+
+#second2 {
+
+}
+
+#third2 {
+
+}
+
+#card3 {
+
+}
+
+#first3 {
+
+}
+
+#avatarbox3 {
+
+}
+
+#avatar3 {
+
+}
+
+#namebox3 {
+
+}
+
+#name3 {
+
+}
+
+#grad3 {
+
+}
+
+#second3 {
+
+}
+
+#third3 {
+
+}
+
+#card4 {
+
+}
+
+#first4 {
+
+}
+
+#avatarbox4 {
+
+}
+
+#avatar4 {
+
+}
+
+#namebox4 {
+
+}
+
+#name4 {
+
+}
+
+#grad4 {
+
+}
+
+#second4 {
+
+}
+
+#third4 {
+
+}
+
+#card5 {
+
+}
+
+#first5 {
+
+}
+
+#avatarbox5 {
+
+}
+
+#avatar5 {
+
+}
+
+#namebox5 {
+
+}
+
+#name5 {
+
+}
+
+#grad5 {
+
+}
+
+#second5 {
+
+}
+
+#third5 {
+
+}
+
+/* Code by FrontEndMentor.io */
+/* Formats the footer */
+#attribution { 
+    color: rgb(70, 68, 68);
+    font-size: 1em; 
+    text-align: center; 
+}
+    
+/* Code by FrontEndMentor.io */
+/* Formats the footer links */
+#attribution a { 
+    color: hsl(228, 45%, 44%);   
+}
+
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flexr {
+display: flex;
+flex-direction: row;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+    }
+
+/* Changes settings at 768px screen size */
+@media only screen and (min-width: 768px) {
+
+    /* Changes the em base and background image*/
+    html {
+        font-size: 19px;
+    }
+
+    /* Changes the foundation to the size of the view height */
+    #showbox {
+        height: 100vh;
+    }
+
+    /* Changes the  of the main container */
+    #bigbox {  
+        
+    }
+
+
+}
+
+
+
