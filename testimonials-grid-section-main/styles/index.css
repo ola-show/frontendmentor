@@ -9,7 +9,6 @@
     --very-light-color: hsl(210, 46%, 95%);
     --grey-color: hsl(0, 0%, 81%);
     --white: hsl(0, 0%, 100%);
-
 }
 
 /* Makes every element into a box that includes margins and padding. */
@@ -32,48 +31,59 @@ html {
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
 
+/* Formats all 5 cards/boxes */
 .card {
     border-radius: 10px;
     padding: 8%;
+    font-weight: 600;
+    word-wrap: break-word;
 }
 
+/* Formats the intermediate box inside the card */
 .inside {
     display: flex;
     flex-direction: column;
 }
 
+/* Formats the first line of boxes in each card */
 .first {
     display: flex;
     flex-direction: row;
     padding-bottom: 5%;
 }
 
+/* Formats the boxes where the avatar pictures are stored */
 .avatarbox {
     width: 11%;
 }
 
+/* Formats the avatar pictures */
 .avatar {
     border-radius: 50%;
     width: 100%;
 }
 
+/* Formats the boxes with the name and grad status */
 .namebox {
     display: flex;
     flex-direction: column;
     padding-left: 4%;
-
 }
+
+/* Formats the boxes with the names in them */
 .name {
     font-size: 100%;
     font-weight: 600;
     padding-bottom: 1%;
 }
 
+/* Formats the grad status boxes */
 .grad {
     font-size: 1.1rem;
     opacity: 0.5;
 }
 
+/* Formats the heading in the second box */
 .heading {
 font-size: 1.9rem;
 line-height: 1.3;
@@ -81,6 +91,7 @@ font-weight: 500;
 padding: 0 16% 5% 0;
 }
 
+/* Formats the box with the paragraph text */
 .para {
     opacity: 0.75;
     font-size: 1.3rem;
@@ -108,9 +119,10 @@ padding: 0 16% 5% 0;
     grid-template-areas:    'card1' 'card2' 'card3' 'card4' 'card5';
     gap: 3%;
     width: 90%;
-    margin: 20%;
+    margin: 20% auto;
 }
 
+/* Formats the first card */
 #card1 {
     grid-area: card1;
     position: relative;
@@ -118,6 +130,7 @@ padding: 0 16% 5% 0;
     color: var(--very-light-color);
 }
 
+/* Formats the quotation mark box */
 #quotationbox {
     position: absolute;
     z-index: 0;
@@ -126,196 +139,51 @@ padding: 0 16% 5% 0;
 
 }
 
-#quotation {
-
-}
-
-#first1 {
-
-}
-
-#avatarbox1 {
-
-}
-
+/* Formats avatar image in box 1 */
 #avatar1 {
     border-width: 1%;
     border-style: solid;
     border-color:  hsl(278, 40%, 65%);
 }
 
-#namebox1 {
-
-}
-
-#name1 {
-
-}
-
-#grad1 {
-
-}
-
+/* Formats the heading in part 2 */
 #second1 {
     z-index: 1;
 }
 
-#third1 {
-
-}
-
+/* Formats card 2 */
 #card2 {
     grid-area: card2;
     background-color: var(--tertiary-color);
     color: var(--white);
 }
 
-#first2 {
-
-}
-
-#avatarbox2 {
-
-}
-
-#avatar2 {
-
-}
-
-#namebox2 {
-
-}
-
-#name2 {
-
-}
-
-#grad2 {
-
-}
-
-#second2 {
-
-}
-
-#third2 {
-
-}
-
+/* Formats Card 3 */
 #card3 {
     grid-area: card3;
     background-color: var(--white);
     color: var(--primary-color);
 }
 
-#first3 {
-
-}
-
-#avatarbox3 {
-
-}
-
-#avatar3 {
-
-}
-
-#namebox3 {
-
-}
-
-#name3 {
-
-}
-
-#grad3 {
-
-}
-
-#second3 {
-
-}
-
-#third3 {
-
-}
-
+/* Formats Card 3 */
 #card4 {
     grid-area: card4;
     background-color: var(--primary-color);
     color: var(--white);
 }
 
-#first4 {
-
-}
-
-#avatarbox4 {
-
-}
-
+/* Formats avatar image in box 4 */
 #avatar4 {
     border-width: 1%;
     border-style: solid;
     border-color: var(--secondary-color);
 }
 
-#namebox4 {
-
-}
-
-#name4 {
-
-}
-
-#grad4 {
-
-}
-
-#second4 {
-
-}
-
-#third4 {
-
-}
-
+/* Formats card 2 */
 #card5 {
     grid-area: card5;
     background-color: var(--white);
     color: var(--primary-color);
-}
-
-#first5 {
-
-}
-
-#avatarbox5 {
-
-}
-
-#avatar5 {
-
-}
-
-#namebox5 {
-
-}
-
-#name5 {
-
-}
-
-#grad5 {
-
-}
-
-#second5 {
-
-}
-
-#third5 {
-
 }
 
 /* Responsive CSS */
@@ -335,37 +203,150 @@ flex-direction: row;
 .flexc {
     display: flex;
     flex-direction: column;
-    }
+}
 
-/* Changes settings at 768px screen size */
-@media only screen and (min-width: 768px) {
-
+/* Changes settings at 500px screen size to 1000px screen size*/
+@media only screen and (min-width: 750px) and (max-width: 1199px) {
     /* Changes the em base and background image*/
     html {
-        /* font-size: 13px; */
+        font-size: 8px;
     }
 
     /* Changes the foundation to the size of the view height */
     #showbox {
         height: 100vh;
-        display: flex;
-        flex-direction: row; 
-        justify-content: center;
-        align-items: center;
+        width: 100vw;
+        margin: 0;
     }
 
     /* Changes the  of the main container */
-    #bigbox {  
-        grid-template-rows: 2(1fr);
-        grid-template-columns: 4(1fr);
+    #bigbox { 
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas:    'card1 card1 card2 card5'
                                 'card3 card4 card4 card5';
-        gap: 3%;
-        width: 80%;
+        column-gap: 3%;
+        row-gap: 4%;
+        width: 90%;
         height: 80%;
+        margin: 0;
     }
 
+    #card2 {
+        padding: 12%;
+    }
 
+    .first #avatarbox1, .first #avatarbox4 {
+        width: 8%;
+    }
+
+    .card {
+        padding: 6%;
+    }
+
+    .namebox {
+        padding-left: 4%;
+    }
+    .name {
+        font-size: 1.2rem;
+    }
+    
+    .grad {
+        font-size: 1.1rem;
+    }
+    
+    .heading {
+        padding: 0 0 5% 0;
+    }
+    
+    .para {
+        padding-right: 0;
+    }
+
+    #card2 {
+        padding: 12%;
+    }
+
+    #card3 {
+        padding: 12%;
+    }
+
+    #card5 {
+        padding: 12%;
+    }
+}
+
+
+
+/* Changes settings at 1200px screen size */
+@media only screen and (min-width: 1200px) {
+
+    /* Changes the em base and background image*/
+    html {
+        font-size: 10px;
+    }
+
+    /* Changes the foundation to the size of the view height */
+    #showbox {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    /* Changes the  of the main container */
+    #bigbox { 
+        /* position: absolute; */
+        /* top: 50%; */
+        /* right: 50%; */
+        /* transform: translate(50%, -50%);  */
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:    'card1 card1 card2 card5'
+                                'card3 card4 card4 card5';
+        column-gap: 3%;
+        row-gap: 4%;
+        width: 80%;
+        height: 70%;
+    }
+
+    .first #avatarbox1, .first #avatarbox4 {
+        width: 6%;
+    }
+
+    .card {
+        padding: 5%;
+    }
+
+    .namebox {
+        padding-left: 4%;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+    
+    .grad {
+        font-size: 1.1rem;
+    }
+    
+    .heading {
+        padding: 0 0 5% 0;
+    }
+    
+    .para {
+        padding-right: 0;
+    }
+
+    #card2 {
+        padding: 12%;
+    }
+
+    #card3 {
+        padding: 12%;
+    }
+
+    #card5 {
+        padding: 12%;
+    }
 }
 
 
