@@ -36,6 +36,11 @@ html {
     font-size: 16px;
 }
 
+/* Formats body */
+body {
+    position: relative;
+}
+
 /* CLASS FORMATTING */
 /* Place all class formatting here */
 
@@ -78,7 +83,6 @@ html {
     width: 70%;
     padding: 0.5rem;
     margin: 0.25rem;
-
 }
 
 /* Formats the box containing the radio and walk buttons */
@@ -121,7 +125,7 @@ html {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    /* padding: 3.5rem 10%; */
+    padding: 3.5rem 0;
 }
 
 /* Formats the left background shape */
@@ -133,7 +137,7 @@ html {
     height: 55%;
     background-image:  linear-gradient(var(--gradient-magenta) -75%, var(--gradient-violet) 75%);
     z-index: -1;
-    border-radius: 0 0 80% 0;
+    border-radius: 0 0 50% 50%;
 }
 
 /* Formats the right background shape */
@@ -151,8 +155,7 @@ html {
 
 /* Formats the main container */
 #bigbox {    
-    /* width: 80%; */
-    /* padding: 10% 10%; */
+
 }
 
 /* Formats the insulation box */
@@ -160,6 +163,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* Formats the container that looks like a phone */
@@ -168,7 +172,9 @@ html {
     border: 0.5rem solid var(--white);
     box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
     background-color: var(--app-background);
-    margin: 0 8%;
+    max-width: 75%;
+    aspect-ratio: 1 / 2;
+    align-content: space-between;
 }
 
 /* Formats the container at the top with gradient */
@@ -296,7 +302,6 @@ width: 12%;
     position: relative;
     align-items: center;
     justify-content: space-between;
-
 }
 
 /* Formats the box containing the radio and walk buttons */
@@ -378,6 +383,7 @@ width: 12%;
 /* Formats the box containing heading and paragraph text */
 #headerbox {
     margin-top: 3rem;
+    text-align: center;
 }
 
 /* Formats header text */
@@ -391,10 +397,8 @@ width: 12%;
 #para {
     color: var(--paragraph);
     font-size: 0.85rem;
-    text-align: center;
     line-height: 1.6;
-    padding: 1rem 0 0 0;
-
+    padding: 1rem 2rem 0 2rem;
 }
 
 
@@ -408,8 +412,8 @@ width: 12%;
 }
 
 .flexr {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .flexc {
@@ -419,39 +423,113 @@ flex-direction: row;
 
 /* Changes settings at 768px screen size to 1024px screen size*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Changes the em base and background image*/
+    /* Changes the rem base */
     html {
-        font-size: ;
+        font-size: 18px;
     }
 
-    /* Changes the foundation to the size of the view height */
+    /* Changes the foundation box */
     #showbox {
-        padding: 0 0;
-        margin: 0;
+        padding: 3rem 0;
     }
 
+    /* Changes the left background image */
+    #lbgshape {
+        width: 50%;
+        height: 75%;
+        border-radius: 0 0 200px 200px;
+    }
+
+    /* Changes the right background image */
+    #rbgshape {
+        right: -20%;
+        width: 50%;
+        height: 75%;
+        border-radius: 200px 200px 0 0;
+    }
+
+    /* Changes the foundation box */
+    #showbox {
+        padding: 3rem 0;
+    }
+
+    /* Changes the orientation and justify of the insulation box inside the main container */
     #inside {
-        display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: right;
+    }
+
+    /* Changes the size of the phone */
+    #phonebox {
+        max-height: 75vh;
+        width: auto;
+    }
+
+    /* Changes the box containing the header and paragraph text */
+    #headerbox {
+        text-align: left;
+        width: 50%;
+        margin: 0 2rem 0 2rem;
+    }
+
+    /* Changes the padding between the header and paragraph text */
+    #para {
+        padding: 1rem 0 0 0;
     }
 }
-
 
 
 /* Changes settings at 1200px screen size */
 @media only screen and (min-width: 1024px) {
 
-    /* Changes the em base and background image*/
+    /* Changes the em base */
     html {
-        font-size: ;
+        font-size: 22px;
     }
 
-    /* Changes the foundation to the size of the view height */
+    /* Changes the foundation box */
     #showbox {
-        /* width: 100vw; */
+        padding: 3rem 0;
     }
 
-    
+    /* Changes the left background image */
+    #lbgshape {
+        position: absolute;
+        top: 0;
+        left: -8%;
+        width: 30%;
+        height: 80%;
+        border-radius: 0 0 400px 400px;
+    }
+
+    /* Changes the right background image */
+    #rbgshape {
+        right: -15%;
+        width: 40%;
+        height: 80%;
+        border-radius: 400px 400px 0 0;
+    }
+
+    /* Changes the orientation of the insulation box inside the main container */
+    #inside {
+        flex-direction: row;
+    }
+
+    /* Changes the size of the phone */
+    #phonebox {
+        max-height: 75vh;
+        width: auto;
+    }
+
+    /* Changes the box containing the header and paragraph text */
+    #headerbox {
+        text-align: left;
+        width: 50%;
+        margin: 0 2rem 0 2rem;
+    }
+
+    /* Changes the padding between the header and paragraph text */
+    #para {
+        padding: 1rem 0 0 0;
+    } 
 }

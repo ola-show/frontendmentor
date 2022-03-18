@@ -27,9 +27,9 @@ x https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-int
 
 ### 3-14-22
 
-  https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7
+x https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7
 
-  https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY
+X https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY
 
   https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n
 
