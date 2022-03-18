@@ -1,0 +1,457 @@
+/* Imports Rubik font 400, 500, and 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    --gradient-magenta: hsl(293, 100%, 63%);
+    --gradient-violet: hsl(264, 100%, 61%);
+    --left-chat-bg: hsla(264, 100%, 61%, 0.1);
+    --app-background: hsl(270, 20%, 96%);
+    --main-heading: hsl(271, 36%, 24%);
+    --placeholder: hsl(206, 6%, 79%);
+    --right-chat: hsl(271, 15%, 43%);
+    --left-chat: hsl(276, 55%, 52%);
+    --sub-heading: hsl(276, 100%, 81%);
+    --paragraph: hsl(270, 7%, 64%);
+    --submit-button: hsl(271, 36%, 24%);
+    --radio-button: hsl(289, 100%, 72%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Makes every element into a box that includes margins and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here */
+
+/* Effects all elements */
+html {
+    background-color: var(--app-background);
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+/* CLASS FORMATTING */
+/* Place all class formatting here */
+
+/* Formats all left messages */
+.lmessages {
+    color: var(--left-chat);
+    background-color: var(--left-chat-bg);
+    border-radius: 10px 10px 10px 4px;
+    font-size: 0.45rem;
+    line-height: 1.5;
+    width: 60%;
+    padding: 0.3rem 0.4rem;
+    margin: 0.25rem;
+}
+
+/* Formats all right messages */
+.rmessages {
+    background-color: var(--white);
+    color: var(--right-chat);
+    font-size: 0.45rem;
+    border-radius: 10px 10px 4px 10px;
+    line-height: 1.5;
+    width: 60%;
+    padding:  0.3rem 0.4rem;
+    margin: 0.25rem;
+}
+
+/* Formats all dog images */
+.dogs {
+    width: 2.2rem;
+    border-radius: 10px;
+    margin: 0.25rem;
+}
+
+/* Formats all gradient messages */
+.gmessages {
+    position: relative;
+    background-image: linear-gradient(to right, var(--gradient-magenta), var(--gradient-violet));
+    border-radius: 10px 10px 10px 4px;
+    width: 70%;
+    padding: 0.5rem;
+    margin: 0.25rem;
+
+}
+
+/* Formats the box containing the radio and walk buttons */
+.radiowalk {
+    align-items: center;
+}
+
+/* Formats all radio buttons */
+.radio {
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 0.12rem solid var(--radio-button);
+    border-radius: 50%;
+    margin-right: 0.4rem;
+}
+
+/* Formats all walk time text */
+.walk {
+    color: var(--white);
+    font-size: 0.4rem;
+    opacity: 0.6;
+}
+
+/* Formats all prices */
+.price {
+    font-size: 0.6rem;
+    color: var(--white);
+    font-weight: 700;
+    margin-right: 0.3rem;
+}
+
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation for all other boxes */
+#showbox {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    /* padding: 3.5rem 10%; */
+}
+
+/* Formats the left background shape */
+#lbgshape {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    width: 70%;
+    height: 55%;
+    background-image:  linear-gradient(var(--gradient-magenta) -75%, var(--gradient-violet) 75%);
+    z-index: -1;
+    border-radius: 0 0 80% 0;
+}
+
+/* Formats the right background shape */
+#rbgshape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color: var(--gradient-violet);
+    z-index: -1;
+    border-radius: 100% 0 0 0;
+    opacity: 0.05;
+}
+
+/* Formats the main container */
+#bigbox {    
+    /* width: 80%; */
+    /* padding: 10% 10%; */
+}
+
+/* Formats the insulation box */
+#inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Formats the container that looks like a phone */
+#phonebox {
+    border-radius: 30px;
+    border: 0.5rem solid var(--white);
+    box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
+    background-color: var(--app-background);
+    margin: 0 8%;
+}
+
+/* Formats the container at the top with gradient */
+#topgradient {
+    position: relative;
+    align-items: center;
+    background-image: linear-gradient(to left, var(--gradient-magenta), var(--gradient-violet));
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    color: var(--white);
+    padding: 1.5rem 1rem 0.5rem 1rem;
+}
+
+/* Formats the white tab at the top of the phone */
+#topwhitetab {
+    border-radius: 0 0 15px 15px;
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    right: 25%;
+    height: 1.2em;
+    width: 50%;
+    z-index: 1;
+}
+
+/* Formats back symbol in top gradient box */
+#backsymbol i {
+    font-size: 0.7rem;
+    padding: 0 .5rem 0 0;
+}
+
+/* Formats box containing avatar image */
+#avatarbox {
+width: 12%;
+}
+
+/* Formats avatar image */
+#avatar {
+    width: 100%;
+    border: 0.12rem solid var(--white);
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+/* Formats box containing name and availability */
+#toptext {
+    justify-content: center;
+    padding-left: 0.5rem;
+    
+}
+
+/* Formats the name */
+#name {
+    font-size: 0.6rem;
+    padding-bottom: 0.2rem;
+}
+
+/* Formats availability text */
+#availability {
+    font-size: 0.4rem;
+    color: var(--sub-heading);
+}
+
+/* Formats dots in gradient box */
+#dotbox {
+    position: absolute;
+    right: 1rem;
+    font-size: 0.6rem;
+}
+
+/* Formats box around all the messages */
+#messagesbox {
+    position: relative;
+    padding: 0.25rem 0.5rem 0.5rem 0.5rem ;
+}
+
+/* Formats message 1 */
+#message1 {
+
+}
+
+/* Formats message 2 */
+#message2 {
+
+}
+
+/* Formats message 3 */
+#message3 {
+    align-self: flex-end;
+}
+
+/* Formats first dog image */
+#dog1 {
+
+}
+
+/* Formats second dog image */
+#dog2 {
+
+}
+
+/* Formats third dog image */
+#dog3 {
+
+}
+
+/* Formats message 4 */
+#message4 {
+    align-self: flex-end;
+}
+
+/* Formats message 5 */
+#message5 {
+    align-self: flex-end;
+    width: 40%;
+}
+
+/* Formats message 6 */
+#message6 {
+
+}
+
+/* Formats message 7 */
+#message7 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Formats the box containing the radio and walk buttons */
+#radiowalk1 {
+
+}
+
+/* Formats first radio button */
+#radio1 {
+    
+}
+
+/* Formats first walk time text */
+#walk1 {
+
+}
+
+/* Formats first price */
+#price1 {
+    right: 1rem;
+}
+
+/* Formats message 8 */
+#message8 {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Formats the box containing the radio and walk buttons */
+#radiowalk2 {
+
+}
+
+/* Formats second radio button */
+#radio2 {
+
+}
+
+/* Formats second walk time text */
+#walk2 {
+
+}
+
+/* Formats second price */
+#price2 {
+    
+}
+
+/* Formats message 9 */
+#message9 {
+    background-color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+/* Formats type box at the bottom */
+#type {
+    color: var(--placeholder);
+    font-size: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* Formats send button at the bottom */
+#sendbtn {
+    font-size: 0.6rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    text-align: center;
+    background-color: var(--submit-button);
+    color: var(--white);
+    border-radius: 50%;
+    padding: 0.25rem;
+}
+
+/* Formats the box containing heading and paragraph text */
+#headerbox {
+    margin-top: 3rem;
+}
+
+/* Formats header text */
+#header {
+    color: var(--main-heading);
+    font-size: 2.15rem;
+    font-weight: 500;
+}
+
+/* Formats paragraph text */
+#para {
+    color: var(--paragraph);
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.6;
+    padding: 1rem 0 0 0;
+
+}
+
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flexr {
+display: flex;
+flex-direction: row;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Changes settings at 768px screen size to 1024px screen size*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Changes the em base and background image*/
+    html {
+        font-size: ;
+    }
+
+    /* Changes the foundation to the size of the view height */
+    #showbox {
+        padding: 0 0;
+        margin: 0;
+    }
+
+    #inside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+
+/* Changes settings at 1200px screen size */
+@media only screen and (min-width: 1024px) {
+
+    /* Changes the em base and background image*/
+    html {
+        font-size: ;
+    }
+
+    /* Changes the foundation to the size of the view height */
+    #showbox {
+        /* width: 100vw; */
+    }
+
+    
+}
