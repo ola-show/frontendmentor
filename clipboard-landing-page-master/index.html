@@ -2,86 +2,264 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <!-- Imports the CSS for the page --> 
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!-- Icon and Title: Shows up in browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Clipboard landing page</title>
+  <title>Frontend Mentor | Clipboard landing page | Katie Fox</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  A history of everything you copy
-
-  Clipboard allows you to track and organize everything you 
-  copy. Instantly access your clipboard on all your devices.
-
-  Download for iOS
-  Download for Mac
-
-  Keep track of your snippets
-
-  Clipboard instantly stores any item you copy in the cloud, 
-  meaning you can access your snippets immediately on all your 
-  devices. Our Mac and iOS apps will help you organize everything.
-
-  Quick Search
-
-  Easily search your snippets by content, category, web address, application, and more.
-
-  iCloud Sync
-
-  Instantly saves and syncs snippets across all your devices.
-
-  Complete History
-
-  Retrieve any snippets from the first moment you started using the app.
-
-  Access Clipboard anywhere
-
-  Whether you’re on the go, or at your computer, you can access all your Clipboard 
-  snippets in a few simple clicks.
-
-  Supercharge your workflow
-
-  We’ve got the tools to boost your productivity.
-
-  Create blacklists
-
-  Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-
-  Plain text snippets
-
-  Remove unwanted formatting from copied text for a consistent look.
-
-  Sneak preview
-
-  Quick preview of all snippets on your Clipboard for easy access.
-
-  Clipboard for iOS and Mac OS
-
-  Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-  and you’re ready to start adding to your clipboard.
-
-  Download for iOS
-  Download for Mac
-
-  FAQs
-  Contact Us
-  Privacy Policy
-  Press Kit
-  Install Guide
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <!-- Makes an invisible box around everything -->
+  <div id="showbox" class="flexr row">
+    <!-- Big box: holds main box -->
+    <div id="bigbox">
+      <!-- Inside box: holds main boxes -->
+      <div id="inside" class="flexc">
+        <!-- Box 1: holds logo, heading, and para text -->
+        <div id="one" class="flexc">
+          <!-- Logo -->
+          <img src="images/logo.svg" alt="Company Logo" id="toplogo">
+          <!-- Box 1 heading -->
+          <h1 id="oneh1">
+            A history of everything you copy
+          </h1>
+          <!-- Box 1 para text -->
+          <p id="onep">
+            Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.
+          </p>
+        </div>
+        <!-- Box 2: holds 2 download buttons -->
+        <div id="two">
+          <!-- IOS download button -->
+          <div id="ios1" class="iosbtn">
+            Download for iOS
+          </div>
+          <!-- Mac download button -->
+          <div id="mac1" class="macbtn">
+            Download for Mac
+          </div>
+        </div>
+        <!-- Box 3: holds heading and para text -->
+        <div id="three">
+          <!-- Box 3 heading -->
+          <h2 id="threeh1">
+            Keep track of your snippets
+          </h2>
+          <!-- Box 3 para text -->
+          <p id="threep">
+            Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.
+          </p>
+        </div>
+        <!-- Box 4: holds computer image and 3 boxes with headings and para text -->
+        <div id="four">
+          <!-- Box 4 left side: computer image -->
+          <img src="images/image-computer.png" alt="Picture of Computer" id="computer">
+          <!-- Box 4 right side: holds 3 boxes with headings and para text -->
+          <div id="fourright" class="flexc">
+            <!-- Box 4 right side top: holds heading and para text -->
+            <div id="fourrighttop" class="fourthree flexc">
+              <!-- Box 4 right side top heading -->
+              <h3 id="fourrighttoph3">
+                Quick Search
+              </h3>
+              <!-- Box 4 right side top paragragh -->
+              <p id="fourrighttopp">
+                Easily search your snippets by content, category, web address, application, and more.
+              </p>
+            </div>
+            <!-- Box 4 right side middle: holds heading and para text -->
+            <div id="fourrightmiddle" class="fourthree flexc">
+              <!-- Box 4 right side middle heading -->
+              <h3 id="fourrightmiddleh3">
+                iCloud Sync
+              </h3>
+              <!-- Box 4 right side middle paragragh -->
+              <p id="fourrightmiddlep">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
+            </div>
+            <!-- Box 4 right side bottom: holds heading and para text -->
+            <div id="fourrightbottom" class="fourthree flexc">
+              <!-- Box 4 right side bottom heading -->
+              <h3 id="fourrightbottomh3">
+                Complete History
+              </h3>
+              <!-- Box 4 right side bottom paragragh -->
+              <p id="fourrightbottomp">
+                Retrieve any snippets from the first moment you started using the app.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Box 5: holds heading and para text -->
+        <div id="five" class="flexc">
+          <!-- Box 5 heading -->
+          <h2 id="fiveh2">
+            Access Clipboard anywhere
+          </h2>
+          <!-- Box 5 para text -->
+          <p id="fivep">
+            Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.
+          </p>
+        </div>
+        <!-- Box 6: holds devices image -->
+        <div id="six">
+          <!-- Devices image -->
+          <img src="images/image-devices.png" alt="Picture of Devices" id="devices">
+        </div>
+        <!-- Box 7: holds heading and para text -->
+        <div id="seven" class="flexc">
+          <!-- Box 7 heading -->
+          <h2 id="sevenh2">
+            Supercharge your workflow
+          </h2>
+          <!-- Box 7 para text -->
+          <p id="sevenp">
+            We’ve got the tools to boost your productivity.
+          </p>
+        </div>
+        <!-- Box 8: holds 3 boxes with image, heading, and para text -->
+        <div id="eight">
+          <!-- Box 8 left: holds image, heading, and para text -->
+          <div id="eightleft" class="eightthree flexc">
+            <!-- Box 8 left image: blacklist -->
+            <img src="images/icon-blacklist.svg" alt="Image of blacklist" id="blacklist">
+            <!-- Box 8 left heading -->
+            <h3 id="eightlefth3">
+              Create blacklists
+            </h3>
+            <!-- Box 8 left para text -->
+            <p id="eightleftp">
+              Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+            </p>
+          </div>
+          <!-- Box 8 middle: holds image, heading, and para text -->
+          <div id="eightmiddle" class="eightthree flexc">
+            <!-- Box 8 middle image: plain text -->
+            <img src="images/icon-text.svg" alt="Image of Plain Text" id="plaintext">
+            <!-- Box 8 middle heading -->
+            <h3 id="eightmiddleh3">
+              Plain text snippets
+            </h3>
+            <!-- Box 8 middle para text -->
+            <p id="eightmiddlep">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+          <!-- Box 8 right: holds image, heading, and para text -->
+          <div id="eightright" class="eightthree flexc">
+            <!-- Box 8 right image: preview -->
+            <img src="images/icon-preview.svg" alt="Image of an Eye" id="preview">
+            <!-- Box 8 right heading -->
+            <h3 id="eightrighth3">
+              Sneak preview
+            </h3>
+            <!-- Box 8 right para text -->
+            <p id="eightrightp">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
+        </div>
+        <!-- Box 9: holds 5 logo images -->
+        <div id="nine">
+          <!-- Google logo -->
+          <img src="images/logo-google.png" alt="Google Logo" id="google" class="logos">
+          <!-- IBM logo -->
+          <img src="images/logo-ibm.png" alt="IBM Logo" id="ibm" class="logos">
+          <!-- Microsoft logo -->
+          <img src="images/logo-microsoft.png" alt="Microsoft Logo" id="microsoft" class="logos">
+          <!-- HP logo -->
+          <img src="images/logo-hp.png" alt="HP Logo" id="hp" class="logos">
+          <!-- Vector Graphic logo -->
+          <img src="images/logo-vector-graphics.png" alt="Vector Graphics Logo" id="vector" class="logos">
+        </div>
+        <!-- Row 10: holds heading and para text -->
+        <div id="ten" class="flexc">
+          <!-- Box 10 heading -->
+          <h2 id="tenh2">
+            Clipboard for iOS and Mac OS
+          </h2>
+          <!-- Box 10 para text -->
+          <p id="tenp">
+            Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.
+          </p>
+        </div>
+        <!-- Box 11: holds 2 download buttons -->
+        <div id="eleven">
+          <!-- IOS download button -->
+          <div id="ios2" class="iosbtn">
+            Download for iOS
+          </div>
+          <!-- Mac download button -->
+          <div id="mac2" class="macbtn">
+            Download for Mac
+          </div>
+        </div>
+        <!-- Footer: holds logo, 5 page links, and 3 icon links -->
+        <div id="footer">
+          <!-- Footer left: holds logo and 5 page links -->
+          <div id="footerleft">
+            <!-- Footer left column 1: holds logo -->
+            <div id="footer1">
+              <!-- Small logo -->
+              <img src="images/logo.svg" alt="" id="bottomlogo">
+            </div>
+            <!-- Footer left column 2: holds faqs and contact links -->
+            <div id="footer2" class="flexc">
+              <!-- Link to FAQs -->
+              <a href="" id="faqs" class="footertext">
+                FAQs
+              </a>
+              <!-- Link to Contact Us -->
+              <a href="" id="contact" class="footertext">
+                Contact Us
+              </a>
+            </div>
+            <!-- Footer left column 3: holds privacy and press -->
+            <div id="footer3" class="flexc">
+              <!-- Link to Privacy Policy -->
+              <a href="" id="privacy" class="footertext">
+                Privacy Policy
+              </a>  
+              <!-- Link to Press Kit -->
+              <a href="" id="press" class="footertext">
+                Press Kit
+              </a>  
+            </div>
+            <!-- Footer left column 4: holds install -->
+            <div id="footer4" class="flexc">
+              <!-- Link to Install Guide -->
+              <a href="" id="install" class="footertext">
+                Install Guide
+              </a>  
+            </div>
+          </div>
+          <!-- Footer right: holds 3 icon links -->
+          <div id="footerright" class="flexr">
+            <!-- Link to Facebook -->
+            <a href="" id="facebooklink" class="link">
+              <!-- Facebook icon -->
+              <img src="images/icon-facebook.svg" alt="Facebook icon" id="facebook" class="icons">
+            </a>
+            <!-- Link to Twitter -->
+            <a href="" id="twitterlink" class="link">
+              <!-- Twitter icon -->
+              <img src="images/icon-twitter.svg" alt="Twitter icon" id="twitter" class="icons">
+            </a>
+            <!-- Link to Instagram -->
+            <a href="" id="instagramlink" class="link">
+              <!-- Instagram icon -->
+              <img src="images/icon-instagram.svg" alt="Instagram icon" id="instagram" class="icon">
+            </a>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
 </body>
-</html>
+</html> 

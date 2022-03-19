@@ -1,0 +1,554 @@
+/* Imports Bai Jamjuree font 400 and 600 weight */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    --primary-color: hsl(171, 66%, 44%);
+    --secondary-color: hsl(233, 100%, 69%);
+    --tertiary-color: hsl(210, 10%, 33%);
+    --quaternary-color: hsl(201, 11%, 66%);
+    --white: white;
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Formats all elements */
+html {
+    background-color: var();
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
+/* Formats all H1 elements */
+h1 {
+
+}
+
+/* Formats all H2 elements */
+h2 {
+
+}
+
+/* Formats all H3 elements */
+h3 {
+
+}
+
+/* Formats all paragragh text */
+p {
+
+}
+
+/* Formats all links */
+a {
+
+}
+
+/* Formats all images */
+img {
+
+}
+
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+  
+/* Formats IOS buttons */
+.iosbtn {
+
+}
+
+/* Formats MAC buttons */
+.macbtn {
+
+}
+
+/* Formats three right boxes in box 4 */
+.fourthree {
+
+}
+
+/* Formats three boxes in box 8 */
+.eightthree {
+
+}
+
+/* Formats 5 logos in box 9 */
+.logos {
+
+}
+
+/* Formats 5 text links in footer */
+.footertext {
+
+}
+
+/* Formats icon links in footer */
+.links {
+
+}
+
+/* Formats icon images in footer */
+.icons {
+
+}
+
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation for all other boxes */
+#showbox {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formats the main container */
+#bigbox {    
+    
+}
+
+/* Formats  */
+#inside {
+
+}
+
+/* Formats  */
+#one {
+
+}
+
+/* Formats  */
+#toplogo {
+
+}
+
+/* Formats  */
+#oneh1 {
+
+}
+
+/* Formats  */
+#onep {
+
+}
+
+/* Formats  */
+#two {
+
+}
+
+/* Formats  */
+#ios1 {
+
+}
+
+/* Formats  */
+#mac1 {
+
+}
+
+/* Formats  */
+#three {
+
+}
+
+/* Formats  */
+#threeh1 {
+
+}
+
+/* Formats  */
+#threep {
+
+}
+
+/* Formats  */
+#four {
+
+}
+
+/* Formats  */
+#computer {
+
+}
+
+/* Formats  */
+#fourright {
+
+}
+
+/* Formats  */
+#fourrighttop {
+
+}
+
+/* Formats  */
+#fourrighttoph3 {
+
+}
+
+/* Formats  */
+#fourrighttopp {
+
+}
+
+/* Formats  */
+#fourrightmiddle {
+
+}
+
+/* Formats  */
+#fourrightmiddleh3 {
+
+}
+
+/* Formats  */
+#fourrightmiddlep {
+
+}
+
+/* Formats  */
+#fourrightbottom {
+
+}
+
+/* Formats  */
+#fourrightbottomh3 {
+
+}
+
+/* Formats  */
+#fourrightbottomp {
+
+}
+
+/* Formats  */
+#five {
+
+}
+
+/* Formats  */
+#fiveh2 {
+
+}
+
+/* Formats  */
+#fivep {
+
+}
+
+/* Formats  */
+#six {
+
+}
+
+/* Formats  */
+#devices {
+
+}
+
+/* Formats  */
+#seven {
+
+}
+
+/* Formats  */
+#sevenh2 {
+
+}
+
+/* Formats  */
+#sevenp {
+
+}
+
+/* Formats  */
+#eight {
+
+}
+
+/* Formats  */
+#eightleft {
+
+}
+
+/* Formats  */
+#blacklist {
+
+}
+
+/* Formats  */
+#eightlefth3 {
+
+}
+
+/* Formats  */
+#eightleftp {
+
+}
+
+/* Formats  */
+#eightmiddle {
+
+}
+
+/* Formats  */
+#plaintext {
+
+}
+
+/* Formats  */
+#eightmiddleh3 {
+
+}
+
+/* Formats  */
+#eightmiddlep {
+
+}
+
+/* Formats  */
+#eightright {
+
+}
+
+/* Formats  */
+#preview {
+    
+}
+
+/* Formats  */
+#eightrighth3 {
+
+}
+
+/* Formats  */
+#eightrightp {
+
+}
+
+/* Formats  */
+#nine {
+
+}
+
+/* Formats  */
+#google {
+
+}
+
+/* Formats  */
+#ibm {
+
+}
+
+/* Formats  */
+#microsoft {
+
+}
+
+/* Formats  */
+#hp {
+
+}
+
+/* Formats  */
+#vector {
+
+}
+
+/* Formats  */
+#ten {
+
+}
+
+/* Formats  */
+#tenh2 {
+
+}
+
+/* Formats  */
+#tenp {
+
+}
+
+/* Formats  */
+#eleven {
+
+}
+
+/* Formats  */
+#ios2 {
+
+}
+
+/* Formats  */
+#mac2 {
+
+}
+
+/* Formats  */
+#footer {
+
+}
+
+/* Formats  */
+#footerleft {
+
+}
+
+/* Formats  */
+#footer1 {
+
+}
+
+/* Formats  */
+#bottomlogo {
+
+}
+
+/* Formats  */
+#footer2 {
+
+}
+
+/* Formats  */
+#faqs {
+
+}
+
+/* Formats  */
+#contact {
+
+}
+
+/* Formats  */
+#footer3 {
+
+}
+
+/* Formats  */
+#privacy {
+
+}
+
+/* Formats  */
+#press {
+
+}
+
+/* Formats  */
+#footer4 {
+
+}
+
+/* Formats  */
+#install {
+
+}
+
+/* Formats  */
+#footerright {
+
+}
+
+/* Formats  */
+#facebooklink {
+
+}
+
+/* Formats  */
+#facebook {
+
+}
+
+/* Formats  */
+#twitterlink {
+
+}
+
+/* Formats  */
+#twitter {
+
+}
+
+/* Formats  */
+#instagramlink {
+
+}
+
+/* Formats  */
+#instagram {
+
+}
+
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flexr {
+display: flex;
+flex-direction: row;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Changes settings at 768px screen size to 1023px screen size*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Changes the em base and background image*/
+    html {
+        font-size: ;
+    }
+
+    /* Changes the foundation to the size of the view height */
+    #showbox {
+ 
+    }
+
+    /* Changes the  of the main container */
+    #bigbox { 
+        
+    }
+
+}
+
+
+
+/* Changes settings at 1024px screen size */
+@media only screen and (min-width: 1024px) {
+
+    /* Changes the em base and background image*/
+    html {
+        font-size: ;
+    }
+
+    /* Changes the foundation to the size of the view height */
+    #showbox {
+       
+    }
+
+    /* Changes the  of the main container */
+    #bigbox { 
+        
+    }
+    
+}
