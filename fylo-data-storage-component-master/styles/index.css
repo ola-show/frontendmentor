@@ -1,0 +1,418 @@
+/* Imports Raleway font 400 and 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    --gradient1: hsl(6, 100%, 80%);
+    --gradient2: hsl(335, 100%, 65%);
+    --primary-color: hsl(229, 57%, 11%);
+    --secondary-color: hsl(228, 56%, 26%);
+    --tertiary-color: hsl(229, 7%, 55%);
+    --quaternary-color: hsl(243, 100%, 93%);
+    --white: hsl(0%, 0%, 100%);
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Formats the body */
+body {
+    position: relative;
+    background-image: url("../images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+  
+/* Formats the boxes around the icons */
+.iconbox {
+    position: relative;
+    margin: 1rem 1rem 1rem 0;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: var(--primary-color);
+    border-radius: 8px 8px 8px 8px;
+}
+
+/* Formats the icons */
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+/* Formats the min max boxes */
+.minmax {
+
+}
+
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation for all other boxes */
+#showbox {
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formats the main container */
+#bigbox {    
+    position: relative;
+    width: 85%;
+}
+
+/* Formats the inside box that insulates the main content */
+#inside {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formats the top box */
+#topbox {
+    flex-grow: 1;
+    width: 100%;
+    padding: 2.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 10px 60px 10px 10px;
+    margin: 1rem;
+}
+
+/* Formats the inside box that insulates the top box */
+#tpinside {
+
+}
+
+/* Formats the logo */
+#logo {
+    height: 3rem;
+    width: 10rem;
+    margin: 0 0 1.5em 0;
+}
+
+/* Formats the row of icons */
+#iconrow {
+    
+}
+
+/* Formats the left box containing the document icon */
+#iconbox1 {
+
+}
+
+/* Formats the document icon */
+#icon1 {
+
+}
+
+/* Formats the middle box containing the file folder icon */
+#iconbox2 {
+
+}
+
+/* Formats the file folder icon */
+#icon2 {
+
+}
+
+/* Formats the right box containing the upload icon */
+#iconbox3 {
+
+}
+
+/* Formats the upload icon */
+#icon3 {
+
+}
+
+/* Formats the bottom box */
+#bottombox {
+    flex-grow: 2;
+    position: relative;
+    width: 100%;
+    padding: 2.5rem 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 10px 10px 10px 10px;
+    margin: 0 1rem 1rem 1rem;
+}
+
+/* Formats the inside box that insulates the bottom box */
+#btinside {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formats the usage text */
+#usage {
+    justify-content: center;
+    color: var(--quaternary-color);
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+/* Formats the bold text in the usage text */
+#bold {
+    font-weight: 700;
+    padding: 0 0.25rem;
+}
+
+/* Formats the usage gauge */
+#gauge {
+    width: 100%;
+    height: 1.3rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    margin: 0 0 0.6rem 0;
+    padding: 0.15rem;
+}
+
+/* Formats the gradient usage  */
+#indicator {
+    position: relative;
+    width: 82%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, var(--gradient1), var(--gradient2));
+    padding: 0.15rem;
+}
+
+/* Formats the dot in the indicator */
+#dot {
+    position: absolute;
+    right: 0.15rem;
+    background-color: white;
+    border-radius: 50%;
+    height: 0.7rem;
+    width: 0.7rem;
+}
+
+/* Formats the min-max text */
+#minmaxbox {
+    justify-content: space-between;
+    align-items: center;
+    color: var(--quaternary-color);
+    font-weight: 700;
+    font-size: .9rem;
+    padding-bottom: 1rem;
+}
+
+/* Formats the min text */
+#min {
+
+}
+
+/* Formats the max text */
+#max {
+
+}
+
+/* Formats the remaining space box */
+#spacebox {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -25%;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+}
+
+/* Formats the number in the space box */
+#number {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Formats the first word in the space box */
+#gb1 {
+    color: var(--tertiary-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    margin-left: 0.5rem;
+}
+
+/* Formats the second word in the space box */
+#gb2 {
+    color: var(--tertiary-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    margin-left: 0.5rem;
+}
+
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Makes flex rows */
+.flexr {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Makes flex columns */
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Changes settings at 768px screen size to 1024px screen size*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Changes the em base */
+    html {
+        font-size: 12px;
+    }
+
+    /* Changes the background */
+    body {
+        background-image: url("../images/bg-desktop.png");
+        background-color: var(--primary-color);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100% 50%;
+    }
+
+    /* Changes the orientation and alignment */
+    #inside {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    /* Changes the alignment of the text */
+    #usage {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    /* Changes the position to top right */
+    #spacebox {
+        bottom: auto;
+        top: -30%;
+        right: 30%;
+        border-radius: 10px 10px 0 10px;
+    }
+
+    /* Adds a speech tail to the spacebox */
+    #spacebox:after {
+        content: '';
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    width: 0;
+	    height: 0;
+	    border: 20px solid transparent;
+	    border-top-color: white;
+	    border-bottom: 0;
+	    border-right: 0;
+	    margin-left: -10px;
+	    margin-bottom: -20px;
+    }
+}
+
+
+
+/* Changes settings at 1024px screen size */
+@media only screen and (min-width: 1024px) {
+
+    /* Changes the em base */
+    html {
+        font-size: 12px;
+    }
+
+    /* Changes the background */
+    body {
+        background-image: url("../images/bg-desktop.png");
+        background-color: var(--primary-color);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100% 50%;
+    }
+
+    /* Changes the width of the main container */
+    #bigbox { 
+        width: 75%;
+    }
+
+    /* Changes the orientation and alignment */
+    #inside {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    /* Changes the width of the top container */
+    #topbox {
+        width: 60%;
+    }
+
+    /* Changes the alignment of the text */
+    #usage {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    /* Changes the position to top right */
+    #spacebox {
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: auto;
+        top: -30%;
+        right: 25%;
+        border-radius: 10px 10px 0 10px;
+    }
+
+    /* Adds a speech tail to the spacebox */
+    #spacebox:after {
+        content: '';
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    width: 0;
+	    height: 0;
+	    border: 20px solid transparent;
+	    border-top-color: white;
+	    border-bottom: 0;
+	    border-right: 0;
+	    margin-left: -10px;
+	    margin-bottom: -20px;
+    } 
+}

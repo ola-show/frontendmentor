@@ -2,30 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <!-- Imports the CSS for the page --> 
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!-- Icon and Title: Shows up in browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
+  <title>Frontend Mentor | Fylo data storage component | Katie Fox</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <!-- Makes an invisible box around everything -->
+  <div id="showbox" class="flexc row">
+    <!-- Big box: holds main container -->
+    <div id="bigbox">
+      <!-- Inside box: holds 2 main boxes -->
+      <div id="inside">
+        <!-- Top box: holds top content -->
+        <div id="topbox">
+          <!-- Top inside box: holds logo and icons -->
+          <div id="tpinside" class="flexc">
+            <!-- Logo image -->
+            <img src="images/logo.svg" alt="Fylo logo" id="logo">
+            <!-- Icon row: row of icons in top box -->
+            <div id="iconrow" class="flexr">
+              <!-- Icon box left: holds document icon -->
+              <div id="iconbox1" class="iconbox">
+                <!-- Document icon: -->
+                <img src="images/icon-document.svg" alt="Document icon" id="icon1" class="icon">
+              </div>
+              <!-- Icon box middle: holds file icon -->
+              <div id="iconbox2" class="iconbox">
+                <!-- File folder icon -->
+                <img src="images/icon-folder.svg" alt="Document icon" id="icon2" class="icon">
+              </div>
+              <!-- Icon box right: holds upload icon -->
+              <div id="iconbox3" class="iconbox">
+                <!-- Upload icon -->
+                <img src="images/icon-upload.svg" alt="Document icon" id="icon3" class="icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom box: holds bottom content -->
+        <div id="bottombox">
+          <!-- Bottom inside box: holds usage, gauge, minmax box and gbbox -->
+          <div id="btminside" class="flexc">
+            <!-- Usage box: Holds the usage text -->
+            <div id="usage" class="flexr">
+              <div>
+              You’ve used 
+              </div>
+              <!-- Makes the text bold -->
+              <div id="bold">
+              815 GB
+              </div>
+              <div>
+               of your storage
+              </div>
+            </div>
+            <!-- Gauge box: makes the usage gauge -->
+            <div id="gauge">
+              <!-- Indicator box: makes the gradient measurement -->
+              <div id="indicator">
+                <!-- Dot: makes a dot at the usage level  -->
+                <div id="dot">
 
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+                </div>
+              </div>
+            </div>
+            <!-- Min-max box: holds the min and max text -->
+            <div id="minmaxbox" class="flexr">
+              <!-- Min box: holds the min text -->
+              <div id="min" class="minmax">
+                0 GB
+              </div>
+              <!-- Max box: holds the max text -->
+              <div id="max" class="minmax">
+                1000 GB
+              </div>
+            </div>
+            <!-- Space box: holds the remaining space text -->
+            <div id="spacebox" class="flexr">
+              <!-- Number box: holds the number of the space left calculation -->
+              <div id="number">
+                185
+              </div>
+              <!-- GB box: holds the 'GB LEFT' text -->
+              <div id="gb1">
+                GB 
+              </div>
+              <div id="gb2">
+                Left
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
+  
+  

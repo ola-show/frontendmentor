@@ -23,15 +23,15 @@ X https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK
 
 X https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc
 
-x https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0
+X https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0
 
 ### 3-14-22
 
-x https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7
+X https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7
 
 X https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY
 
-  https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n
+X https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n
 
   https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9
 
