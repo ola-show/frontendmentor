@@ -22,34 +22,71 @@
 
 /* Formats all elements */
 html {
-    background-color: var();
+    background: white url(../images/bg-header-mobile.png) no-repeat top;
+    background-size: 100% auto;
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
+    font-weight: 400;
+}
+
+/* Formats body */
+body {
+    position: relative;
+    text-align: center;
+
 }
 
 /* Formats all H1 elements */
 h1 {
+    color: var(--tertiary-color);
+    font-weight: 600;
+    font-size: 1.75rem;
+    padding-bottom: 0.8rem;
+}
 
+/* Formats para text after H1 elements */
+h1 + p {
+    font-size: 0.9rem;
+    padding: 0 0.2rem;
 }
 
 /* Formats all H2 elements */
 h2 {
+    color: var(--tertiary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 0.8rem;
+}
 
+/* Formats para text after H2 elements */
+h2 + p {
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
 }
 
 /* Formats all H3 elements */
 h3 {
+    color: var(--tertiary-color);
+    font-size: 1.35rem;
+    font-weight: 600;
+    padding-bottom: 0.8rem;
+}
 
+/* Formats para text after H3 elements */
+h3 + p {
+    font-size: 0.9rem;
 }
 
 /* Formats all paragragh text */
 p {
-
+    color: var(--quaternary-color);
+    line-height: 1.6;
+    
 }
 
 /* Formats all links */
 a {
-
+    text-decoration: none;
 }
 
 /* Formats all images */
@@ -60,35 +97,79 @@ img {
 
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
-  
+
+/* Formats all download button containers */
+.btn {
+    position: relative;
+    width: 17.5rem;
+    height: 3rem;
+    border-radius: 30px;
+    margin: 0.7rem;
+    letter-spacing: 0.02rem;
+}
+
+/* Formats hover state of download buttons */
+.btn:hover {
+    opacity: 0.6;
+}
+
+/* Formats all download button links */
+.dnldbtn {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: var(--white);
+    font-size: 1rem;
+}
+
 /* Formats IOS buttons */
 .iosbtn {
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 0 rgb(2, 158, 135), 0 6px 20px 0 rgba(2, 158, 135, 0.4);
+}
+
+/* Formats IOS links */
+.isolink {
 
 }
 
 /* Formats MAC buttons */
 .macbtn {
+    background-color: var(--secondary-color);
+    box-shadow: 0 3px 0 hsl(233, 54%, 55%), 0 6px 20px 0 hsl(233, 54%, 55%, 0.4);
+}
+
+/* Formats MAC links */
+.maclink {
 
 }
 
 /* Formats three right boxes in box 4 */
 .fourthree {
-
+    margin: 1.25rem 0.4rem;
 }
 
 /* Formats three boxes in box 8 */
 .eightthree {
+    margin: 1rem 0 1.7rem 0;
+}
 
+/* Formats images in box 8 */
+.eightthree img {
+    margin: 1rem 0 2rem 0;
 }
 
 /* Formats 5 logos in box 9 */
 .logos {
-
+    transform: scale(85%, 85%);
+    margin: 1.6rem;
 }
 
 /* Formats 5 text links in footer */
 .footertext {
-
+    color: var(--tertiary-color);
+    margin: 0.6rem;
 }
 
 /* Formats icon links in footer */
@@ -109,385 +190,487 @@ img {
 #showbox {
     position: relative;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
 /* Formats the main container */
 #bigbox {    
+    position: relative;
     
 }
 
-/* Formats  */
+/* Formats the insulation box inside the main container */
 #inside {
-
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
 }
 
-/* Formats  */
+/* Formats box 1 */
 #one {
-
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1.55;
+    width: 100%;
 }
 
-/* Formats  */
+/* Formats the top logo */
 #toplogo {
-
+    position: absolute;
+    top: 38%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 40%;
 }
 
-/* Formats  */
+/* Formats text in box 1 */
+#onetextbox {
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    transform: translateX(50%);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Formats box 1 heading */
 #oneh1 {
 
 }
 
-/* Formats  */
+/* Formats box 1 para text */
 #onep {
-
+    
 }
 
-/* Formats  */
+/* Formats box 2 */
 #two {
-
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
 }
 
-/* Formats  */
+/* Formats IOS download button in box 2 */
 #ios1 {
 
 }
 
-/* Formats  */
+/* Formats IOS link in box 2 */
+#isolink {
+
+}
+
+/* Formats Mac download button in box 2 */
 #mac1 {
 
 }
 
-/* Formats  */
+/* Formats box 3 */
 #three {
-
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0 0 0;
 }
 
-/* Formats  */
+/* Formats box 3 heading */
 #threeh1 {
 
 }
 
-/* Formats  */
+/* Formats box 3 para text */
 #threep {
 
 }
 
-/* Formats  */
+/* Formats box 4 */
 #four {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0;
 
 }
 
-/* Formats  */
+/* Formats image of computer */
 #computer {
-
+    width: 100%;
+    margin: 1rem;
 }
 
-/* Formats  */
+/* Formats container holding 3 boxes in box 4 on the right */
 #fourright {
-
+    justify-content: center;
+    align-items: center;
+    margin: 0.9rem 0;
 }
 
-/* Formats  */
+/* Formats top box in box 4 on the right */
 #fourrighttop {
-
+    justify-content: center;
+    align-items: center;
 }
 
-/* Formats  */
+/* Formats heading in top box in box 4 on the right */
 #fourrighttoph3 {
 
 }
 
-/* Formats  */
+/* Formats para text in top box in box 4 on the right */
 #fourrighttopp {
 
 }
 
-/* Formats  */
+/* Formats middle box in box 4 on the right */
 #fourrightmiddle {
-
+    justify-content: center;
+    align-items: center;
 }
 
-/* Formats  */
+/* Formats heading in middle box in box 4 on the right  */
 #fourrightmiddleh3 {
 
 }
 
-/* Formats  */
+/* Formats para text in middle box in box 4 on the right */
 #fourrightmiddlep {
 
 }
 
-/* Formats  */
+/* Formats bottom box in box 4 on the right */
 #fourrightbottom {
-
+    justify-content: center;
+    align-items: center;
 }
 
-/* Formats  */
+/* Formats heading in bottom box in box 4 on the right */
 #fourrightbottomh3 {
 
 }
 
-/* Formats  */
+/* Formats para text in bottom box in box 4 on the right */
 #fourrightbottomp {
 
 }
 
-/* Formats  */
+/* Formats box 5 */
 #five {
-
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 4rem 0;
 }
 
-/* Formats  */
+/* Formats heading in box 5 */
 #fiveh2 {
 
 }
 
-/* Formats  */
+/* Formats para text in box 5 */
 #fivep {
 
 }
 
-/* Formats  */
+/* Formats box 6 */
 #six {
-
+    justify-content: center;
+    align-items: center;
 }
 
-/* Formats  */
+/* Formats devices image */
 #devices {
-
+    width: 100%;
 }
 
-/* Formats  */
+/* Formats box 7 */
 #seven {
-
+    justify-content: center;
+    align-items: center;
+    margin: 5.5rem 0 3rem 0;
 }
 
-/* Formats  */
+/* Formats heading in box 7 */
 #sevenh2 {
 
 }
 
-/* Formats  */
+/* Formats para text in box 7 */
 #sevenp {
 
 }
 
-/* Formats  */
+/* Formats box 8 */
 #eight {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Formats  */
+/* Formats left box in box 8 */
 #eightleft {
-
+    justify-content: center;
+    align-items: center;
 }
 
-/* Formats  */
+/* Formats blacklist image in box 8 */
 #blacklist {
 
 }
 
-/* Formats  */
+/* Formats heading in left box in box 8 */
 #eightlefth3 {
 
 }
 
-/* Formats  */
+/* Formats para text in left box in box 8 */
 #eightleftp {
 
 }
 
-/* Formats  */
+/* Formats middle box in box 8  */
 #eightmiddle {
-
+    justify-content: center;
+    align-items: center;
 }
 
-/* Formats  */
+/* Formats plaintext image in middle box in box 8 */
 #plaintext {
 
 }
 
-/* Formats  */
+/* Formats heading in middle box in box 8 */
 #eightmiddleh3 {
 
 }
 
-/* Formats  */
+/* Formats para text in middle box in box 8 */
 #eightmiddlep {
 
 }
 
-/* Formats  */
+/* Formats right box in box 8 */
 #eightright {
-
+    justify-content: center;
+    align-items: center;
 }
 
-/* Formats  */
+/* Formats preview image in right box in box 8 */
 #preview {
     
 }
 
-/* Formats  */
+/* Formats heading in right box in box 8 */
 #eightrighth3 {
 
 }
 
-/* Formats  */
+/* Formats para text in right box in box 8 */
 #eightrightp {
 
 }
 
-/* Formats  */
+/* Formats box 9 */
 #nine {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
 }
 
-/* Formats  */
+/* Formats Google logo in box 9 */
 #google {
 
 }
 
-/* Formats  */
+/* Formats IBM logo in box 9  */
 #ibm {
 
 }
 
-/* Formats  */
+/* Formats Microsoft logo in box 9 */
 #microsoft {
 
 }
 
-/* Formats  */
+/* Formats HP logo in box 9 */
 #hp {
 
 }
 
-/* Formats  */
+/* Formats Vector Graphics logo in box 9 */
 #vector {
 
 }
 
-/* Formats  */
+/* Formats box 10 */
 #ten {
-
+    justify-content: center;
+    align-items: center;
+    margin: 3.75rem 0.25rem 2rem 0.25rem;
 }
 
-/* Formats  */
+/* Formats heading in box 10 */
 #tenh2 {
 
 }
 
-/* Formats  */
+/* Formats para text in box 10 */
 #tenp {
 
 }
 
-/* Formats  */
+/* Formats box 11 */
 #eleven {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Formats  */
+/* Formats IOS download button in box 11 */
 #ios2 {
 
 }
 
-/* Formats  */
+/* Formats ISO link in box 11 */
+#iso2link {
+
+}
+
+/* Formats Mac download button in box 11 */
 #mac2 {
 
 }
 
-/* Formats  */
+/* Formats Mac link in box 11 */
+#mac2link {
+
+}
+
+/* Formats footer */
 #footer {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(201, 11%, 66%, 0.15);width: 100%;
+    margin-top: 9rem;
+    padding: 2rem;
+    aspect-ratio: 1 / 1.35;
 }
 
-/* Formats  */
+/* Formats left side of footer holding company logo and 5 text links */
 #footerleft {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    
 }
 
-/* Formats  */
+/* Formats box containing company logo */
 #footer1 {
-
+    justify-content: center;
+    align-items: center;
+    margin: .6rem;
+    height: 25%;
 }
 
-/* Formats  */
+/* Formats smal logo in footer */
 #bottomlogo {
-
+    height: 3.2rem;
 }
 
-/* Formats  */
+/* Formats second column in left footer */
 #footer2 {
-
+    justify-content: center;
+    align-content: space-between;
+    height: 25%;
 }
 
-/* Formats  */
+/* Formats FAQs link in second column in left footer */
 #faqs {
 
 }
 
-/* Formats  */
+/* Formats Contact Us link in second column in left footer */
 #contact {
 
 }
 
-/* Formats  */
+/* Formats third column in left footer */
 #footer3 {
-
+    justify-content: center;
+    align-content: space-between;
+    height: 25%;
 }
 
-/* Formats  */
+/* Formats Privacy Policy link in third column in left footer */
 #privacy {
 
 }
 
-/* Formats  */
+/* Formats Press Kit link in third column in left footer */
 #press {
 
 }
 
-/* Formats  */
+/* Formats fourth column in left footer  */
 #footer4 {
-
+    justify-content: flex-start;
+    align-content: center;
+    height: 25%;
 }
 
-/* Formats  */
+/* Formats Install Guide link in fourth column in left footer */
 #install {
 
 }
 
-/* Formats  */
+/* Formats right side of footer holding 3 links with icons */
 #footerright {
-
+    justify-content: space-evenly;
+    align-content: flex-end;
+    height: 10%;
+    width: 80%;
 }
 
-/* Formats  */
+/* Formats Facebook link in right footer */
 #facebooklink {
 
 }
 
-/* Formats  */
+/* Formats Facebook icon in right footer */
 #facebook {
 
 }
 
-/* Formats  */
+/* Formats twitter link in right footer */
 #twitterlink {
 
 }
 
-/* Formats  */
+/* Formats twitter icon in right footer */
 #twitter {
 
 }
 
-/* Formats  */
+/* Formats instagram link in right footer */
 #instagramlink {
 
 }
 
-/* Formats  */
+/* Formats instagram icon in right footer */
 #instagram {
 
 }

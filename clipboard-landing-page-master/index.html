@@ -15,7 +15,7 @@
 </head>
 <body>
   <!-- Makes an invisible box around everything -->
-  <div id="showbox" class="flexr row">
+  <div id="showbox" class="flexc row">
     <!-- Big box: holds main box -->
     <div id="bigbox">
       <!-- Inside box: holds main boxes -->
@@ -24,28 +24,35 @@
         <div id="one" class="flexc">
           <!-- Logo -->
           <img src="images/logo.svg" alt="Company Logo" id="toplogo">
-          <!-- Box 1 heading -->
-          <h1 id="oneh1">
-            A history of everything you copy
-          </h1>
-          <!-- Box 1 para text -->
-          <p id="onep">
-            Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.
-          </p>
+          <!-- Box one text box: holds text for the top box -->
+          <div id="onetextbox" class="flexc">
+            <!-- Box 1 heading -->
+            <h1 id="oneh1">
+              A history of everything you copy
+            </h1>
+            <!-- Box 1 para text -->
+            <p id="onep">
+              Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.
+            </p>
+          </div>
         </div>
         <!-- Box 2: holds 2 download buttons -->
         <div id="two">
           <!-- IOS download button -->
-          <div id="ios1" class="iosbtn">
-            Download for iOS
+          <div id="ios1" class="iosbtn btn">
+            <a href="" id="ios1link" class="dnldbtn">
+              Download for iOS
+            </a>
           </div>
           <!-- Mac download button -->
-          <div id="mac1" class="macbtn">
-            Download for Mac
+          <div id="mac1" class="macbtn btn">
+            <a href="" id="mac1link" class="dnldbtn">
+              Download for Mac
+            </a>
           </div>
         </div>
         <!-- Box 3: holds heading and para text -->
-        <div id="three">
+        <div id="three" class="flexc">
           <!-- Box 3 heading -->
           <h2 id="threeh1">
             Keep track of your snippets
@@ -100,7 +107,7 @@
         <div id="five" class="flexc">
           <!-- Box 5 heading -->
           <h2 id="fiveh2">
-            Access Clipboard anywhere
+            Access Clipboard Anywhere
           </h2>
           <!-- Box 5 para text -->
           <p id="fivep">
@@ -192,36 +199,40 @@
         <!-- Box 11: holds 2 download buttons -->
         <div id="eleven">
           <!-- IOS download button -->
-          <div id="ios2" class="iosbtn">
-            Download for iOS
+          <div id="ios2" class="iosbtn btn">
+            <a href="" id="ios2link" class="dnldbtn">               Download for iOS
+            </a>
           </div>
           <!-- Mac download button -->
-          <div id="mac2" class="macbtn">
-            Download for Mac
+          <div id="mac2" class="macbtn btn">
+            <a href="" id="mac2link" class="dnldbtn">
+              Download for Mac
+            </a>
           </div>
         </div>
-        <!-- Footer: holds logo, 5 page links, and 3 icon links -->
-        <div id="footer">
-          <!-- Footer left: holds logo and 5 page links -->
-          <div id="footerleft">
-            <!-- Footer left column 1: holds logo -->
-            <div id="footer1">
-              <!-- Small logo -->
-              <img src="images/logo.svg" alt="" id="bottomlogo">
-            </div>
-            <!-- Footer left column 2: holds faqs and contact links -->
-            <div id="footer2" class="flexc">
-              <!-- Link to FAQs -->
-              <a href="" id="faqs" class="footertext">
-                FAQs
-              </a>
-              <!-- Link to Contact Us -->
-              <a href="" id="contact" class="footertext">
-                Contact Us
-              </a>
-            </div>
-            <!-- Footer left column 3: holds privacy and press -->
-            <div id="footer3" class="flexc">
+      </div>  
+      <!-- Footer: holds logo, 5 page links, and 3 icon links -->
+      <div id="footer">
+        <!-- Footer left: holds logo and 5 page links -->
+        <div id="footerleft">
+          <!-- Footer left column 1: holds logo -->
+          <div id="footer1" class="flexc">
+            <!-- Small logo -->
+            <img src="images/logo.svg" alt="small company logo" id="bottomlogo">
+          </div>
+          <!-- Footer left column 2: holds faqs and contact links -->
+          <div id="footer2" class="flexc">
+            <!-- Link to FAQs -->
+            <a href="" id="faqs" class="footertext">
+              FAQs
+            </a>
+            <!-- Link to Contact Us -->
+            <a href="" id="contact" class="footertext">
+              Contact Us
+            </a>
+          </div>
+          <!-- Footer left column 3: holds privacy and press -->
+          <div id="footer3" class="flexc">
               <!-- Link to Privacy Policy -->
               <a href="" id="privacy" class="footertext">
                 Privacy Policy
@@ -230,33 +241,32 @@
               <a href="" id="press" class="footertext">
                 Press Kit
               </a>  
-            </div>
-            <!-- Footer left column 4: holds install -->
-            <div id="footer4" class="flexc">
-              <!-- Link to Install Guide -->
-              <a href="" id="install" class="footertext">
-                Install Guide
-              </a>  
-            </div>
           </div>
-          <!-- Footer right: holds 3 icon links -->
-          <div id="footerright" class="flexr">
-            <!-- Link to Facebook -->
-            <a href="" id="facebooklink" class="link">
-              <!-- Facebook icon -->
-              <img src="images/icon-facebook.svg" alt="Facebook icon" id="facebook" class="icons">
-            </a>
-            <!-- Link to Twitter -->
-            <a href="" id="twitterlink" class="link">
-              <!-- Twitter icon -->
-              <img src="images/icon-twitter.svg" alt="Twitter icon" id="twitter" class="icons">
-            </a>
-            <!-- Link to Instagram -->
-            <a href="" id="instagramlink" class="link">
-              <!-- Instagram icon -->
-              <img src="images/icon-instagram.svg" alt="Instagram icon" id="instagram" class="icon">
-            </a>
+          <!-- Footer left column 4: holds install -->
+          <div id="footer4" class="flexc">
+            <!-- Link to Install Guide -->
+            <a href="" id="install" class="footertext">
+              Install Guide
+            </a>  
           </div>
+        </div>
+        <!-- Footer right: holds 3 icon links -->
+        <div id="footerright" class="flexr">
+          <!-- Link to Facebook -->
+          <a href="" id="facebooklink" class="link">
+            <!-- Facebook icon -->
+            <img src="images/icon-facebook.svg" alt="Facebook icon" id="facebook" class="icons">
+          </a>
+          <!-- Link to Twitter -->
+          <a href="" id="twitterlink" class="link">
+            <!-- Twitter icon -->
+            <img src="images/icon-twitter.svg" alt="Twitter icon" id="twitter" class="icons">
+          </a>
+          <!-- Link to Instagram -->
+          <a href="" id="instagramlink" class="link">
+            <!-- Instagram icon -->
+            <img src="images/icon-instagram.svg" alt="Instagram icon" id="instagram" class="icon">
+          </a>
         </div>
       </div>  
     </div>
