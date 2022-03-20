@@ -5,6 +5,9 @@
   <!-- displays site properly based on user's device -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <!-- Imports FontAwesome icons -->
+  <script src="https://kit.fontawesome.com/5d5f7bf628.js" crossorigin="anonymous"></script>
+
   <!-- Imports the CSS for the page --> 
   <link rel="stylesheet" href="styles/index.css">
 
@@ -63,9 +66,12 @@
           </p>
         </div>
         <!-- Box 4: holds computer image and 3 boxes with headings and para text -->
-        <div id="four">
-          <!-- Box 4 left side: computer image -->
-          <img src="images/image-computer.png" alt="Picture of Computer" id="computer">
+        <div id="four" class="row">
+          <!-- Box 4 left side: holds computer image on the left -->
+          <div id="fourleft">
+            <!-- Computer image -->
+            <img src="images/image-computer.png" alt="Picture of Computer" id="computer">
+          </div>
           <!-- Box 4 right side: holds 3 boxes with headings and para text -->
           <div id="fourright" class="flexc">
             <!-- Box 4 right side top: holds heading and para text -->
@@ -107,7 +113,7 @@
         <div id="five" class="flexc">
           <!-- Box 5 heading -->
           <h2 id="fiveh2">
-            Access Clipboard Anywhere
+            Access Clipboard anywhere
           </h2>
           <!-- Box 5 para text -->
           <p id="fivep">
@@ -220,34 +226,37 @@
             <!-- Small logo -->
             <img src="images/logo.svg" alt="small company logo" id="bottomlogo">
           </div>
-          <!-- Footer left column 2: holds faqs and contact links -->
-          <div id="footer2" class="flexc">
-            <!-- Link to FAQs -->
-            <a href="" id="faqs" class="footertext">
-              FAQs
-            </a>
-            <!-- Link to Contact Us -->
-            <a href="" id="contact" class="footertext">
-              Contact Us
-            </a>
-          </div>
-          <!-- Footer left column 3: holds privacy and press -->
-          <div id="footer3" class="flexc">
-              <!-- Link to Privacy Policy -->
-              <a href="" id="privacy" class="footertext">
-                Privacy Policy
+          <!-- Footer text box: holds 3 columns of links -->
+          <div id="footerlefttext">
+            <!-- Footer left column 2: holds faqs and contact links -->
+            <div id="footer2" class="flexc">
+              <!-- Link to FAQs -->
+              <a href="" id="faqs" class="footertext">
+                FAQs
+              </a>
+              <!-- Link to Contact Us -->
+              <a href="" id="contact" class="footertext">
+                Contact Us
+              </a>
+            </div>
+            <!-- Footer left column 3: holds privacy and press -->
+            <div id="footer3" class="flexc">
+                <!-- Link to Privacy Policy -->
+                <a href="" id="privacy" class="footertext">
+                  Privacy Policy
+                </a>  
+                <!-- Link to Press Kit -->
+                <a href="" id="press" class="footertext">
+                  Press Kit
+                </a>  
+            </div>
+            <!-- Footer left column 4: holds install -->
+            <div id="footer4" class="flexc">
+              <!-- Link to Install Guide -->
+              <a href="" id="install" class="footertext">
+                Install Guide
               </a>  
-              <!-- Link to Press Kit -->
-              <a href="" id="press" class="footertext">
-                Press Kit
-              </a>  
-          </div>
-          <!-- Footer left column 4: holds install -->
-          <div id="footer4" class="flexc">
-            <!-- Link to Install Guide -->
-            <a href="" id="install" class="footertext">
-              Install Guide
-            </a>  
+            </div>
           </div>
         </div>
         <!-- Footer right: holds 3 icon links -->
@@ -255,17 +264,17 @@
           <!-- Link to Facebook -->
           <a href="" id="facebooklink" class="link">
             <!-- Facebook icon -->
-            <img src="images/icon-facebook.svg" alt="Facebook icon" id="facebook" class="icons">
+            <i class="fa-brands fa-facebook-square icons" id="facebook"></i>
           </a>
           <!-- Link to Twitter -->
           <a href="" id="twitterlink" class="link">
             <!-- Twitter icon -->
-            <img src="images/icon-twitter.svg" alt="Twitter icon" id="twitter" class="icons">
+            <i class="fa-brands fa-twitter icons" id="twitter"></i>
           </a>
           <!-- Link to Instagram -->
           <a href="" id="instagramlink" class="link">
             <!-- Instagram icon -->
-            <img src="images/icon-instagram.svg" alt="Instagram icon" id="instagram" class="icon">
+            <i class="fa-brands fa-instagram icons" id="instagram"></i>
           </a>
         </div>
       </div>  
