@@ -1,0 +1,564 @@
+/* Imports Poppins font 600 weight */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Imports Open Sans font 400 and 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    --primary-color: hsl(322, 100%, 66%);
+    --secondary-color: hsl(192, 100%, 9%);
+    --tertiary-color: hsl(208, 11%, 55%);
+    --quaternary-color: hsl(193, 100%, 96%);
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    background-color: var();
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+/* Formats all body elements */
+body {
+    position: relative;
+}
+
+/* Formats all H1 elements */
+h1 {
+
+}
+
+/* Formats P elements after H1 elements */
+h1 + p {
+
+}
+
+/* Formats all H2 elements */
+h2 {
+
+}
+
+/* Formats P elements after H2 elements */
+h2 + p {
+
+}
+
+/* Formats all H3 elements */
+h3 {
+
+}
+
+/* Formats all P elements */
+p {
+
+}
+
+/* Formats all link elements */
+a {
+
+}
+
+/* Formats all icon elements */
+i {
+
+}
+
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+/* Formats 2 start buttons */
+.startbtn {
+
+}
+
+/* Formats 2 start button links */
+.startbtnlnk {
+
+}
+
+/* Formats 3 card containers */
+.card {
+
+}
+
+/* Formats 3 image boxes in card containers */
+.cardimgbox {
+
+}
+
+/* Formats 3 images in card containers */
+.cardimg {
+
+}
+
+/* Formats text boxes in card containers */
+.cardtext {
+
+}
+
+/* Formats headings in card containers */
+.cardh2 {
+
+}
+
+/* Formats para text in card containers */
+.cardp {
+
+}
+
+/* Formats icon boxes in column 1 of the footer */
+.c1iconbox {
+
+}
+
+/* Formats icons in column 1 of the footer */
+.c1icon {
+
+}
+
+/* Formats para text in column 1 of the footer */
+.c1p {
+
+}
+
+/* Formats text links in footer */
+.footertextlink {
+
+}
+
+/* Formats icon boxes in footer */
+.icon {
+
+}
+
+/* Formats icon links in footer */
+.iconlink {
+
+}
+
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation for all other boxes */
+#showbox {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formats the main container */
+#bigbox {    
+    
+}
+
+/* Formats the insulation box inside the main container */
+#inside {
+
+}
+
+/* Formats the top box */
+#topbox {
+
+}
+
+/* Formats the box that hold the logo and try it button at the top of the top box */
+#logobuttonbox {
+
+}
+
+/* Formats the logo box at the top of the top box */
+#logobox {
+
+}
+
+/* Formats the logo image at the top of the top box */
+#logotop {
+
+}
+
+/* Formats the try it button at the top of the top box */
+#trybutton {
+
+}
+
+/* Formats the try it button link at the top of the top box */
+#tryit {
+
+}
+
+/* Formats the bottom box of the top box */
+#topinfomockbox {
+
+}
+
+/* Formats the left box in the bottom box of the top box */
+#topleftbox {
+
+}
+
+/* Formats the heading of the left box in the bottom box of the top box */
+#toplefth {
+
+}
+
+/* Formats the para text of the left box in the bottom box of the top box */
+#topleftp {
+
+}
+
+/* Formats the top start button */
+#startbtn1 {
+
+}
+
+/* Formats the top start button link */
+#startbtnlnk1 {
+
+}
+
+/* Formats the right box in the bottom box of the top box */
+#toprightbox {
+
+}
+
+/* Formats the mockups image */
+#mockups {
+
+}
+
+/* Formats the box holding 3 cards */
+#cardbox {
+
+}
+
+/* Formats card 1 */
+#card1 {
+
+}
+
+/* Formats the box holding the image in card 1 */
+#card1imgbox {
+
+}
+
+/* Formats the image in card 1 */
+#grow {
+
+}
+
+/* Formats the text box in card 1 */
+#card1text {
+
+}
+
+/* Formats the heading in the text box in card 1 */
+#card1h2 {
+
+}
+
+/* Formats the para text in the text box in card 1 */
+#card1p {
+
+}
+
+/* Formats card 2 */
+#card2 {
+
+}
+
+/* Formats the box holding the image in card 2 */
+#card2imgbox {
+
+}
+
+/* Formats the image in card 2 */
+#flow {
+
+}
+
+/* Formats the text box in card 2 */
+#card2text {
+
+}
+
+/* Formats the heading in the text box in card 2 */
+#card2h2 {
+
+}
+
+/* Formats the para text in the text box in card 2 */
+#card2p {
+
+}
+
+/* Formats card 3 */
+#card3 {
+
+}
+
+/* Formats the box holding the image in card 3 */
+#card3imgbox {
+
+}
+
+/* Formats the image in card 3 */
+#users {
+
+}
+
+/* Formats the text box in card 3 */
+#card3text {
+
+}
+
+/* Formats the heading in the text box in card 3 */
+#card3h2 {
+
+}
+
+/* Formats the para text in the text box in card 3 */
+#card3p {
+
+}
+
+/* Formats the footer at the bottom of the page */
+#footer {
+
+}
+
+/* Formats the invitation box in the footer */
+#invitation {
+
+}
+
+/* Formats the text in the invitation box in the footer */
+#invitationtext {
+
+}
+
+/* Formats start button 2 */
+#startbtn2 {
+
+}
+
+/* Formats start button 2 link */
+#startbtnlnk2 {
+
+}
+
+/* Formats box holding bottom logo in the footer */
+#footerlogobox {
+
+}
+
+/* Formats bottom logo in the footer */
+#footerlogo {
+
+}
+
+/* Formats the main box inside the footer */
+#footermain {
+
+}
+
+/* Formats column 1 of the footer */
+#footerc1 {
+
+}
+
+/* Formats row 1 of column 1 of the footer */
+#footerc1r1 {
+
+}
+
+/* Formats the box holding the location icon */
+#c1r1location {
+
+}
+
+/* Formats the location icon */
+#locationi {
+
+}
+
+/* Formats the location info */
+#locationp {
+
+}
+
+/* Formats row 2 of column 1 of the footer */
+#footerc1r2 {
+
+}
+
+/* Formats the box holding the phone icon */
+#c1r2phone {
+
+}
+
+/* Formats the phone icon */
+#phonei {
+
+}
+
+/* Formats the phone info */
+#phonep {
+
+}
+
+/* Formats row 3 of column 1 of the footer */
+#footerc1r3 {
+
+}
+
+/* Formats the box holding the email icon */
+#c1r3email {
+
+}
+
+/* Formats the email icon */
+#emaili {
+
+}
+
+/* Formats the email info */
+#emailp {
+
+}
+
+/* Formats column 2 of the footer */
+#footerc2 {
+
+}
+
+/* Formats the about us text link */
+#about {
+
+}
+
+/* Formats the what we do text link */
+#what {
+
+}
+
+/* Formats the FAQ text link */
+#faq {
+
+}
+
+/* Formats column 4 of the footer */
+#footerc3 {
+
+}
+
+/* Formats the career text link */
+#career {
+
+}
+
+/* Formats the blog text link */
+#blog {
+
+}
+
+/* Formats the contact us text link */
+#contact {
+
+}
+
+/* Formats column 4 of the footer */
+#footerc4 {
+
+}
+
+/* Formats icon box 1 */
+#iconbox1 {
+
+}
+
+/* Formats facebook link */
+#facebooklnk {
+
+}
+
+/* Formats icon box 2 */
+#iconbox2 {
+
+}
+
+/* Formats twitter link */
+#twitterlnk {
+    
+}
+
+/* Formats icon box 3 */
+#iconbox3 {
+
+}
+
+/* Formats instagram link */
+#instagramlnk {
+    
+}
+
+/* Formats copyright info in footer */
+#footercopyright {
+
+}
+
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flexr {
+display: flex;
+flex-direction: row;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Changes settings at 768px screen size to 1023px screen size*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Changes the em base and background image*/
+    html {
+        font-size: ;
+    }
+
+    
+}
+
+
+
+/* Changes settings at 1024px screen size */
+@media only screen and (min-width: 1024px) {
+
+    /* Changes the em base and background image*/
+    html {
+        font-size: ;
+    }
+
+    
+}

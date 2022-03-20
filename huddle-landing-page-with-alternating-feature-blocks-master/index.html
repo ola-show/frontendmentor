@@ -2,69 +2,259 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <!-- Imports FontAwesome icons -->
+  <script src="https://kit.fontawesome.com/5d5f7bf628.js" crossorigin="anonymous"></script>
+
+  <!-- Imports the CSS for the page --> 
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!-- Icon and Title: Shows up in browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+  <title>Frontend Mentor | Huddle landing page with alternating feature blocks | Katie Fox</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Try It Free
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Get Started For Free
-
-  Grow Together
-
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.
-
-  Your Users
-
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
-
-  +1-543-123-4567
-  example@huddle.com
-
-  About Us
-  What We Do
-  FAQ
-
-  Career
-  Blog
-  Contact Us
-
-  &copy; Copyright 2018 Huddle. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <!-- Makes an invisible box around everything -->
+  <div id="showbox" class="flexc row">
+    <!-- Big box: holds main content -->
+    <div id="bigbox">
+      <!-- Inside box: holds main boxes -->
+      <div id="inside" class="flexc">
+        <!-- Top box: holds logo, top information, link, and mockup image -->
+        <div id="topbox" class="flexc">
+          <!-- Logo/button box: holds logo and try button -->
+          <div id="logobuttonbox" class="flexr">
+            <!-- Logo box: holds logo -->
+            <div id="logobox">
+              <!-- Top logo -->
+              <img src="images/logo.svg" alt="" id="logotop">
+            </div>
+            <!-- Try it button -->
+            <div id="trybutton">
+              <!-- Try it link -->
+              <a href="" id="tryit">
+                Try It Free
+              </a>
+            </div>
+          </div>
+          <!-- Top info/mockup box: holds top info text and mockups image -->
+          <div id="topinfomockbox">
+            <!-- Top left box: holds top info heading and para text -->
+            <div id="topleftbox" class="flexc">
+              <!-- Top heading -->
+              <h1 id="toplefth">
+                Build The Community Your Fans Will Love
+              </h1>
+              <!-- Top para text -->
+              <p id="topleftp">
+                Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
+              </p>
+              <!-- Start button 1 -->
+              <div id="startbtn1" class="startbtn">
+                <a href="" id="startbtnlnk1"class="startbtnlnk">
+                  Get Started For Free
+                </a>
+              </div>
+            </div>
+            <!-- Top right box: holds mockup image -->
+            <div id="toprightbox">
+              <!-- Mockup image -->
+              <img src="images/illustration-mockups.svg" alt="Illistration of website mockups" id="mockups">
+            </div>
+          </div>
+        </div>
+        <!-- Card box: holds 3 cards -->
+        <div id="cardbox" class="flexc">
+          <!-- Card 1: holds image and text -->
+          <div id="card1" class="card">
+            <!-- Card 1 image box: holds grow together image -->
+            <div id="card1imgbox" class="cardimgbox">
+              <!-- Grow together image -->
+              <img src="images/illustration-grow-together.svg" alt="Illistration of growing together" id="grow" class="cardimg">
+            </div>
+            <!-- Card 1 text box: holds heading and para text -->
+            <div id="card1text" class="cardtext">
+              <!-- Card 1 heading -->
+              <h2 id="card1h2" class="cardh2">
+                Grow Together
+              </h2>
+              <!-- Card 1 para text -->
+              <p id="card1p" class="cardp">
+                Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2: holds image and text -->
+          <div id="card2" class="card">
+            <!-- Card 2 image box: holds flowing conversation image -->
+            <div id="card2imgbox" class="cardimgbox">
+              <!-- Flowing conversation image -->
+              <img src="images/illustration-flowing-conversation.svg" alt="Illistration of flowing conversation" id="flow" class="cardimg">
+            </div>
+            <!-- Card 2 text box: holds heading and para text -->
+            <div id="card2text" class="cardtext">
+              <!-- Card 2 heading -->
+              <h2 id="card2h2" class="cardh2">
+                Flowing Conversations
+              </h2>
+              <!-- Card 2 para text -->
+              <p id="card2p" class="cardp">
+                You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+                have just-in-time loading for a more natural flow.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3: holds image and text -->
+          <div id="card3" class="card">
+            <!-- Card 3 image box: holds your users image -->
+            <div id="card3imgbox" class="cardimgbox">
+              <!-- Your users image -->
+              <img src="images/illustration-your-users.svg" alt="Illistration of your users" id="users" class="cardimg">
+            </div>
+            <!-- Card 3 text box: holds heading and para text -->
+            <div id="card3text" class="cardtext">
+              <!-- Card 3 heading -->
+              <h2 id="card3h2" class="cardh2">
+                Your Users
+              </h2>
+              <!-- Card 3 para text -->
+              <p id="card3p" class="cardp">
+                It takes no time at all to integrate Huddle with your app's authentication solution. 
+                This means, once signed in to your app, your users can start chatting immediately.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Footer: holds invitation, logo, contact info, text links, icon links, and copyright -->
+        <div id="footer">
+          <!-- Invitation box: holds invitation text and start button -->
+          <div id="invitation" class="flexc">
+            <!-- Invitation text -->
+            <h3 id="invitationtext">
+              Ready To Build Your Community?
+            </h3>
+            <!-- Start button -->
+            <div id="startbtn2" class="startbtn">
+              <!-- Start button link -->
+              <a href="" id="startbtnlnk2"class="startbtnlnk">
+                Get Started For Free
+              </a>
+            </div>
+          </div>
+          <!-- Footer logo box: holds logo image -->
+          <div id="footerlogobox">
+            <!-- Logo image -->
+            <img src="images/logo.svg" alt="" id="footerlogo">
+          </div>
+          <!-- Footer main box: holds contact info, text links, and icon links -->
+          <div id="footermain">
+            <!-- Footer main column 1: holds location, phone, and email information -->
+            <div id="footerc1" class="flexc">
+              <!-- Footer main column 1 row 1: Holds location info -->
+              <div id="footerc1r1" class="flexr">
+                <!-- Location icon box: holds location icon  -->
+                <div id="c1r1location" class="c1iconbox">
+                  <!-- Location icon -->
+                  <img src="images/icon-location.svg" alt="location icon" id="locationi" class="c1icon">
+                </div>
+                <!-- Location info -->
+                <p id="locationp" class="c1p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+              </div>
+              <!-- Footer main column 1 row 2: Holds phone info -->
+              <div id="footerc1r2" class="flexr">
+                <!-- Phone icon box: holds phone icon -->
+                <div id="c1r2phone" class="c1iconbox">
+                  <!-- Phone icon -->
+                  <img src="images/icon-phone.svg" alt="phone icon" id="phonei" class="c1icon">
+                </div>
+                <!-- Phone info -->
+                <p id="phonep" class="c1p">
+                  +1-543-123-4567
+                </p>
+              </div>
+              <!-- Footer main column 1 row 3: Holds email info -->
+              <div id="footerc1r3" class="flexr">
+                <!-- Email icon box: holds email icon  -->
+                <div id="c1r3email" class="c1iconbox">
+                  <!-- Email icon -->
+                  <img src="images/icon-email.svg" alt="email icon" id="emaili" class="c1icon">
+                </div>
+                <!-- Email info -->
+                <p id="emailp" class="c1p">
+                  example@huddle.com
+                </p>
+              </div>
+            </div>
+            <!-- Footer main column 2: holds 3 text links -->
+            <div id="footerc2" class="flexc">
+              <!-- About us link -->
+              <a href="" id="about" class="footertextlink">
+                About Us
+              </a>
+              <!-- What we do link -->
+              <a href="" id="what" class="footertextlink">
+                What We Do
+              </a>
+              <!-- FAQ link -->
+              <a href="" id="faq" class="footertextlink">
+                FAQ
+              </a>
+            </div>
+            <!-- Footer main column 3: holds 3 text links -->
+            <div id="footerc3" class="flexc">
+              <!-- Career link -->
+              <a href="" id="career" class="footertextlink">
+                Career
+              </a>
+              <!-- Blog link -->
+              <a href="" id="blog" class="footertextlink">
+                Blog
+              </a>
+              <!-- Contact us link -->
+              <a href="" id="contact" class="footertextlink">
+                Contact Us
+              </a>
+            </div>
+            <!-- Footer main column 4: holds 3 icon links -->
+            <div id="footerc4" class="flexr">
+              <!-- Icon box 1: holds first link icon -->
+              <div id="iconbox1" class="icon">
+                <!-- Facebook link -->
+                <a href="" id="facebooklnk" class="iconlink">
+                  <!-- Facebook icon -->
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+              <!-- Icon box 2: holds second icon -->
+              <div class="icon">
+                <!-- Twitter link -->
+                <a href="" id="twitterlnk" class="iconlink">
+                  <!-- Twitter icon -->
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <!-- Icon box 3: holds third icon -->
+              <div class="icon">
+                <!-- Instagram link -->
+                <a href="" id="instagramlnk" class="iconlink">
+                  <!-- Instagram icon -->
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Footer copyright -->
+          <div id="footercopyright">
+            &copy; Copyright 2018 Huddle. All rights reserved.
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
 </body>
-</html>
+</html> 
