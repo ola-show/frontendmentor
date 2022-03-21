@@ -18,13 +18,13 @@
 </head>
 <body>
   <!-- Makes an invisible box around everything -->
-  <div id="showbox" class="flexc row">
+  <div id="showbox" class="flexc">
     <!-- Big box: holds main content -->
     <div id="bigbox">
       <!-- Inside box: holds main boxes -->
       <div id="inside" class="flexc">
         <!-- Top box: holds logo, top information, link, and mockup image -->
-        <div id="topbox" class="flexc">
+        <div id="topbox" class="flexc row">
           <!-- Logo/button box: holds logo and try button -->
           <div id="logobuttonbox" class="flexr">
             <!-- Logo box: holds logo -->
@@ -67,16 +67,16 @@
           </div>
         </div>
         <!-- Card box: holds 3 cards -->
-        <div id="cardbox" class="flexc">
+        <div id="cardbox" class="flexc row">
           <!-- Card 1: holds image and text -->
-          <div id="card1" class="card">
+          <div id="card1" class="card flexc">
             <!-- Card 1 image box: holds grow together image -->
             <div id="card1imgbox" class="cardimgbox">
               <!-- Grow together image -->
               <img src="images/illustration-grow-together.svg" alt="Illistration of growing together" id="grow" class="cardimg">
             </div>
             <!-- Card 1 text box: holds heading and para text -->
-            <div id="card1text" class="cardtext">
+            <div id="card1text" class="cardtext flexc">
               <!-- Card 1 heading -->
               <h2 id="card1h2" class="cardh2">
                 Grow Together
@@ -88,14 +88,14 @@
             </div>
           </div>
           <!-- Card 2: holds image and text -->
-          <div id="card2" class="card">
+          <div id="card2" class="card flexc">
             <!-- Card 2 image box: holds flowing conversation image -->
             <div id="card2imgbox" class="cardimgbox">
               <!-- Flowing conversation image -->
               <img src="images/illustration-flowing-conversation.svg" alt="Illistration of flowing conversation" id="flow" class="cardimg">
             </div>
             <!-- Card 2 text box: holds heading and para text -->
-            <div id="card2text" class="cardtext">
+            <div id="card2text" class="cardtext flexc">
               <!-- Card 2 heading -->
               <h2 id="card2h2" class="cardh2">
                 Flowing Conversations
@@ -108,14 +108,14 @@
             </div>
           </div>
           <!-- Card 3: holds image and text -->
-          <div id="card3" class="card">
+          <div id="card3" class="card flexc">
             <!-- Card 3 image box: holds your users image -->
             <div id="card3imgbox" class="cardimgbox">
               <!-- Your users image -->
               <img src="images/illustration-your-users.svg" alt="Illistration of your users" id="users" class="cardimg">
             </div>
             <!-- Card 3 text box: holds heading and para text -->
-            <div id="card3text" class="cardtext">
+            <div id="card3text" class="cardtext flexc">
               <!-- Card 3 heading -->
               <h2 id="card3h2" class="cardh2">
                 Your Users
@@ -129,7 +129,7 @@
           </div>
         </div>
         <!-- Footer: holds invitation, logo, contact info, text links, icon links, and copyright -->
-        <div id="footer">
+        <div id="footer" class="row">
           <!-- Invitation box: holds invitation text and start button -->
           <div id="invitation" class="flexc">
             <!-- Invitation text -->
@@ -147,14 +147,14 @@
           <!-- Footer logo box: holds logo image -->
           <div id="footerlogobox">
             <!-- Logo image -->
-            <img src="images/logo.svg" alt="" id="footerlogo">
+            <img src="images/logo-white.svg" alt="" id="footerlogo">
           </div>
           <!-- Footer main box: holds contact info, text links, and icon links -->
           <div id="footermain">
             <!-- Footer main column 1: holds location, phone, and email information -->
             <div id="footerc1" class="flexc">
               <!-- Footer main column 1 row 1: Holds location info -->
-              <div id="footerc1r1" class="flexr">
+              <div id="footerc1r1" class="c1r flexr">
                 <!-- Location icon box: holds location icon  -->
                 <div id="c1r1location" class="c1iconbox">
                   <!-- Location icon -->
@@ -166,7 +166,7 @@
                 </p>
               </div>
               <!-- Footer main column 1 row 2: Holds phone info -->
-              <div id="footerc1r2" class="flexr">
+              <div id="footerc1r2" class="c1r flexr">
                 <!-- Phone icon box: holds phone icon -->
                 <div id="c1r2phone" class="c1iconbox">
                   <!-- Phone icon -->
@@ -178,7 +178,7 @@
                 </p>
               </div>
               <!-- Footer main column 1 row 3: Holds email info -->
-              <div id="footerc1r3" class="flexr">
+              <div id="footerc1r3" class="c1r flexr">
                 <!-- Email icon box: holds email icon  -->
                 <div id="c1r3email" class="c1iconbox">
                   <!-- Email icon -->

@@ -10,6 +10,7 @@
     --secondary-color: hsl(192, 100%, 9%);
     --tertiary-color: hsl(208, 11%, 55%);
     --quaternary-color: hsl(193, 100%, 96%);
+    --white: white;
 }
 
 /* Makes every element into a box that includes margins and padding. */
@@ -24,9 +25,7 @@
 
 /* Effects all elements */
 html {
-    background-color: var();
     font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
 
@@ -37,42 +36,58 @@ body {
 
 /* Formats all H1 elements */
 h1 {
-
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    color: var(--secondary-color);
 }
 
 /* Formats P elements after H1 elements */
 h1 + p {
-
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: var(--secondary-color);
 }
 
 /* Formats all H2 elements */
 h2 {
-
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 0.7rem;
 }
 
 /* Formats P elements after H2 elements */
 h2 + p {
-
+    color: var(--tertiary-color);
+    font-size: 0.75rem;
 }
 
 /* Formats all H3 elements */
 h3 {
-
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 /* Formats all P elements */
 p {
-
+    line-height: 1.5;
 }
 
 /* Formats all link elements */
 a {
-
+    text-decoration: none;
 }
 
 /* Formats all icon elements */
 i {
-
+    color: white;
+    font-size: 0.8em;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
 
@@ -81,32 +96,61 @@ i {
 
 /* Formats 2 start buttons */
 .startbtn {
+    font-size: 18px;
+    position: relative;
+    background-color: var(--primary-color);
+    border-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
+    width: 14em;
+    height: 2.5em;
+    margin: 1.5rem 0;
+}
 
+/* Formats the hover state of 2 start buttons */
+.startbtn:hover {
+    opacity: 0.5;
 }
 
 /* Formats 2 start button links */
 .startbtnlnk {
-
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.65rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
 /* Formats 3 card containers */
 .card {
-
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
+    aspect-ratio: 1 / 1.45;
+    margin: 1rem 0;
+    text-align: center;
 }
 
 /* Formats 3 image boxes in card containers */
 .cardimgbox {
-
+    margin: auto;
+    width: 70%;
 }
 
 /* Formats 3 images in card containers */
 .cardimg {
-
+    margin-top: 1.5rem;
+    width: 100%;
 }
 
 /* Formats text boxes in card containers */
 .cardtext {
-
+    width: 75%;
+    margin: auto;
 }
 
 /* Formats headings in card containers */
@@ -118,6 +162,8 @@ i {
 .cardp {
 
 }
+
+/* Formats  */
 
 /* Formats icon boxes in column 1 of the footer */
 .c1iconbox {
@@ -136,17 +182,37 @@ i {
 
 /* Formats text links in footer */
 .footertextlink {
-
+    color: var(--white);
 }
 
-/* Formats icon boxes in footer */
-.icon {
+/* Formats hover state of text link in footer */
+.footertextlink:hover {
+    text-decoration: underline;
+}
 
+/* Formats icon boxes/borders in footer */
+.icon {
+    position: relative;
+    height: 1.5em;
+    width: 1.5em;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0.5em;
+}
+
+/* Formats hover state of icon borders in footer */
+.icon:hover {
+    border: 1px solid var(--primary-color);
+}
+
+/* Formats hover state of icons in bottom right box */
+.icon:hover > a > i {
+    color: var(--primary-color);
 }
 
 /* Formats icon links in footer */
 .iconlink {
-
+    
 }
 
 
@@ -161,53 +227,91 @@ i {
 }
 
 /* Formats the main container */
-#bigbox {    
-    
+#bigbox {   
+    position: relative;
 }
 
 /* Formats the insulation box inside the main container */
 #inside {
-
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Formats the top box */
 #topbox {
-
+    position: relative;
+    width: 100vw;
+    background: var(--quaternary-color) url(../images/bg-hero-mobile.svg) no-repeat top;
+    background-size: 100% auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Formats the box that hold the logo and try it button at the top of the top box */
 #logobuttonbox {
-
+    position: relative;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
 }
 
 /* Formats the logo box at the top of the top box */
 #logobox {
-
+    width: 30%;
 }
 
 /* Formats the logo image at the top of the top box */
 #logotop {
-
+    width: 100%;
 }
 
 /* Formats the try it button at the top of the top box */
 #trybutton {
+    position: relative;
+    font-size: 18px;
+    background-color: var(--white);
+    border-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
+    width: 7em;
+    height: 1.5em;
+}
 
+/* Formats the hover state of try it button */
+#trybutton:hover {
+    opacity: 0.5;
 }
 
 /* Formats the try it button link at the top of the top box */
 #tryit {
-
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 0.6rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
 /* Formats the bottom box of the top box */
 #topinfomockbox {
-
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 83%;
+    padding: 3.5rem 0 1rem 0;
+    text-align: center;
 }
 
 /* Formats the left box in the bottom box of the top box */
 #topleftbox {
-
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 /* Formats the heading of the left box in the bottom box of the top box */
@@ -232,17 +336,22 @@ i {
 
 /* Formats the right box in the bottom box of the top box */
 #toprightbox {
-
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0 0 0;
 }
 
 /* Formats the mockups image */
 #mockups {
-
+    /* height: 90%; */
+    width: 95%;
 }
 
 /* Formats the box holding 3 cards */
 #cardbox {
-
+    position: relative;
+    width: 90%;
+    margin: 2rem 0;
 }
 
 /* Formats card 1 */
@@ -337,12 +446,27 @@ i {
 
 /* Formats the footer at the bottom of the page */
 #footer {
-
+    position: relative;
+    background-color: var(--secondary-color);
+    margin-top: 9.5rem;
+    color: var(--white);
+    padding: 7rem 1rem 1rem 1rem;
 }
 
 /* Formats the invitation box in the footer */
 #invitation {
-
+    position: absolute;
+    top: -5%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: .75rem;
+    box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
+    background-color: var(--white);
+    width: 95%;
+    padding: 2rem 0 0.5rem 0;
+    color: var(--secondary-color);
 }
 
 /* Formats the text in the invitation box in the footer */
@@ -362,12 +486,12 @@ i {
 
 /* Formats box holding bottom logo in the footer */
 #footerlogobox {
-
+   width: 50%; 
 }
 
 /* Formats bottom logo in the footer */
 #footerlogo {
-
+    width: 100%;
 }
 
 /* Formats the main box inside the footer */
@@ -544,10 +668,10 @@ flex-direction: row;
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* Changes the em base and background image*/
     html {
-        font-size: ;
+        /* font-size: ; */
     }
 
-    
+
 }
 
 
@@ -557,7 +681,7 @@ flex-direction: row;
 
     /* Changes the em base and background image*/
     html {
-        font-size: ;
+        /* font-size: ; */
     }
 
     
