@@ -82,7 +82,7 @@ a {
 
 /* Formats all icon elements */
 i {
-    color: white;
+    color: var(--quaternary-color);
     font-size: 0.8em;
     position: absolute;
     top: 50%;
@@ -113,9 +113,9 @@ i {
 
 /* Formats 2 start button links */
 .startbtnlnk {
-    color: var(--white);
+    color: var(--quaternary-color);
     font-weight: 700;
-    font-size: 0.65rem;
+    font-size: 0.65em;
     position: absolute;
     top: 50%;
     right: 50%;
@@ -125,6 +125,8 @@ i {
 /* Formats 3 card containers */
 .card {
     position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background-color: var(--white);
@@ -163,11 +165,16 @@ i {
 
 }
 
-/* Formats  */
+/* Formats column 1 rows */
+.cr1 {
+    justify-content: flex-start;
+    align-content: flex-start;
+}
 
 /* Formats icon boxes in column 1 of the footer */
 .c1iconbox {
-
+    height: 0.9rem;
+    padding: 0.2rem;
 }
 
 /* Formats icons in column 1 of the footer */
@@ -177,12 +184,14 @@ i {
 
 /* Formats para text in column 1 of the footer */
 .c1p {
-
+    font-size: 0.9rem;
+    padding: 0 1rem 1.3rem 1rem;
 }
 
 /* Formats text links in footer */
 .footertextlink {
-    color: var(--white);
+    color: var(--quaternary-color);
+    padding: 0.5rem 0.5rem;
 }
 
 /* Formats hover state of text link in footer */
@@ -193,11 +202,16 @@ i {
 /* Formats icon boxes/borders in footer */
 .icon {
     position: relative;
-    height: 1.5em;
-    width: 1.5em;
-    border: 1px solid white;
+    height: 1.75em;
+    width: 1.75em;
+    border: 1px solid var(--quaternary-color);
     border-radius: 50%;
-    margin: 0.5em;
+    margin: 0.4em;
+}
+
+/* Formats icons in bottom right box */
+.icon > a > i {
+    color: var(--quaternary-color);
 }
 
 /* Formats hover state of icon borders in footer */
@@ -287,7 +301,7 @@ i {
 #tryit {
     color: var(--secondary-color);
     font-weight: 700;
-    font-size: 0.6rem;
+    font-size: 0.6em;
     position: absolute;
     top: 50%;
     right: 50%;
@@ -343,7 +357,6 @@ i {
 
 /* Formats the mockups image */
 #mockups {
-    /* height: 90%; */
     width: 95%;
 }
 
@@ -446,25 +459,26 @@ i {
 
 /* Formats the footer at the bottom of the page */
 #footer {
+    font-size: 18px;
     position: relative;
     background-color: var(--secondary-color);
-    margin-top: 9.5rem;
+    margin-top: 9.5em;
     color: var(--white);
-    padding: 7rem 1rem 1rem 1rem;
+    padding: 7.5em 1em 3em 1em;
 }
 
 /* Formats the invitation box in the footer */
 #invitation {
     position: absolute;
-    top: -5%;
+    top: -2%;
     right: 50%;
     transform: translate(50%, -50%);
     justify-content: space-around;
     align-items: center;
-    border-radius: .75rem;
+    border-radius: .75em;
     box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
     background-color: var(--white);
-    width: 95%;
+    width: 92%;
     padding: 2rem 0 0.5rem 0;
     color: var(--secondary-color);
 }
@@ -496,12 +510,15 @@ i {
 
 /* Formats the main box inside the footer */
 #footermain {
-
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 0.5em 0 0rem;
+    color: var(--quaternary-color);
 }
 
 /* Formats column 1 of the footer */
 #footerc1 {
-
+    padding: 1em 0;
 }
 
 /* Formats row 1 of column 1 of the footer */
@@ -584,7 +601,7 @@ i {
 
 }
 
-/* Formats column 4 of the footer */
+/* Formats column 3 of the footer */
 #footerc3 {
 
 }
@@ -606,7 +623,9 @@ i {
 
 /* Formats column 4 of the footer */
 #footerc4 {
-
+    justify-content: center;
+    align-content: center;
+    padding: 2em 0 1em 0;
 }
 
 /* Formats icon box 1 */
@@ -641,7 +660,9 @@ i {
 
 /* Formats copyright info in footer */
 #footercopyright {
-
+    text-align: center;
+    font-size: 0.6em;
+    color: var(--quaternary-color);
 }
 
 
@@ -655,8 +676,8 @@ i {
 }
 
 .flexr {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .flexc {
@@ -666,14 +687,97 @@ flex-direction: row;
 
 /* Changes settings at 768px screen size to 1023px screen size*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* Changes the em base and background image*/
-    html {
-        /* font-size: ; */
+
+    /* Changes the background image of top box */
+    #topbox {
+        background: var(--quaternary-color) url(../images/bg-hero-desktop.svg) no-repeat top;
+        background-size: 100% auto;
     }
 
+    /* Changes the size of the logo box */
+    #logobox {
+        width: 16%;
+    }
 
+    /* Changes the base em of the try button */
+    #trybutton {
+        font-size: 18x;
+    }
+
+    /* Changes the orientation, width, padding, and text alignment of the box containing the info and mockup image at the top of the page */
+    #topinfomockbox {
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem 0 1.5rem 0;
+        text-align: left;
+    }
+
+    /* Changes the alignment of boxes, width, and padding in the top left box */
+    #topleftbox {
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 47%;
+        padding: 2.5rem 2rem 2rem 2.5rem;
+    }
+
+    /* Changes the width and padding in the top left box */
+    #toprightbox {
+        width: 55%;
+        padding: 0 0 0 0;
+    }
+
+    /* Changes the width of the mockups image */
+    #mockups {
+        width: 90%;
+    }
+
+    /* Changes the padding of the box containing the 3 cards */
+    #cardbox {
+        margin: 4.5rem 0;
+    }
+
+    /* Changes the orientation, aspect ratio, alignment, margin, padding, and text alignment */
+    .card {
+        flex-direction: row-reverse;
+        justify-content: center;
+        aspect-ratio: 2.8 / 1;
+        margin: 0.75rem 0;
+        text-align: left;
+        padding: 0 1.5rem;
+    }
+
+    /* Changes the width of the image boxes in the card containers */
+    .cardimgbox {
+        width: 40%;
+    }
+
+    /* Changes the margin of the card images */
+    .cardimg {
+        margin-top: 0rem;
+    }
+
+    /* Changes the width of the card text */
+    .cardtext {
+        width: 41%;
+    }
+
+    /* Changes the order of the elements in card 2 */
+    #card2 {
+        flex-direction: row;
+    }
+
+    /* Changes position, width, and padding of the invitation box in the footer */
+    #invitation {
+        top: -5%;
+        width: 55%;
+        padding: 2rem 0 0.1rem 0;
+    }
+
+    /* Changes the width of the logo in the footer */
+    #footerlogobox {
+        width: 30%; 
+    }
 }
-
 
 
 /* Changes settings at 1024px screen size */
@@ -681,8 +785,175 @@ flex-direction: row;
 
     /* Changes the em base and background image*/
     html {
-        /* font-size: ; */
+        font-size: 28px;
     }
 
+    /* Changes the size of the font in p elements after an H1 heading */
+    h1 + p {
+        font-size: 0.65rem;
+    }
+
+    /* Changes the size of the font in p elements after an H2 heading */
+    h2 + p {
+        font-size: 0.6rem;
+    }
     
+    /* Changes the size of the font of an H1 heading */
+    h3 {
+    font-size: 1.1rem;
+    }
+
+    /* Changes the background image of top box */
+    #topbox {
+        background: var(--quaternary-color) url(../images/bg-hero-desktop.svg) no-repeat top;
+        background-size: 100% auto;
+    }
+
+    /* Changes the padding in the box containing the the logo and button at the top */
+    #logobuttonbox {
+        padding: 1.5rem 0;
+    }
+
+    /* Changes the size of the logo box */
+    #logobox {
+        width: 16%;
+    }
+
+    /* Changes the base em of the try button */
+    #trybutton {
+        font-size: 26px;
+    }
+
+    /* Changes the orientation, width, padding, and text alignment of the box containing the info and mockup image at the top of the page */
+    #topinfomockbox {
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem 0 1.5rem 0;
+        text-align: left;
+    }
+
+    /* Changes the alignment of boxes, width, and padding in the top left box */
+    #topleftbox {
+        justify-content: flex-start;
+        align-content: flex-start;
+        width: 47%;
+        padding: 2.5rem 2rem 2rem 2.5rem;
+    }
+
+    /* Changes the em base of the top start button */
+    #startbtn1 {
+        font-size: 20px;
+    }
+
+    /* Changes the width and padding in the top left box */
+    #toprightbox {
+        width: 55%;
+        padding: 0 0 0 0;
+    }
+
+    /* Changes the width of the mockups image */
+    #mockups {
+        width: 90%;
+    }
+
+    /* Changes the width and padding of the box containing the 3 cards */
+    #cardbox {
+        width: 85%;
+        margin: 4.5rem 0;
+    }
+
+    /* Changes the orientation, aspect ratio, alignment, margin, padding, and text alignment */
+    .card {
+        flex-direction: row-reverse;
+        justify-content: center;
+        aspect-ratio: 2.8 / 1;
+        margin: 0.75rem 0;
+        text-align: left;
+        padding: 0 1.5rem;
+    }
+
+    /* Changes the width of the image boxes in the card containers */
+    .cardimgbox {
+        width: 40%;
+    }
+
+    /* Changes the margin of the card images */
+    .cardimg {
+        margin-top: 0rem;
+    }
+
+    /* Changes the width of the card text */
+    .cardtext {
+        width: 41%;
+    }
+
+    /* Changes the order of the elements in card 2 */
+    #card2 {
+        flex-direction: row;
+    }
+
+    /* Changes the padding and margin of the footer */
+    #footer {
+        margin-top: 10.5em;
+        padding: 10em 4em 3em 6em;
+    }
+
+    /* Changes position, width, and padding of the invitation box in the footer */
+    #invitation {
+        top: -5%;
+        width: 55%;
+        padding: 2rem 0 0.1rem 0;
+    }
+
+    /* Changes the em base of the bottom start button */
+    #startbtn2 {
+        font-size: 30px;
+    }
+
+    /* Changes the width of the logo in the footer */
+    #footerlogobox {
+        width: 17%; 
+    }
+
+    /* Changes the orientation and alignment of footer elements */
+    #footermain {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+
+    /* Changes the width of column 1 in the footer */
+    #footerc1 {
+        width: 40%;
+    }
+
+    /* Changes the size and padding of the font in column 1 */
+    .c1p {
+        font-size: 0.55rem;
+        padding: 0 3.4rem 1.3rem 1rem;
+    }
+
+    /* Changes the width of column 2 in the footer */
+    #footerc2 {
+        width: 20%;
+    }
+
+    /* Changes the width of column 3 in the footer */
+    #footerc3 {
+        width: 20%;
+    }
+
+    /* Changes the width, padding, and alignment of column 4 in the footer */
+    #footerc4 {
+        justify-content: flex-end;
+        align-content: flex-end;
+        padding: 2em 0 0 0;
+        width: 20%;
+    }
+
+    /* Changes the size and text alignment of the copyright text in the footer */
+    #footercopyright {
+        text-align: right;
+        font-size: 0.6em;
+    }
 }
