@@ -20,103 +20,127 @@
     <div id="bigbox">
       <!-- Inside box: holds main boxes -->
       <div id="inside" class="flexc">
-        <!-- Top box: holds logo, top information, link, and filing image -->
-        <div id="topbox" class="flexc row">
-          <!-- Logo-Nav box: holds the logo and nav bar -->
-          <div id="logonavbox" class="flexr">
-            <!-- Top Logo Box: holds top logo image -->
-            <div id="logotopbox">
-              <!-- Logo image -->
-              <img src="images/logo.svg" alt="Logo" id="logotop">
-            </div>
-            <!-- Nav bar: holds unordered list of links -->
-            <nav id="navbar">
-              <!-- Nav bar list: holds list of links -->
-              <ul id="navbarlist" class="flexr">
-                <!-- Features list item -->
-                <li id="featuresi" class="navi">
-                  <!-- Features link -->
-                  <a href="" id="features" class="navlinks">
-                    Features
-                  </a>
-                </li>
-                <!-- Team list item -->
-                <li id="teami" class="navi">
-                  <!-- Team link -->
-                  <a id="team" class="navlinks">
-                    Team
-                  </a>
-                </li>
-                <!-- Sign in list item -->
-                <li id="signini" class="navi">
-                  <!-- Sign in link -->
-                  <a href="" id="signin" class="navlinks">
-                    Sign In
-                  </a>
-                </li>
-              </ul>
-            </nav>
+        <!-- Logo-Nav box: holds the logo and nav bar -->
+        <div id="logonavbox" class="flexr">
+          <!-- Top Logo Box: holds top logo image -->
+          <div id="logotopbox">
+            <!-- Logo image -->
+            <img src="images/logo.svg" alt="Logo" id="logotop">
           </div>
+          <!-- Nav bar: holds unordered list of links -->
+          <nav id="navbar">
+            <!-- Nav bar list: holds list of links -->
+            <ul id="navbarlist" class="flexr">
+              <!-- Features list item -->
+              <li id="featuresli" class="navli">
+                <!-- Features link -->
+                <a href="" id="features" class="navlinks">
+                  Features
+                </a>
+              </li>
+              <!-- Team list item -->
+              <li id="teamli" class="navli">
+                <!-- Team link -->
+                <a id="team" class="navlinks">
+                  Team
+                </a>
+              </li>
+              <!-- Sign in list item -->
+              <li id="signinli" class="navli">
+                <!-- Sign in link -->
+                <a href="" id="signin" class="navlinks">
+                  Sign In
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Top box: holds top information and filing image -->
+        <div id="topbox" class="flexc row">  
           <!-- Top main box: holds left and right boxes -->
           <div id="topmain">
             <!-- Top left box: holds heading, 2 para texts, and form -->
             <div id="topleftbox">
+              <!-- Top left heading: main heading for the site -->
               <h1 id="toplefth1">
                 All your files in one secure location, accessible anywhere.
               </h1>
+              <!-- Top left para text -->
               <p id="topleftp">
                 Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, 
                 family, and co-workers.
               </p>
+              <!-- Email button box: holds the email form -->
               <div id="emailbtnbox">
+                <!-- Email form top -->
                 <form id="formtop">
+                  <!-- Email input top -->
                   <input type="email" name="emailinputtop" id="emailinputtop"  placeholder="Enter your email..." required>
-                  <div id="hiddentop" class="hidden">
-
-                  </div>
+                  <!-- Submit button top -->
                   <input type="submit" id="emailsubmittop" value="Get Started">
                 </form>
               </div>
             </div>
+            <!-- Top right box: holds filing illustration -->
             <div id="toprightbox">
+              <!-- Filing illustration -->
               <img src="images/illustration-1.svg" alt="Illustration of filing" id="filing">
             </div>
           </div>
         </div>
+        <!-- Second box: holds left and right boxes -->
         <div id="secondbox">
+          <!-- Left second box: holds heading, 2 para text, link, and testimonial -->
           <div id="leftsecondbox" class="flexc">
+            <!-- Second box heading -->
             <h2 id="box2h2">
               Stay productive, wherever you are
             </h2>
+            <!-- Second box para tevt 1 -->
             <p id="box2p1" class="box2p">
               Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
             </p>
+            <!-- Second box para tevt 2 -->
             <p id="box2p2" class="box2p">
               Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
             </p>
-            <a href="" id="seelink1" class="seelink">
+            <!-- See How link: holds box containing text and an arrow image -->
+            <a href="" id="seelink">
+              <!-- See-Arrow box: holds text and arrow image -->
               <div id="seearrowbox" class="flexr">
-                <div id="seetext1" class="seetext">
+                <!-- See How text -->
+                <div id="seetext">
                   See how Fylo works
                 </div>
-                <img src="images/icon-arrow.svg" alt="image of arrow" id="arrow1" class="arrow">
+                <!-- Arrow image -->
+                <img src="images/icon-arrow.svg" alt="image of arrow" id="arrow">
               </div>
             </a>
+            <!-- Testimonial card: holds quotes image, para text, and avatar info -->
             <div id="card" class="flexc">
+              <!-- Quotes box: holds the quotes image -->
               <div id="quotesbox">
+                <!-- Quotes image -->
                 <img src="images/icon-quotes.svg" alt="" id="quotes">
               </div>
+              <!-- Card para text -->
               <div id="cardp">
                 Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
               </div>
+              <!-- Avatar-Name box: holds the avatar, name, and title -->
               <div id="avatarnamebox" class="flexr">
+                <!-- Avatar box: holds avatar image -->
                 <div id="avatarbox">
+                  <!-- Avatar image -->
                   <img src="images/avatar-testimonial.jpg" alt="Picture of Kyle" id="avatar">
                 </div>
+                <!-- Name-Title box: holds name and title of avatar -->
                 <div id="nametitlebox" class="flexc">
+                  <!-- Name -->
                   <div id="name">
                     Kyle Burton
                   </div>
+                  <!-- Title -->
                   <div id="title">
                     Founder & CEO, Huddle
                   </div>
@@ -124,51 +148,57 @@
               </div>
             </div>
           </div>
+          <!-- Right second box: holds conversations illustration -->
           <div id="rightsecondbox">
+            <!-- Conversations illustration -->
             <img src="images/illustration-2.svg" alt="Illustation of conversations" id="talking">
           </div>
         </div>
+        <!-- Third box: holds left and right box -->
         <div id="thirdbox">
+          <!-- Left third box: holds heading and para text -->
           <div id="leftthirdbox" class="flexc">
+            <!-- Third box heading -->
             <h3 id="box3h3">
               Get early access today
             </h3>
+            <!-- Third box para text -->
             <p id="box3p">
               It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
             </p>
           </div>
+          <!-- Right third box: holds email form -->
           <div id="rightthirdbox">
-            <form id="formbottmom">
+            <!-- Email form bottom -->
+            <form id="formbottom">
+              <!-- Email input bottom -->
               <input type="email" name="emailinputbottom" id="emailinputbottom"  placeholder="email@example.com" required>
-              <div id="hiddenbottom" class="hidden">
-
-              </div>
+              <!-- Submit button bottom -->
               <input type="submit" id="emailsubmitbottom" value="Get Started For Free">
             </form>
           </div>
         </div>
+        <!-- Footer: holds logo, contact info, social media links, and text links  -->
         <footer id="footer" class="flexc">
+          <!-- Bottom logo box: holds logo image -->
           <div id="logobottombox">
             <img src="images/logo.svg" alt="" id="logobottom">
           </div>
           <!-- Footer main box: holds contact info, text links, and icon links -->
           <div id="footermain">
-            <!-- Footer main column 1: holds location, phone, and email information -->
+            <!-- Footer main column 1: holds phone and email information -->
             <div id="footerc1" class="flexc">
-              <!-- Footer main column 1 row 1: Holds location info -->
+              <!-- Footer main column 1 row 1: Holds phone info -->
               <div id="footerc1r1" class="c1r flexr">
-                <!-- Footer main column 1 row 1: Holds phone info -->
-                <div id="footerc1r1" class="c1r flexr">
-                  <!-- Phone icon box: holds phone icon -->
-                  <div id="c1r1phone" class="c1iconbox">
-                    <!-- Phone icon -->
-                    <img src="images/icon-phone.svg" alt="phone icon" id="phonei" class="c1icon">
-                  </div>
-                  <!-- Phone info -->
-                  <p id="phonep" class="c1p">
-                    +1-543-123-4567
-                  </p>
+                <!-- Phone icon box: holds phone icon -->
+                <div id="c1r1phone" class="c1iconbox">
+                  <!-- Phone icon -->
+                  <img src="images/icon-phone.svg" alt="phone icon" id="phonei" class="c1icon">
                 </div>
+                <!-- Phone info -->
+                <p id="phonep" class="c1p">
+                  +1-543-123-4567
+                </p>
               </div>
               <!-- Footer main column 1 row 2: Holds email info -->
               <div id="footerc1r2" class="c1r flexr">
@@ -245,7 +275,6 @@
               </div>
             </div>
           </div>
-
         </footer>
       </div>
     </div>

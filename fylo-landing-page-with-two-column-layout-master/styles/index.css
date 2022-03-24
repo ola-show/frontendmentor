@@ -1,13 +1,19 @@
-/* Imports  font 600 weight */
+/* Imports Raleway font 400 & 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+/* Imports Open Sans font 400 weight */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* Sets universal CSS variables */
 :root {
-    --primary-color: ;
-    --secondary-color: ;
-    --tertiary-color: ;
-    --quaternary-color: ;
-    --white: ;
+    --primary-color: hsl(243, 87%, 12%);
+    --secondary-color: hsl(238, 22%, 44%);
+    --tertiary-color: hsl(224, 93%, 58%);
+    --quaternary-color: hsl(170, 45%, 43%);
+    --quinary-color: hsl(240, 75%, 98%);
+    --senary-color: hsl(0, 0%, 75%);
+    --white: hsl(0, 0%, 100%);
+    --header-font: 'Raleway', sans-serif;
 }
 
 /* Makes every element into a box that includes margins and padding. */
@@ -22,14 +28,110 @@
 
 /* Effects all elements */
 html {
-    background-color: var();
-    font-family: ;
-    font-size: ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
 }
+
+/* Formats all H1 elements */
+h1 {
+    font-family: var(--header-font);
+}
+
+/* Formats P elements after all H1 elements */
+h1 + p {
+
+}
+
+/* Formats all H2 elements */
+h2 {
+
+}
+
+/* Formats P elements after all H2 elements */
+h2 + p {
+
+}
+
+/* Formats all H3 elements */
+h3 {
+
+}
+
+/* Formats P elements after all H2 elements */
+h3 + p {
+
+}
+
+/* Formats all P elements */
+p {
+
+}
+
+/* Formats all links */
+a {
+
+}
+
+/* Formats all icons */
+i {
+
+}
+
 
 /* CLASS FORMATTING */
 /* Place all class formatting here. */
-  
+
+/* Formats nav list items */
+.navli {
+
+}
+
+/* Formats nav links */
+.navlinks {
+
+}
+
+/* Formats box2 para text */
+.box2p {
+
+}
+
+/* Formats footer column 1 rows */
+.c1r {
+
+}
+
+/* Formats the footer column 1 icon boxes */
+.c1iconbox {
+
+}
+
+/* Formats the footer column 1 icons */
+.c1icon {
+
+}
+
+/* Formats the footer column 1 para text */
+.c1p {
+
+}
+
+/* Formats the footer column 2/3 text links */
+.footertextlink {
+
+}
+
+/* Formats the footer column 4 icon boxes */
+.icon {
+
+}
+
+/* Formats the footer column 1 icon links */
+.iconlink {
+
+}
+
+
 /* ID FORMATTING */
 /* Place all id formatting here. */
 
@@ -44,6 +146,407 @@ html {
 #bigbox {    
     
 }
+
+/* Formats the insulation box inside the main container */
+#inside {
+
+}
+
+/* Formats box holding logo and nav bar */
+#logonavbox {
+
+}
+
+/* Formats the box holding the top logo */
+#logotopbox {
+
+}
+
+/* Formats the top logo */
+#logotop {
+
+}
+
+/* Formats the nav bar */
+#navbar {
+
+}
+
+/* Formats the nav bar unordered list */
+#navbarlist {
+
+}
+
+/* Formats features list item */
+#featuresli {
+
+}
+
+/* Formats features link */
+#features {
+
+}
+
+/* Formats team list item */
+#teamli {
+
+}
+
+/* Formats team link */
+#team {
+
+}
+
+/* Formats signin list item */
+#signinli {
+
+}
+
+/* Formats the top box */
+#topbox {
+
+}
+
+/* Formats the main area inside the top box */
+#topmain {
+
+}
+
+/* Formats the top left box */
+#topleftbox {
+
+}
+
+/* Formats the top left heading */
+#toplefth1 {
+
+}
+
+/* Formats the top left para text */
+#topleftp {
+
+}
+
+/* Formats the box holding the top form */
+#emailbtnbox {
+
+}
+
+/* Formats the top form */
+#formtop {
+
+}
+
+/* Formats the email input in the top form */
+#emailinputtop {
+
+}
+
+/* Formats the email submit button in the top form */
+#emailsubmittop {
+
+}
+
+/* Formats the top right box */
+#toprightbox {
+
+}
+
+/* Formats the filing illustration */
+#filing {
+
+}
+
+/* Formats the second box */
+#secondbox {
+
+}
+
+/* Formats the left second box */
+#leftsecondbox {
+
+}
+
+/* Formats the second box heading */
+#box2h2 {
+
+}
+
+/* Formats the first para text in the second box */
+#box2p1 {
+
+}
+
+/* Formats the second para text in the second box */
+#box2p2 {
+
+}
+
+/* Formats the See How link */
+#seelink {
+
+}
+
+/* Formats the box containing the See How text and arrow */
+#seearrowbox {
+
+}
+
+/* Formats the See How text */
+#seetext {
+
+}
+
+/* Formats the See How arrow */
+#arrow {
+
+}
+
+/* Formats the testimonial card */
+#card {
+
+}
+
+/* Formats the box holding the quotes image */
+#quotesbox {
+
+}
+
+/* Formats the quotes image */
+#quotes {
+
+}
+
+/* Formats the card para text */
+#cardp {
+
+}
+
+/* Formats the box holding the avatar picture, name, and title */
+#avatarnamebox {
+
+}
+
+/* Formats the box holding the avatar picture */
+#avatarbox {
+
+}
+
+/* Formats the avatar picture */
+#avatar {
+
+}
+
+/* Formats the box holding the name and title */
+#nametitlebox {
+
+}
+
+/* Formats the name in the card */
+#name {
+
+}
+
+/* Formats the title in the card */
+#title {
+
+}
+
+/* Formts the right second box */
+#rightsecondbox {
+
+}
+
+/* Formats the talking illustration */
+#talking {
+
+}
+
+/* Formats the third box */
+#thirdbox {
+
+}
+
+/* Formats the left third box */
+#leftthirdbox {
+
+}
+
+/* Formats the heading in the third box */
+#box3h3 {
+
+}
+
+/* Formats the para text in the third box */
+#box3p {
+
+}
+
+/* Formats the right third box */
+#rightthirdbox {
+
+}
+
+/* Formats the bottom form */
+#formbottom {
+
+}
+
+/* Formats the bottom email input */
+#emailinputbottom {
+
+}
+
+/* Formats the bottom email submit button */
+#emailsubmitbottom {
+
+}
+
+/* Formats footer */
+#footer {
+    
+}
+
+/* Formats box holding bottom logo */
+#logobottombox {
+
+}
+
+/* Formats bottom logo */
+#logobottom {
+
+}
+
+/* Formats the main footer box */
+#footermain {
+
+}
+
+/* Formats footer column 1 */
+#footerc1 {
+
+}
+
+/* Formats footer column 1 row 1 */
+#footerc1r1 {
+
+}
+
+/* Formats the box holding the phone icon */
+#c1r1phone {
+
+}
+
+/* Formats the phone icon */
+#phonei {
+
+}
+
+/* Formats the phone info */
+#phonep {
+
+}
+
+/* Formats footer column 1 row 2 */
+#footerc1r2 {
+
+}
+
+/* Formats the box holding the email icon */
+#c1r2email {
+
+}
+
+/* Formats the email icon */
+#emaili {
+
+}
+
+/* Formats the email info */
+#emailp {
+
+}
+
+/* Formats footer column 2 */
+#footerc2 {
+
+}
+
+/* Formats the about us text link */
+#about {
+
+}
+
+/* Formats the job text link */
+#jobs {
+
+}
+
+/* Formats the text link */
+#press {
+
+}
+
+/* Formats the text link */
+#blog {
+
+}
+
+/* Formats footer column 3 */
+#footerc3 {
+
+}
+
+/* Formats the contact text link */
+#contact {
+
+}
+
+/* Formats the terms text link */
+#terms {
+
+}
+
+/* Formats the privacy text link */
+#privacy {
+
+}
+
+/* Formats footer column 4 */
+#footerc4 {
+
+}
+
+/* Formats icon box 1 */
+#iconbox1 {
+
+}
+
+/* Formats facebook link */
+#facebooklnk {
+
+}
+
+/* Formats icon box 2 */
+#iconbox2 {
+
+}
+
+/* Formats twitter link */
+#twitterlnk {
+
+}
+
+/* Formats icon box 3 */
+#iconbox3 {
+
+}
+
+/* Formats instagram link */
+#instagramlnk {
+
+}
+
 
 /* Responsive CSS */
 
