@@ -1,0 +1,83 @@
+/* Imports  font 600 weight */
+
+
+/* Sets universal CSS variables */
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --tertiary-color: ;
+    --quaternary-color: ;
+    --white: ;
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    background-color: var();
+    font-family: ;
+    font-size: ;
+}
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+  
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation for all other boxes */
+#showbox {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formats the main container */
+#bigbox {    
+    
+}
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flexr {
+display: flex;
+flex-direction: row;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Changes settings at 768px screen size to 1023px screen size*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Changes the em base and background image*/
+    html {
+        font-size: ;
+    }
+}
+
+
+/* Changes settings at 1024px screen size */
+@media only screen and (min-width: 1024px) {
+
+    /* Changes the em base and background image*/
+    html {
+        font-size: ;
+    }
+}

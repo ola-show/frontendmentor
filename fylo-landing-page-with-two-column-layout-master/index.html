@@ -2,72 +2,253 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <!-- Imports the CSS for the page --> 
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!-- Icon and Title: Shows up in browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  <title>Frontend Mentor | Fylo landing page with two column layout | Katie Fox</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <!-- Makes an invisible box around everything -->
+  <div id="showbox" class="flexc row">
+    <!-- Big box: holds main content -->
+    <div id="bigbox">
+      <!-- Inside box: holds main boxes -->
+      <div id="inside" class="flexc">
+        <!-- Top box: holds logo, top information, link, and filing image -->
+        <div id="topbox" class="flexc row">
+          <!-- Logo-Nav box: holds the logo and nav bar -->
+          <div id="logonavbox" class="flexr">
+            <!-- Top Logo Box: holds top logo image -->
+            <div id="logotopbox">
+              <!-- Logo image -->
+              <img src="images/logo.svg" alt="Logo" id="logotop">
+            </div>
+            <!-- Nav bar: holds unordered list of links -->
+            <nav id="navbar">
+              <!-- Nav bar list: holds list of links -->
+              <ul id="navbarlist" class="flexr">
+                <!-- Features list item -->
+                <li id="featuresi" class="navi">
+                  <!-- Features link -->
+                  <a href="" id="features" class="navlinks">
+                    Features
+                  </a>
+                </li>
+                <!-- Team list item -->
+                <li id="teami" class="navi">
+                  <!-- Team link -->
+                  <a id="team" class="navlinks">
+                    Team
+                  </a>
+                </li>
+                <!-- Sign in list item -->
+                <li id="signini" class="navi">
+                  <!-- Sign in link -->
+                  <a href="" id="signin" class="navlinks">
+                    Sign In
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Top main box: holds left and right boxes -->
+          <div id="topmain">
+            <!-- Top left box: holds heading, 2 para texts, and form -->
+            <div id="topleftbox">
+              <h1 id="toplefth1">
+                All your files in one secure location, accessible anywhere.
+              </h1>
+              <p id="topleftp">
+                Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, 
+                family, and co-workers.
+              </p>
+              <div id="emailbtnbox">
+                <form id="formtop">
+                  <input type="email" name="emailinputtop" id="emailinputtop"  placeholder="Enter your email..." required>
+                  <div id="hiddentop" class="hidden">
 
-  Features
-  Team
-  Sign In
+                  </div>
+                  <input type="submit" id="emailsubmittop" value="Get Started">
+                </form>
+              </div>
+            </div>
+            <div id="toprightbox">
+              <img src="images/illustration-1.svg" alt="Illustration of filing" id="filing">
+            </div>
+          </div>
+        </div>
+        <div id="secondbox">
+          <div id="leftsecondbox" class="flexc">
+            <h2 id="box2h2">
+              Stay productive, wherever you are
+            </h2>
+            <p id="box2p1" class="box2p">
+              Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+            </p>
+            <p id="box2p2" class="box2p">
+              Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
+            </p>
+            <a href="" id="seelink1" class="seelink">
+              <div id="seearrowbox" class="flexr">
+                <div id="seetext1" class="seetext">
+                  See how Fylo works
+                </div>
+                <img src="images/icon-arrow.svg" alt="image of arrow" id="arrow1" class="arrow">
+              </div>
+            </a>
+            <div id="card" class="flexc">
+              <div id="quotesbox">
+                <img src="images/icon-quotes.svg" alt="" id="quotes">
+              </div>
+              <div id="cardp">
+                Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+              </div>
+              <div id="avatarnamebox" class="flexr">
+                <div id="avatarbox">
+                  <img src="images/avatar-testimonial.jpg" alt="Picture of Kyle" id="avatar">
+                </div>
+                <div id="nametitlebox" class="flexc">
+                  <div id="name">
+                    Kyle Burton
+                  </div>
+                  <div id="title">
+                    Founder & CEO, Huddle
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="rightsecondbox">
+            <img src="images/illustration-2.svg" alt="Illustation of conversations" id="talking">
+          </div>
+        </div>
+        <div id="thirdbox">
+          <div id="leftthirdbox" class="flexc">
+            <h3 id="box3h3">
+              Get early access today
+            </h3>
+            <p id="box3p">
+              It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
+            </p>
+          </div>
+          <div id="rightthirdbox">
+            <form id="formbottmom">
+              <input type="email" name="emailinputbottom" id="emailinputbottom"  placeholder="email@example.com" required>
+              <div id="hiddenbottom" class="hidden">
 
-  All your files in one secure location, accessible anywhere.
+              </div>
+              <input type="submit" id="emailsubmitbottom" value="Get Started For Free">
+            </form>
+          </div>
+        </div>
+        <footer id="footer" class="flexc">
+          <div id="logobottombox">
+            <img src="images/logo.svg" alt="" id="logobottom">
+          </div>
+          <!-- Footer main box: holds contact info, text links, and icon links -->
+          <div id="footermain">
+            <!-- Footer main column 1: holds location, phone, and email information -->
+            <div id="footerc1" class="flexc">
+              <!-- Footer main column 1 row 1: Holds location info -->
+              <div id="footerc1r1" class="c1r flexr">
+                <!-- Footer main column 1 row 1: Holds phone info -->
+                <div id="footerc1r1" class="c1r flexr">
+                  <!-- Phone icon box: holds phone icon -->
+                  <div id="c1r1phone" class="c1iconbox">
+                    <!-- Phone icon -->
+                    <img src="images/icon-phone.svg" alt="phone icon" id="phonei" class="c1icon">
+                  </div>
+                  <!-- Phone info -->
+                  <p id="phonep" class="c1p">
+                    +1-543-123-4567
+                  </p>
+                </div>
+              </div>
+              <!-- Footer main column 1 row 2: Holds email info -->
+              <div id="footerc1r2" class="c1r flexr">
+                <!-- Email icon box: holds email icon  -->
+                <div id="c1r2email" class="c1iconbox">
+                  <!-- Email icon -->
+                  <img src="images/icon-email.svg" alt="email icon" id="emaili" class="c1icon">
+                </div>
+                <!-- Email info -->
+                <p id="emailp" class="c1p">
+                  example@fylo.com
+                </p>
+              </div>
+            </div>
+            <!-- Footer main column 2: holds 4 text links -->
+            <div id="footerc2" class="flexc">
+              <!-- About us link -->
+              <a href="" id="about" class="footertextlink">
+                About Us
+              </a>
+              <!-- Jobs link -->
+              <a href="" id="jobs" class="footertextlink">
+                Jobs
+              </a>
+              <!-- Press link -->
+              <a href="" id="press" class="footertextlink">
+                Press
+              </a>
+              <!-- Blog link -->
+              <a href="" id="blog" class="footertextlink">
+                Blog
+              </a>
+            </div>
+            <!-- Footer main column 3: holds 3 text links -->
+            <div id="footerc3" class="flexc">
+              <!-- Contact us link -->
+              <a href="" id="contact" class="footertextlink">
+                Contact Us
+              </a>
+              <!-- Terms link -->
+              <a href="" id="terms" class="footertextlink">
+                Terms
+              </a>
+              <!-- Privacy link -->
+              <a href="" id="privacy" class="footertextlink">
+                Privacy
+              </a>
+            </div>
+            <!-- Footer main column 4: holds 3 icon links -->
+            <div id="footerc4" class="flexr">
+              <!-- Icon box 1: holds first link icon -->
+              <div id="iconbox1" class="icon">
+                <!-- Facebook link -->
+                <a href="" id="facebooklnk" class="iconlink">
+                  <!-- Facebook icon -->
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+              <!-- Icon box 2: holds second icon -->
+              <div id="iconbox2" class="icon">
+                <!-- Twitter link -->
+                <a href="" id="twitterlnk" class="iconlink">
+                  <!-- Twitter icon -->
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <!-- Icon box 3: holds third icon -->
+              <div id="iconbox3" class="icon">
+                <!-- Instagram link -->
+                <a href="" id="instagramlnk" class="iconlink">
+                  <!-- Instagram icon -->
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
-
-  Get Started
-
-  Stay productive, wherever you are
-
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
-
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+        </footer>
+      </div>
+    </div>
+  </div>
 </body>
-</html>
+</html> 
