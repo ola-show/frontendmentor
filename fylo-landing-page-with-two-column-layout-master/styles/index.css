@@ -34,6 +34,10 @@ html {
     font-size: 15px;
 }
 
+body {
+    position: relative;
+}
+
 /* Formats all H1 elements */
 h1 {
     font-family: var(--header-font);
@@ -95,10 +99,10 @@ a {
 i {
     color: var(--quinary-color);
     font-size: 0.8em;
-    /* position: absolute; */
-    /* top: 50%; */
-    /* right: 50%; */
-    /* transform: translate(50%, -50%); */
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
 img {
@@ -119,7 +123,7 @@ li {
 /* TYPE FORMATTING */
 /* Place all type formatting here. */
 
-/* Formats all imputs with type email */
+/* Formats all inputs with type email */
 input[type=email] {
     width: 100%;
     padding: 0.8rem;
@@ -129,12 +133,13 @@ input[type=email] {
     border: 1px solid var(--primary-color);
 }
 
-
+/* Formats placeholder text in all inputs with type email */
 input[type=email]::placeholder {
     color: var(--senary-color);
     opacity: 0.5; 
 }
  
+/* Formats all inputs with type submit */
 input[type=submit] {
     width: 100%;
     padding: 0.8rem;
@@ -147,6 +152,7 @@ input[type=submit] {
     letter-spacing: 0.1rem;
 }
 
+/* Formats hover state of all inputs with type submit */
 input[type=submit]:hover {
     background-color: var(--septenary-color);
 }
@@ -195,14 +201,15 @@ input[type=submit]:hover {
 
 /* Formats the footer column 1 para text */
 .c1p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 0 1rem 1.3rem 1rem;
 }
 
 /* Formats the footer column 2/3 text links */
 .footertextlink {
     color: var(--quinary-color);
-    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    padding: 0.6rem 0.6rem;
 }
 
 /* Formats hover state of text link in footer */
@@ -227,6 +234,11 @@ input[type=submit]:hover {
 /* Formats hover state of icon borders in footer */
 .icon:hover {
     border: 1px solid var(--septenary-color);
+}
+
+/* Formats hover state of icons in footer */
+.icon:hover > a > i {
+    /* color: var(--septenary-color); */
 }
 
 /* Formats the footer column 1 icon links */
@@ -598,12 +610,15 @@ input[type=submit]:hover {
 
 /* Formats the main footer box */
 #footermain {
-position: relative;
+    padding: 2rem 0 1rem 0;
+    position: relative;
+    width: 100%;
 }
 
 /* Formats footer column 1 */
 #footerc1 {
-
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* Formats footer column 1 row 1 */
@@ -648,7 +663,9 @@ position: relative;
 
 /* Formats footer column 2 */
 #footerc2 {
-
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
 }
 
 /* Formats the about us text link */
@@ -673,7 +690,8 @@ position: relative;
 
 /* Formats footer column 3 */
 #footerc3 {
-
+    justify-content: center;
+    align-items: flex-start;
 }
 
 /* Formats the contact text link */
@@ -693,17 +711,21 @@ position: relative;
 
 /* Formats footer column 4 */
 #footerc4 {
-position: relative;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 0 0;
 }
 
 /* Formats icon box 1 */
 #iconbox1 {
-
+   
 }
 
 /* Formats facebook link */
 #facebooklnk {
-
+    
 }
 
 /* Formats icon box 2 */
@@ -750,7 +772,7 @@ flex-direction: row;
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     /* Changes the em base and background image*/
     html {
-        font-size: ;
+        font-size: 15px;
     }
 }
 
@@ -760,6 +782,6 @@ flex-direction: row;
 
     /* Changes the em base and background image*/
     html {
-        font-size: ;
+        font-size: 15px;
     }
 }
