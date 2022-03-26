@@ -34,6 +34,7 @@ html {
     font-size: 15px;
 }
 
+/* Formats the body */
 body {
     position: relative;
 }
@@ -62,13 +63,6 @@ h2 {
     font-weight: 600;
     text-align: center;
     margin-bottom: 1rem;
-}
-
-/* Formats P elements after all H2 elements */
-h2 + p {
-    font-size: 1rem;
-    color: var(--primary-color);
-    
 }
 
 /* Formats all H3 elements */
@@ -105,16 +99,19 @@ i {
     transform: translate(50%, -50%);
 }
 
+/* Formats all images */
 img {
 
 }
 
+/* Formats all unordered lists */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+/* Formats all linst items */
 li {
     
 }
@@ -171,7 +168,6 @@ input[type=submit]:hover {
     font-family: var(--header-font);
     color: var(--primary-color);
     font-weight: 600;
-
 }
 
 /* Formats box2 para text */
@@ -216,6 +212,7 @@ input[type=submit]:hover {
 .footertextlink:hover {
     color: var(--septenary-color);
 }
+
 /* Formats the footer column 4 icon boxes */
 .icon {
     position: relative;
@@ -228,7 +225,7 @@ input[type=submit]:hover {
 
 /* Formats icons in bottom right box */
 .icon > a > i {
-    /* color: var(--white); */
+    color: var(--quinary-color);
 }
 
 /* Formats hover state of icon borders in footer */
@@ -238,7 +235,7 @@ input[type=submit]:hover {
 
 /* Formats hover state of icons in footer */
 .icon:hover > a > i {
-    /* color: var(--septenary-color); */
+    color: var(--septenary-color);
 }
 
 /* Formats the footer column 1 icon links */
@@ -340,7 +337,7 @@ input[type=submit]:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 /* Formats the top left heading */
@@ -364,7 +361,6 @@ input[type=submit]:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 /* Formats the email input in the top form */
@@ -389,7 +385,8 @@ input[type=submit]:hover {
 }
 /* Formats top second box */
 #topcurve {
-    background: url(../images/bg-curve-mobile.svg) no-repeat top; 
+    background: url(../images/bg-curve-mobile.svg) no-repeat bottom; 
+    background-size: 100% auto;
     height: 3rem;
     width: 100%;
     margin-top: 1rem;
@@ -460,14 +457,12 @@ input[type=submit]:hover {
 /* Formats the testimonial card */
 #card {
     margin: 2rem 1rem;
-    aspect-ratio: 1.2 / 1;
     justify-content: flex-start;
     align-items: flex-start;
     background-color: var(--white);
     border-radius: 0.3rem;
     box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
     padding: 1rem 1.6rem;
-
 }
 
 /* Formats the box holding the quotes image */
@@ -541,6 +536,8 @@ input[type=submit]:hover {
 
 /* Formats the third box */
 #thirdbox {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -565,9 +562,7 @@ input[type=submit]:hover {
 }
 
 /* Formats the right third box */
-#rightthirdbox {
-    width: 85%;
-}
+
 
 /* Formats the bottom form */
 #formbottom {
@@ -610,6 +605,8 @@ input[type=submit]:hover {
 
 /* Formats the main footer box */
 #footermain {
+    display: flex;
+    flex-direction: column;
     padding: 2rem 0 1rem 0;
     position: relative;
     width: 100%;
@@ -758,11 +755,13 @@ input[type=submit]:hover {
     display: table;
 }
 
+/* Makes any element a flex row */
 .flexr {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
+/* Makes any element a flex column */
 .flexc {
     display: flex;
     flex-direction: column;
@@ -774,14 +773,546 @@ flex-direction: row;
     html {
         font-size: 15px;
     }
+
+    /* Changes the size of font on all H1 elements */
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Changes the padding of all p elements directly after an H1 element */
+    h1 + p {
+        padding: 0.7rem 0;
+    }
+
+    /* Changes the size and alignment of all H2 elements */
+    h2 {
+        font-size: 2.1rem;
+        text-align: left;
+    }
+
+    /* Changes the size of font on all H3 elements */
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Changes the line height of allP elements */
+    p {
+        line-height: 1.3;
+    }
+
+    /* Changes the width, padding, and margin for all input elements with the type of email */
+    input[type=email] {
+        width: 70%;
+        padding: 0.7rem;
+        margin: 0 0.6rem 0 0;
+    }
+
+    /* Changes the width, padding, size, and letter spacing for all input elements with the type of submit */
+    input[type=submit] {
+        width: 30%;
+        padding: 0.8rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.05rem;
+    }
+
+    /* Changes the size and width of the para text in the second box */
+    .box2p {
+        font-size: 0.85rem;
+        width: 80%;
+    }
+
+    /* Changes the size of the info text in the first column in the footer  */
+    .c1p {
+        font-size: 0.85rem;
+    }
+
+    /* Changes the size of the text in columns 2/3 of the footer */
+    .footertextlink {
+        font-size: 0.85rem;
+    }
+
+    /* Changes the padding and alignment of the logo nav box at the top of the page */
+    #logonavbox {
+        padding: 3rem 2.5rem 0 2.5rem;
+        align-items: flex-start;
+    }
+
+    /* Changes the width of the box containing the logo at the top of the page */
+    #logotopbox {
+        width: 13%;
+    }
+
+    /* Changes the width of the box containing the nav links at the top of the page */
+    #navbar {
+        width: 25%;
+    }
+
+    /* Changes the alignment of the li in the nav bar at the top of the page */
+    #navbarlist {
+        justify-content: space-around;
+    }
+
+    /* Changes alignment and padding of the top box */
+    #topbox {
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    /* Changes the orientation and width of the main content in the top box */
+    #topmain {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    /* Changes the text alignment. padding, and width of the top left box */
+    #topleftbox {
+        text-align: left;
+        padding: 0 0;
+        width: 55%;
+    }
+
+    /* Changes the orientation, alignment, and padding of the email form in the top box */
+    #formtop {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 0.5rem;
+    }
+
+    /* Changes the alignment and width of the top right box */
+    #toprightbox {
+        width: 45%;
+        justify-content: right;
+        align-items: right;
+    }
+
+    /* Changes the width of the filing illustration */
+    #filing {
+        width: 100%;
+    }
+
+    /* Changes the background, height, and margin of the box above the second box */
+    #topcurve {
+        background: url(../images/bg-curve-desktop.svg) no-repeat bottom; 
+        background-size: 100% auto;
+        height: 6rem;
+        margin-top: 7rem;
+    }
+
+    /* Changes the orientation, alignment, and width of the second box */
+    #secondbox {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    /* Changes the padding, alignment, and width of the left second box */
+    #leftsecondbox {
+        padding: 0 0 0 0;
+        align-items: flex-start;
+        width: 60%;
+    }
+
+    /* Changes the alignment, width, and margin of the See How link */
+    #seelink {
+        align-items: flex-start;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    /* Changes the width of the box containing the See How text and arrow image */
+    #seearrowbox {
+        width: 40%;
+    }
+
+    /* Changes the size of the text on the See How link */
+    #seetext {
+        font-size: 0.9rem;
+    }
+
+    /* Changes the margin and width of the testimonial card */
+    #card {
+        margin: 1rem 0 1rem 0;
+        width: 60%;
+    }
+
+    /* Changes the width of the box holding the quotes image */
+    #quotesbox {
+        width: 5.5%;
+    }
+
+    /* Changes the width of the quotes image */
+    #quotes {
+        width: 100%;
+    }
+
+    /* Changes the width of the right second box */
+    #rightsecondbox {
+        width: 40%;
+    }
+
+    /* Changes the width of the talking illustration */
+    #talking {
+        width: 85%;
+    }
+
+    /* Changes the orientation, alignment, text alignment, and padding of the third box */
+    #thirdbox {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        padding: 6rem 3.2rem 4rem 3.2rem;
+    }
+
+    /* Changes the width of the left third box */
+    #leftthirdbox {
+        width: 45%;
+    }
+
+    /* Changes the width of the right third box */
+    #rightthirdbox {
+        width: 45%;
+    }
+
+    /* Changes the alignment of the bottom email form */
+    #formbottom {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    /* Changes the width, padding, and margin of the bottom email input */
+    #emailinputbottom {
+        width: 100%;
+        padding: 0.8rem;
+        margin: 0 0 0.5rem 0;
+    }
+
+    /* Changes the width, text size, and padding of the bottom submit button */
+    #emailsubmitbottom {
+        width: 50%;
+        font-size: 0.65rem;
+        padding: 0.8rem;
+    }
+
+    /* Changes the padding of the footer */
+    #footer {
+        padding: 5rem 2rem 2rem 2rem;
+    }
+
+    /* Changes the width of the bottom logo box */
+    #logobottombox {
+        width: 13%;
+    }
+
+    /* Changes the orientation, alignment, and padding of the main container in the footer */
+    #footermain {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem 0 1rem 0;
+    }
+
+    /* Changes the alignment and width of column 1 of the footer */
+    #footerc1 {
+        width: 33%;
+        justify-content: flex-start;
+    }
+
+    /* Changes the padding, alignment, and width of column 2 of the footer */
+    #footerc2 {
+        width: 20%;
+        justify-content: flex-start;
+        padding: 0 0;
+    }
+
+    /* Changes the alignment and width of column 3 of the footer */
+    #footerc3 {
+        width: 20%;
+        justify-content: flex-start;
+    }
+
+    /* Changes the padding, alignment, and width of column 4 of the footer */
+    #footerc4 {
+        width: 27%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 0 0 0;
+    }
 }
 
 
 /* Changes settings at 1024px screen size */
 @media only screen and (min-width: 1024px) {
 
-    /* Changes the em base and background image*/
+    /* Changes the em base */
     html {
-        font-size: 15px;
+        font-size: 19px;
+    }
+
+    /* Changes the size of font on all H1 elements */
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Changes the padding of all p elements directly after an H1 element */
+    h1 + p {
+        padding: 0.7rem 0;
+    }
+
+    /* Changes the size and alignment of all H2 elements */
+    h2 {
+        font-size: 2.1rem;
+        text-align: left;
+    }
+
+    /* Changes the size of font on all H3 elements */
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Changes the line height of allP elements */
+    p {
+        line-height: 1.3;
+    }
+
+    /* Changes the width, padding, and margin for all input elements with the type of email */
+    input[type=email] {
+        width: 60%;
+        padding: 0.7rem;
+        margin: 0 0.6rem 0 0;
+    }
+
+    /* Changes the width, padding, size, and letter spacing for all input elements with the type of submit */
+    input[type=submit] {
+        width: 30%;
+        padding: 0.75rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.05rem;
+    }
+
+    /* Changes the size and width of the para text in the second box */
+    .box2p {
+        font-size: 0.85rem;
+        width: 80%;
+    }
+
+    /* Changes the size of the info text in the first column in the footer  */
+    .c1p {
+        font-size: 0.85rem;
+    }
+
+    /* Changes the size of the text in columns 2/3 of the footer */
+    .footertextlink {
+        font-size: 0.85rem;
+    }
+
+    /* Changes the padding and alignment of the logo nav box at the top of the page */
+    #logonavbox {
+        padding: 3rem 2.5rem 0 2.5rem;
+        align-items: flex-start;
+    }
+
+    /* Changes the width of the box containing the logo at the top of the page */
+    #logotopbox {
+        width: 13%;
+    }
+
+    /* Changes the width of the box containing the nav links at the top of the page */
+    #navbar {
+        width: 25%;
+    }
+
+    /* Changes the alignment of the li in the nav bar at the top of the page */
+    #navbarlist {
+        justify-content: space-around;
+    }
+
+    /* Changes alignment and padding of the top box */
+    #topbox {
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    /* Changes the orientation and width of the main content in the top box */
+    #topmain {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    /* Changes the text alignment. padding, and width of the top left box */
+    #topleftbox {
+        text-align: left;
+        padding: 0 0;
+        width: 45%;
+    }
+
+    /* Changes the orientation, alignment, and padding of the email form in the top box */
+    #formtop {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 0.5rem;
+    }
+
+    /* Changes the alignment and width of the top right box */
+    #toprightbox {
+        width: 50%;
+        justify-content: right;
+        align-items: right;
+    }
+
+    /* Changes the width of the filing illustration */
+    #filing {
+        width: 100%;
+    }
+
+    /* Changes the background, height, and margin of the box above the second box */
+    #topcurve {
+        background: url(../images/bg-curve-desktop.svg) no-repeat bottom; 
+        background-size: 100% auto;
+        height: 6rem;
+        margin-top: 7rem;
+    }
+
+    /* Changes the orientation, alignment, and width of the second box */
+    #secondbox {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    /* Changes the padding, alignment, and width of the left second box */
+    #leftsecondbox {
+        padding: 0 0 0 0;
+        align-items: flex-start;
+        width: 50%;
+    }
+
+    /* Changes the alignment and margin of the See How link */
+    #seelink {
+        align-items: flex-start;
+        margin: 1rem 0;
+    }
+
+    /* Changes the width of the box containing the See How text and arrow image */
+    #seearrowbox {
+        width: 40%;
+    }
+
+    /* Changes the size of the text on the See How link */
+    #seetext {
+        font-size: 0.9rem;
+    }
+
+    /* Changes the margin and width of the testimonial card */
+    #card {
+        margin: 1rem 0 1rem 0;
+        width: 60%;
+    }
+
+    /* Changes the width of the box holding the quotes image */
+    #quotesbox {
+        width: 5.5%;
+    }
+
+    /* Changes the width of the quotes image */
+    #quotes {
+        width: 100%;
+    }
+
+    /* Changes the width of the right second box */
+    #rightsecondbox {
+        width: 50%;
+    }
+
+    /* Changes the width of the talking illustration */
+    #talking {
+        width: 85%;
+    }
+
+    /* Changes the orientation, alignment, text alignment, and padding of the third box */
+    #thirdbox {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+        padding: 6rem 3.2rem 4rem 3.2rem;
+    }
+
+    /* Changes the width of the left third box */
+    #leftthirdbox {
+        width: 40%;
+    }
+
+    /* Changes the width of the right third box */
+    #rightthirdbox {
+        width: 40%;
+    }
+
+    /* Changes the alignment of the bottom email form */
+    #formbottom {
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    /* Changes the width, padding, and margin of the bottom email input */
+    #emailinputbottom {
+        width: 100%;
+        padding: 0.8rem;
+        margin: 0 0 0.5rem 0;
+    }
+
+    /* Changes the width and padding of the bottom submit button */
+    #emailsubmitbottom {
+        width: 50%;
+        padding: 0.8rem;
+    }
+
+    /* Changes the padding of the footer */
+    #footer {
+        padding: 5rem 2rem 2rem 2rem;
+    }
+
+    /* Changes the width of the bottom logo box */
+    #logobottombox {
+        width: 13%;
+    }
+
+    /* Changes the orientation, alignment, and padding of the main container in the footer */
+    #footermain {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1rem 0 1rem 0;
+    }
+
+    /* Changes the alignment and width of column 1 of the footer */
+    #footerc1 {
+        width: 33%;
+        justify-content: flex-start;
+    }
+
+    /* Changes the padding, alignment, and width of column 2 of the footer */
+    #footerc2 {
+        width: 20%;
+        justify-content: flex-start;
+        padding: 0 0;
+    }
+
+    /* Changes the alignment and width of column 3 of the footer */
+    #footerc3 {
+        width: 20%;
+        justify-content: flex-start;
+    }
+
+    /* Changes the padding, alignment, and width of column 4 of the footer */
+    #footerc4 {
+        width: 27%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 0 0 0;
     }
 }
