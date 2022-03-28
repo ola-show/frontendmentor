@@ -668,13 +668,6 @@ i {
 
 /* Responsive CSS */
 
-/* Allows elements to be stacked in rows without filling all 12 columns */
-.row::after,.row::before {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .flexr {
     display: flex;
     flex-direction: row;

@@ -1,0 +1,790 @@
+/* Imports Poppins font 600 weight */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Imports Open Sans font 400, 600, and 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    --primary-color: hsl(322, 100%, 66%);
+    --secondary-color: hsl(192, 100%, 9%);
+    --tertiary-color: hsl(208, 11%, 55%);
+    --quaternary-color: hsl(207, 100%, 98%);
+    --quinary-color: hsl(321, 100%, 78%);
+    --senary-color: hsl(0, 100%, 63%);
+    --white: white;
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* Formats all body elements */
+body {
+    position: relative;
+}
+
+/* Formats all H1 elements */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Formats P elements after H1 elements */
+h1 + p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+/* Formats all H2 elements */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 0.7rem;
+}
+
+/* Formats P elements after H2 elements */
+h2 + p {
+    color: var(--tertiary-color);
+    font-size: 0.75rem;
+}
+
+/* Formats all H3 elements */
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Formats all P elements */
+p {
+    line-height: 1.5;
+}
+
+/* Formats all link elements */
+a {
+    text-decoration: none;
+}
+
+/* Formats all images */
+img {
+    
+}
+
+/* Formats all icon elements */
+i {
+    font-size: 0.8em;
+    position: absolute;
+}
+
+/* TYPE FORMATTING */
+/* Place all type formatting here. */
+
+/* Formats all inputs with type email */
+input[type=email] {
+    width: 100%;
+    padding: 0.8rem;
+    color: var(--quinary-color);
+    margin: 1rem;
+    border-radius: 3px;
+    border: 1px solid var(--primary-color);
+}
+
+/* Formats placeholder text in all inputs with type email */
+input[type=email]::placeholder {
+    color: var(--senary-color);
+    opacity: 0.5; 
+}
+ 
+/* Formats all inputs with type submit */
+input[type=submit] {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 3px;
+    background-color: var(--tertiary-color);
+    border: 1px none;
+    color: var(--quinary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+/* Formats hover state of all inputs with type submit */
+input[type=submit]:hover {
+    background-color: var(--septenary-color);
+}
+
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+/* Formats 2 start buttons */
+.startbtn {
+    font-size: 18px;
+    position: relative;
+    background-color: var(--primary-color);
+    border-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
+    width: 14em;
+    height: 2.5em;
+    margin: 2.5rem 0;
+}
+
+/* Formats the hover state of 2 start buttons */
+.startbtn:hover {
+    background-color: var(--quinary-color);
+}
+
+/* Formats 2 start button links */
+.startbtnlnk {
+    color: var(--quaternary-color);
+    font-weight: 700;
+    font-size: 0.65em;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+/* Formats 2 stats boxes */
+.statsbox {
+    margin: 2.5rem;
+}
+
+/* Formats 2 stats image boxes */
+.statsimgbox {
+    
+}
+
+/* Formats 2 stats images */
+.statsimg {
+    width: 100%;
+}
+
+/* Formats 2 stats numbers */
+.statsnum {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* Formats 2 stats informations */
+.statsinfo { 
+    margin: 0.5rem 0;
+    color: var(--tertiary-color);
+    font-size: 0.9rem;
+}
+
+/* Formats 3 card containers */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* Formats 5 wave images */
+.wave {
+
+}
+
+/* Formats 3 image boxes in card containers */
+.cardimgbox {
+    margin: auto;
+    width: 70%;
+}
+
+/* Formats 3 images in card containers */
+.cardimg {
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+/* Formats text boxes in card containers */
+.cardtext {
+    width: 75%;
+    margin: auto;
+}
+
+/* Formats headings in card containers */
+.cardh2 {
+
+}
+
+/* Formats para text in card containers */
+.cardp {
+
+}
+
+/* Formats column 1 rows */
+.inforow {
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+/* Formats icon boxes in column 1 of the footer */
+.iiconbox {
+    height: 0.9rem;
+    padding: 0.2rem;
+}
+
+/* Formats icons in column 1 of the footer */
+.iicon {
+
+}
+
+/* Formats para text in column 1 of the footer */
+.irp {
+    font-size: 0.9rem;
+    padding: 0 1rem 1.3rem 1rem;
+}
+
+/* Formats icon boxes/borders in footer */
+.icon {
+    position: relative;
+    height: 1.75em;
+    width: 1.75em;
+    border: 1px solid var(--quaternary-color);
+    border-radius: 50%;
+    margin: 0.4em;
+}
+
+/* Formats icons in bottom right box */
+.icon > a > i {
+    color: var(--quaternary-color);
+}
+
+/* Formats hover state of icon borders in footer */
+.icon:hover {
+    border: 1px solid var(--primary-color);
+}
+
+/* Formats hover state of icons in bottom right box */
+.icon:hover > a > i {
+    color: var(--primary-color);
+}
+
+/* Formats icon links in footer */
+.iconlink {
+    
+}
+
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation for all other boxes */
+#showbox {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formats the main container */
+#bigbox {   
+    position: relative;
+}
+
+/* Formats the insulation box inside the main container */
+#inside {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formats the box that hold the logo and try it button at the top of the top box */
+#logobuttonbox {
+    position: relative;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+/* Formats the logo box at the top of the top box */
+#logobox {
+    width: 30%;
+}
+
+/* Formats the logo image at the top of the top box */
+#logotop {
+    width: 100%;
+}
+
+/* Formats the try it button at the top of the top box */
+#trybutton {
+    position: relative;
+    font-size: 18px;
+    border: 1px solid var(--quinary-color);
+    background-color: var(--white);
+    border-radius: 2em;
+    width: 7em;
+    height: 1.5em;
+}
+
+/* Formats the hover state of try it button */
+#trybutton:hover {
+    opacity: 0.5;
+}
+
+/* Formats the try it button link at the top of the top box */
+#tryit {
+    color: var(--quinary-color);
+    font-weight: 700;
+    font-size: 0.6em;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+/* Formats the top box */
+#topbox {
+    position: relative;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Formats the bottom box of the top box */
+#topinfomockbox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 83%;
+    padding: 5.5rem 0 1rem 0;
+    text-align: center;
+}
+
+/* Formats the left box in the bottom box of the top box */
+#topfirstbox {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Formats the heading of the left box in the bottom box of the top box */
+#topfirsth {
+
+}
+
+/* Formats the para text of the left box in the bottom box of the top box */
+#topfirstp {
+
+}
+
+/* Formats the top start button */
+#startbtn1 {
+
+}
+
+/* Formats the top start button link */
+#startbtnlnk1 {
+
+}
+
+/* Formats the right box in the bottom box of the top box */
+#topsecondbox {
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0 0 0;
+}
+
+/* Formats the mockups image */
+#mockups {
+    width: 95%;
+}
+
+/* Formats the stats box */
+#stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+}
+
+/* Formats stats box 1 */
+#statsbox1{
+
+}
+
+/* Formats the stats image box 1 */
+#statsimgbox1 {
+    width: 1.75rem;
+}
+
+/* Formats stats image 1 - Communities */
+#statsimg1 {
+    width: 100%;
+}
+
+/* Formats stats numbers 1 */
+#statsnum1 {
+
+}
+
+/* Formats stats information para text 1 */
+#statsinfo1 {
+
+}
+
+/* Formats stats box 1 */
+#statsbox2{
+
+}
+
+/* Formats the stats image box 1 */
+#statsimgbox2 {
+    width: 1.25rem;
+}
+
+/* Formats stats image 1 - Communities */
+#statsimg2 {
+    width: 100%;
+}
+
+/* Formats stats numbers 1 */
+#statsnum2 {
+
+}
+
+/* Formats stats information para text 1 */
+#statsinfo2 {
+
+}
+
+/* Formats the box holding 3 cards */
+#cardbox {
+    position: relative;
+    width: 90%;
+    margin: 2rem 0;
+}
+
+/* Formats first wave image */
+#wave1 {
+
+}
+
+/* Formats card 1 */
+#card1 {
+
+}
+
+/* Formats the box holding the image in card 1 */
+#card1imgbox {
+
+}
+
+/* Formats the image in card 1 */
+#grow {
+
+}
+
+/* Formats the text box in card 1 */
+#card1text {
+
+}
+
+/* Formats the heading in the text box in card 1 */
+#card1h2 {
+
+}
+
+/* Formats the para text in the text box in card 1 */
+#card1p {
+
+}
+
+/* Formats second wave image */
+#wave2 {
+
+}
+
+/* Formats card 2 */
+#card2 {
+
+}
+
+/* Formats the box holding the image in card 2 */
+#card2imgbox {
+
+}
+
+/* Formats the image in card 2 */
+#flow {
+
+}
+
+/* Formats the text box in card 2 */
+#card2text {
+
+}
+
+/* Formats the heading in the text box in card 2 */
+#card2h2 {
+
+}
+
+/* Formats the para text in the text box in card 2 */
+#card2p {
+
+}
+
+/* Formats third wave image */
+#wave3 {
+
+}
+
+/* Formats card 3 */
+#card3 {
+
+}
+
+/* Formats the box holding the image in card 3 */
+#card3imgbox {
+
+}
+
+/* Formats the image in card 3 */
+#users {
+
+}
+
+/* Formats the text box in card 3 */
+#card3text {
+
+}
+
+/* Formats the heading in the text box in card 3 */
+#card3h2 {
+
+}
+
+/* Formats the para text in the text box in card 3 */
+#card3p {
+
+}
+
+/* Formats fourth wave image */
+#wave4 {
+
+}
+
+/* Formats the invitation box in the footer */
+#invitation {
+    justify-content: space-around;
+    align-items: center;
+    width: 92%;
+    padding: 2rem 0 0.5rem 0;
+    color: var(--secondary-color);
+}
+
+/* Formats the text in the invitation box in the footer */
+#invitationtext {
+
+}
+
+/* Formats start button 2 */
+#startbtn2 {
+
+}
+
+/* Formats start button 2 link */
+#startbtnlnk2 {
+
+}
+
+/* Formats the wave image before the footer */
+#wave5
+
+/* Formats the footer at the bottom of the page */
+#footer {
+    font-size: 18px;
+    position: relative;
+    background-color: var(--secondary-color);
+    margin-top: 9.5em;
+    color: var(--white);
+    padding: 7.5em 1em 3em 1em;
+}
+
+/* Formats the box holding the newsletter heading, para text, and email form */
+#newsletterbox {
+
+}
+
+/* Formats the heading in the newsletter box */
+#newsletterh3 {
+
+}
+
+/* Formats the para text in the newsletter box */
+#newsletterp {
+
+}
+
+/* Formats the box holding the form */
+#emailformbox {
+    
+}
+
+/* Formats the form */
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formats the email input in the form */
+#emailinput {
+    
+}
+
+/* Formats the email submit button in the form */
+#emailsubmit {
+
+}
+
+/* Formats box holding bottom logo and contact info in the footer */
+#logoinfobox {
+   width: 50%; 
+}
+
+/* Formats box holding bottom logo in the footer */
+#logobox {
+
+}
+
+/* Formats bottom logo in the footer */
+#logobottom {
+    width: 100%;
+}
+
+/* Formats the para text in the footer */
+#footerp {
+
+}
+
+/* Formats row 1 of the footer */
+#inforow1 {
+
+}
+
+/* Formats the box holding the phone icon */
+#inforowphone {
+
+}
+
+/* Formats the phone icon */
+#phonei {
+
+}
+
+/* Formats the phone info */
+#phonep {
+
+}
+
+
+/* Formats row 2 of the footer */
+#inforow2 {
+
+}
+
+/* Formats the box holding the email icon */
+#inforowemail {
+
+}
+
+/* Formats the email icon */
+#emaili {
+
+}
+
+/* Formats the email info */
+#emailp {
+
+}
+
+/* Formats column 4 of the footer */
+#footerslnks {
+    justify-content: center;
+    align-content: center;
+    padding: 2em 0 1em 0;
+}
+
+/* Formats icon box 1 */
+#iconbox1 {
+
+}
+
+/* Formats facebook link */
+#facebooklnk {
+
+}
+
+/* Formats icon box 2 */
+#iconbox2 {
+
+}
+
+/* Formats twitter link */
+#twitterlnk {
+    
+}
+
+/* Formats icon box 3 */
+#iconbox3 {
+
+}
+
+/* Formats instagram link */
+#instagramlnk {
+    
+}
+
+
+/* Responsive CSS */
+
+/* Makes any element a flex row */
+.flexr {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Makes any element a flex column */
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Changes settings at 768px screen size to 1023px screen size*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+}
+
+
+/* Changes settings at 1024px screen size */
+@media only screen and (min-width: 1024px) {
+
+
+}
