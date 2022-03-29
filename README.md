@@ -39,6 +39,6 @@ X https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-
 
 X https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5
 
-  https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2
+X https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2
 
 

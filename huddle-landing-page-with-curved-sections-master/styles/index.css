@@ -12,6 +12,7 @@
     --quaternary-color: hsl(207, 100%, 98%);
     --quinary-color: hsl(321, 100%, 78%);
     --senary-color: hsl(0, 100%, 63%);
+    --septenary-color: hsl(192, 98%, 55%);
     --white: white;
 }
 
@@ -50,6 +51,7 @@ h1 + p {
 
 /* Formats all H2 elements */
 h2 {
+    font-weight: 700;
     font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
     padding-bottom: 0.7rem;
@@ -58,14 +60,14 @@ h2 {
 /* Formats P elements after H2 elements */
 h2 + p {
     color: var(--tertiary-color);
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 }
 
 /* Formats all H3 elements */
 h3 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 /* Formats all P elements */
@@ -85,7 +87,6 @@ img {
 
 /* Formats all icon elements */
 i {
-    font-size: 0.8em;
     position: absolute;
 }
 
@@ -98,27 +99,21 @@ input[type=email] {
     padding: 0.8rem;
     color: var(--quinary-color);
     margin: 1rem;
-    border-radius: 3px;
-    border: 1px solid var(--primary-color);
+    border-radius: 0.4rem;
 }
 
-/* Formats placeholder text in all inputs with type email */
-input[type=email]::placeholder {
-    color: var(--senary-color);
-    opacity: 0.5; 
-}
- 
 /* Formats all inputs with type submit */
 input[type=submit] {
-    width: 100%;
+    width: 50%;
     padding: 0.8rem;
-    border-radius: 3px;
-    background-color: var(--tertiary-color);
+    border-radius: 0.4rem;
+    background-color: var(--primary-color);
     border: 1px none;
-    color: var(--quinary-color);
+    color: var(--quaternary-color);
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
+    align-self: flex-end;
 }
 
 /* Formats hover state of all inputs with type submit */
@@ -139,7 +134,7 @@ input[type=submit]:hover {
     box-shadow: 0 4px 8px 0 rgba(73, 66, 92, 0.2), 0 6px 20px 0 rgba(73, 66, 92, 0.19);
     width: 14em;
     height: 2.5em;
-    margin: 2.5rem 0;
+    margin: 2.5em 0;
 }
 
 /* Formats the hover state of 2 start buttons */
@@ -160,7 +155,7 @@ input[type=submit]:hover {
 
 /* Formats 2 stats boxes */
 .statsbox {
-    margin: 2.5rem;
+    
 }
 
 /* Formats 2 stats image boxes */
@@ -189,7 +184,6 @@ input[type=submit]:hover {
 
 /* Formats 3 card containers */
 .card {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -206,11 +200,12 @@ input[type=submit]:hover {
 .cardimgbox {
     margin: auto;
     width: 70%;
+    padding: 2.5rem 0;
 }
 
 /* Formats 3 images in card containers */
 .cardimg {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
     width: 100%;
 }
 
@@ -218,16 +213,17 @@ input[type=submit]:hover {
 .cardtext {
     width: 75%;
     margin: auto;
+    padding-bottom: 3rem;
 }
 
 /* Formats headings in card containers */
 .cardh2 {
-
+    font-weight: 700;
 }
 
 /* Formats para text in card containers */
 .cardp {
-
+    color: var(--secondary-color);
 }
 
 /* Formats column 1 rows */
@@ -249,17 +245,15 @@ input[type=submit]:hover {
 
 /* Formats para text in column 1 of the footer */
 .irp {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 0 1rem 1.3rem 1rem;
 }
 
 /* Formats icon boxes/borders in footer */
 .icon {
     position: relative;
-    height: 1.75em;
-    width: 1.75em;
-    border: 1px solid var(--quaternary-color);
-    border-radius: 50%;
+    height: 1.34em;
+    width: 1.34em;
     margin: 0.4em;
 }
 
@@ -270,12 +264,12 @@ input[type=submit]:hover {
 
 /* Formats hover state of icon borders in footer */
 .icon:hover {
-    border: 1px solid var(--primary-color);
+    
 }
 
 /* Formats hover state of icons in bottom right box */
 .icon:hover > a > i {
-    color: var(--primary-color);
+    color: var(--septenary-color);
 }
 
 /* Formats icon links in footer */
@@ -306,7 +300,7 @@ input[type=submit]:hover {
     align-items: center;
 }
 
-/* Formats the box that hold the logo and try it button at the top of the top box */
+/* Formats the box that holds the logo and try it button at the top of the page */
 #logobuttonbox {
     position: relative;
     width: 90%;
@@ -315,17 +309,17 @@ input[type=submit]:hover {
     padding: 1rem 0;
 }
 
-/* Formats the logo box at the top of the top box */
+/* Formats the logo box at the top of the page */
 #logobox {
     width: 30%;
 }
 
-/* Formats the logo image at the top of the top box */
+/* Formats the logo image at the top of the page */
 #logotop {
     width: 100%;
 }
 
-/* Formats the try it button at the top of the top box */
+/* Formats the try it button at the top of the page */
 #trybutton {
     position: relative;
     font-size: 18px;
@@ -341,7 +335,7 @@ input[type=submit]:hover {
     opacity: 0.5;
 }
 
-/* Formats the try it button link at the top of the top box */
+/* Formats the try it button link at the top of the page */
 #tryit {
     color: var(--quinary-color);
     font-weight: 700;
@@ -372,7 +366,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-/* Formats the left box in the bottom box of the top box */
+/* Formats the first box of the top box */
 #topfirstbox {
     position: relative;
     justify-content: center;
@@ -380,12 +374,12 @@ input[type=submit]:hover {
     width: 100%;
 }
 
-/* Formats the heading of the left box in the bottom box of the top box */
+/* Formats the heading of the first box of the top box */
 #topfirsth {
 
 }
 
-/* Formats the para text of the left box in the bottom box of the top box */
+/* Formats the para text of the first box of the top box */
 #topfirstp {
 
 }
@@ -400,7 +394,7 @@ input[type=submit]:hover {
 
 }
 
-/* Formats the right box in the bottom box of the top box */
+/* Formats the second box of the top box */
 #topsecondbox {
     justify-content: center;
     align-items: center;
@@ -418,12 +412,13 @@ input[type=submit]:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2.5rem 0;
+    text-align: center;
+    margin: 2.5rem 0 0 0;
 }
 
 /* Formats stats box 1 */
 #statsbox1{
-
+    margin: 2.5rem;
 }
 
 /* Formats the stats image box 1 */
@@ -448,7 +443,7 @@ input[type=submit]:hover {
 
 /* Formats stats box 1 */
 #statsbox2{
-
+    margin: 2.5rem 2.5rem 0 2.5rem;
 }
 
 /* Formats the stats image box 1 */
@@ -474,18 +469,21 @@ input[type=submit]:hover {
 /* Formats the box holding 3 cards */
 #cardbox {
     position: relative;
-    width: 90%;
-    margin: 2rem 0;
+    width: 100%;
+    margin: 0 0;
 }
 
 /* Formats first wave image */
 #wave1 {
-
+    background: url(../images/bg-section-top-mobile-1.svg) no-repeat bottom;
+    background-size: 100% 100%;
+    height: 112px;
+    width: 100%;
 }
 
 /* Formats card 1 */
 #card1 {
-
+    background-color: var(--quaternary-color);
 }
 
 /* Formats the box holding the image in card 1 */
@@ -515,12 +513,15 @@ input[type=submit]:hover {
 
 /* Formats second wave image */
 #wave2 {
-
+    background: url(../images/bg-section-bottom-mobile-1.svg) no-repeat top;
+    background-size: 100% 100%;
+    height: 52px;
+    width: 100%;
 }
 
 /* Formats card 2 */
 #card2 {
-
+    margin: 3.5rem 0;
 }
 
 /* Formats the box holding the image in card 2 */
@@ -550,27 +551,30 @@ input[type=submit]:hover {
 
 /* Formats third wave image */
 #wave3 {
-
+    background: url(../images/bg-section-top-mobile-2.svg) no-repeat bottom;
+    background-size: 100% 100%;
+    height: 103px;
+    width: 100%;
 }
 
 /* Formats card 3 */
 #card3 {
-
+    background-color: var(--quaternary-color);
 }
 
 /* Formats the box holding the image in card 3 */
 #card3imgbox {
-
+    padding: 0 0 2.5rem 0;
 }
 
 /* Formats the image in card 3 */
 #users {
-
+margin: 0 0 1.5rem 0;
 }
 
 /* Formats the text box in card 3 */
 #card3text {
-
+    margin-bottom: 3rem;
 }
 
 /* Formats the heading in the text box in card 3 */
@@ -585,7 +589,10 @@ input[type=submit]:hover {
 
 /* Formats fourth wave image */
 #wave4 {
-
+    background: url(../images/bg-section-bottom-mobile-2.svg) no-repeat top;
+    background-size: 100% 100%;
+    height: 101px;
+    width: 100%;
 }
 
 /* Formats the invitation box in the footer */
@@ -593,8 +600,9 @@ input[type=submit]:hover {
     justify-content: space-around;
     align-items: center;
     width: 92%;
-    padding: 2rem 0 0.5rem 0;
+    padding: 5rem 0 9rem 0;
     color: var(--secondary-color);
+    text-align: center;
 }
 
 /* Formats the text in the invitation box in the footer */
@@ -613,16 +621,23 @@ input[type=submit]:hover {
 }
 
 /* Formats the wave image before the footer */
-#wave5
+#wave5 {
+    background: url(../images/bg-footer-top-mobile.svg) no-repeat bottom;
+    background-size: 100% 100%;
+    height: 53px;
+    width: 100%;
+}
 
 /* Formats the footer at the bottom of the page */
 #footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     font-size: 18px;
     position: relative;
     background-color: var(--secondary-color);
-    margin-top: 9.5em;
     color: var(--white);
-    padding: 7.5em 1em 3em 1em;
+    padding: 2.5em 2em 3em 2em;
 }
 
 /* Formats the box holding the newsletter heading, para text, and email form */
@@ -632,12 +647,16 @@ input[type=submit]:hover {
 
 /* Formats the heading in the newsletter box */
 #newsletterh3 {
-
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    padding: 1rem 0;
 }
 
 /* Formats the para text in the newsletter box */
 #newsletterp {
-
+    line-height: 1.8;
+    font-size: 0.73rem;
+    padding-right: 0.5rem;
 }
 
 /* Formats the box holding the form */
@@ -651,6 +670,7 @@ input[type=submit]:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 0;
 }
 
 /* Formats the email input in the form */
@@ -665,12 +685,14 @@ input[type=submit]:hover {
 
 /* Formats box holding bottom logo and contact info in the footer */
 #logoinfobox {
-   width: 50%; 
+    position: relative;
+    width: 100%; 
+    margin-top: 5rem;
 }
 
 /* Formats box holding bottom logo in the footer */
-#logobox {
-
+#logobottombox {
+    width: 70%;
 }
 
 /* Formats bottom logo in the footer */
@@ -680,17 +702,18 @@ input[type=submit]:hover {
 
 /* Formats the para text in the footer */
 #footerp {
-
+    font-size: 0.75rem;
+    line-height: 1.8;
 }
 
 /* Formats row 1 of the footer */
 #inforow1 {
-
+    margin-top: 2rem;
 }
 
 /* Formats the box holding the phone icon */
 #inforowphone {
-
+    
 }
 
 /* Formats the phone icon */
@@ -724,42 +747,69 @@ input[type=submit]:hover {
 
 }
 
-/* Formats column 4 of the footer */
+/* Formats icon row of the footer */
 #footerslnks {
-    justify-content: center;
-    align-content: center;
-    padding: 2em 0 1em 0;
+    position: relative;
+    justify-content: baseline;
+    align-items: baseline;
+    padding: 1em 0 0 0;
 }
 
 /* Formats icon box 1 */
 #iconbox1 {
-
+    border-radius: 10%;
+    color: var(--primary-color);
+    background-color: var(--quaternary-color);
 }
 
-/* Formats facebook link */
-#facebooklnk {
+/* Formats the hover state of icon box 1 */
+#iconbox1:hover {
+    background-color: var(--septenary-color);
+}
 
+/* Formats facebook link icon */
+#facebooklnk > i {
+    color: var(--secondary-color);
+    font-size: 1.05em;
+    top: 0.17em;
+    right: 0.07em;
 }
 
 /* Formats icon box 2 */
 #iconbox2 {
-
+    height: 1.5em;
+    width: 1.5em;
 }
 
-/* Formats twitter link */
-#twitterlnk {
-    
+/* Formats instagram link icon */
+#instagramlnk > i {
+    font-size: 1.5em; 
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
 /* Formats icon box 3 */
 #iconbox3 {
-
+    border-radius: 10%;
+    background-color: var(--quaternary-color);
 }
 
-/* Formats instagram link */
-#instagramlnk {
-    
+/* Formats the hover state of icon box 3 */
+#iconbox3:hover {
+    background-color: var(--septenary-color);
 }
+
+/* Formats twitter link icon */
+#twitterlnk > i {
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+
 
 
 /* Responsive CSS */
@@ -779,12 +829,556 @@ input[type=submit]:hover {
 /* Changes settings at 768px screen size to 1023px screen size*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
+    /* Changes the rem base */
+    html {
+        font-size: 20px;
+    }
 
+    /* Changes the size of all H1 elements */
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    /* Changes the size of all H1 elements */
+    h2 {
+        font-size: 1.65rem;
+    }
+
+    /* Changes the width, border radius, padding and margin of the email form input */
+    input[type=email] {
+        width: 70%;
+        padding: 0.6rem;
+        margin: 0 1.5rem 0 0;
+        border-radius: 0.3rem;
+    }
+
+    /* Changes width, padding, border radius, font size, and letter spacing of the submit form button */
+    input[type=submit] {
+        width: 30%;
+        padding: 0.6rem;
+        border-radius: 0.3rem;
+        font-size: 0.6rem;
+        letter-spacing: 0;
+    }
+
+    /* Changes the em base and margin of the start buttons */
+    .startbtn {
+        font-size: 30px;
+        margin: 2rem 0;
+    }
+
+    /* Changes the font size of the stats number */
+    .statsnum {
+        font-size: 4rem;
+    }
+
+    /* Changes the font size of the stats text */
+    .statsinfo { 
+        font-size: 1rem;
+    }
+
+    /* Changes the orientation, alignment, text alignment, and padding on the 3 card containers */
+    .card {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-content: center;
+        text-align: left;
+        padding: 1.4rem 0 1rem 0;
+    }
+
+    /* Changes the width and padding on the image boxes in the card containers */
+    .cardimgbox {
+        width: 35%;
+        padding: 0;
+    }
+
+    /* Changes the width and padding on the text boxes in the card containers  */
+    .cardtext {
+        width: 39%;
+        padding-bottom: 0;
+    }
+
+    /* Changes the font size and padding of the rows in the footer */
+    .irp {
+        font-size: 0.7rem;
+        padding: 0 1rem 0.7rem 1rem;
+    }
+
+    /* Changes the size and margin of the icon boxes in the footer */
+    .icon {
+        height: 1.8em;
+        width: 1.8em;
+        margin: 0.5em;
+    }
+
+    /* Changes the width and padding of the box holding the top logo and Try It button */
+    #logobuttonbox {
+        width: 92%;
+        padding: 3rem 0;
+    }
+
+    /* Changes the width of the logo box at the top of the page */
+    #logobox {
+        width: 17%;
+    }
+
+    /* Changes the em base of the button */
+    #trybutton {
+        font-size: 24px;
+    }
+
+    /* Changes the width and padding of the top box */
+    #topinfomockbox {
+        width: 83%;
+        padding: 6rem 0 1rem 0;
+    }
+
+    /* Changes the width of the para text in the top box */
+    #topfirstp {
+        width: 50%;
+    }
+
+    /* Changes the orientation, alignment, width, and margin of the stats box */
+    #stats {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        margin: 3rem 0 5rem 0;
+    }
+
+    /* Changes the margin of the first stats box */
+    #statsbox1{
+        margin: 0;
+        
+    }
+
+    /* Changes the width of the first stats image box */
+    #statsimgbox1 {
+        width: 2rem;
+    }
+
+    /* Changes the margin of the second stats box */
+    #statsbox2{
+        margin: 0;
+    }
+
+    /* Changes the width of the second stats image box */
+    #statsimgbox2 {
+        width: 1.6rem;
+    }
+
+    /* Changes the background and height of the first wave */
+    #wave1 {
+        background: url(../images/bg-section-top-desktop-1.svg) no-repeat bottom;
+        height: 165px;
+    }
+
+    /* Changes the background and height of the second wave */
+    #wave2 {
+        background: url(../images/bg-section-bottom-desktop-1.svg) no-repeat top;
+        height: 139px;
+    }
+
+    /* Changes the orientation and margin of card 2 */
+    #card2 {
+        flex-direction: row;
+        margin: 5rem 0 2rem 0;
+    }
+
+    /* Changes the background and height of the third wave */
+    #wave3 {
+        background: url(../images/bg-section-top-desktop-2.svg) no-repeat bottom;
+        height: 156px;
+    }
+
+    /* Changes the padding in the card 3 image box */
+    #card3imgbox {
+        padding: 0;
+    }
+
+    /* Changes the margin in card 3 text box */
+    #card3text {
+        margin-bottom: auto;
+    }
+
+    /* Changes the background and height of the fourth wave */
+    #wave4 {
+        background: url(../images/bg-section-bottom-desktop-2.svg) no-repeat top;
+        height: 139px;
+    }
+
+    /* Changes the padding in the invitation box */
+    #invitation {
+        padding: 6rem 0 5rem 0;
+    }
+
+    /* Changes the text size in the invitation box */
+    #invitationtext {
+        font-size: 1.7rem
+    }
+
+    /* Changes the margin in of the start button */
+    #startbtn2 {
+        margin: 1em 0;
+    }
+
+    /* Changes the background and height of the fifth wave */
+    #wave5 {
+        background: url(../images/bg-footer-top-desktop.svg) no-repeat bottom;
+        height: 158px;
+    }
+
+    /* Changes the orientation, alignment, and padding of the footer */
+    #footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 6em 5em 5.5em 6em;
+    }
+
+    /* Changes the width of the newsletter box */
+    #newsletterbox {
+        width: 50%;
+    }
+
+    /* Changes the padding in the newsletter heading */
+    #newsletterh3 {
+        padding: 0.5rem 0;
+    }
+
+    /* Changes the font size and padding of the newsletter para text */
+    #newsletterp {
+        font-size: 0.6rem;
+        padding-right: 7rem;
+    }
+
+    /* Changes the orientation and padding in the email form */
+    #form {
+        flex-direction: row;
+        padding: 1rem 0;
+    }
+
+    /* Changes the width and margin of the box holding the logo and info */
+    #logoinfobox {
+        width: 40%;
+        margin-top: auto;
+    }
+
+    /* Changes the font size and padding in the footer para text */
+    #footerp {
+        font-size: 0.6rem;
+        padding-right: 1.5em;
+    }
+
+    /* Changes the margin of the first info row in the footer */
+    #inforow1 {
+        margin-top: 1em;
+    }
+
+    /* Changes the padding of the icon row of the footer */
+    #footerslnks {
+        padding: 3em 0 0 0;
+    }
+
+    /* Changes the size and position of the facebook icon */
+    #facebooklnk > i {
+        font-size: 1.5em;
+        top: 0.07em;
+        right: 0.08em;
+    }
+
+    /* Changes the size of the second icon icon box */
+    #iconbox2 {
+        height: 1.9em;
+        width: 1.9em;
+    }
+
+    /* Changes the size of the instagram icon */
+    #instagramlnk > i {
+        font-size: 1.9em; 
+    }
+
+    /* Changes the size of the twitter icon */
+    #twitterlnk > i {
+        font-size: 1.2em;
+    }
 }
 
 
 /* Changes settings at 1024px screen size */
 @media only screen and (min-width: 1024px) {
 
+    /* Changes the rem base */
+    html {
+        font-size: 24px;
+    }
 
+    /* Changes the size of all H1 elements */
+    h1 {
+        font-size: 1.9rem;
+    }
+    
+    /* Changes the size of all H1 elements */
+    h2 {
+        font-size: 1.65rem;
+    }
+
+    /* Changes the width, border radius, padding and margin of the email form input */
+    input[type=email] {
+        width: 70%;
+        padding: 0.6rem;
+        margin: 0 1.5rem 0 0;
+        border-radius: 0.3rem;
+    }
+    
+    /* Changes width, padding, border radius, font size, and letter spacing of the submit form button */
+    input[type=submit] {
+        width: 30%;
+        padding: 0.6rem;
+        border-radius: 0.3rem;
+        font-size: 0.6rem;
+        letter-spacing: 0;
+    }
+    
+    /* Changes the em base and margin of the start buttons */
+    .startbtn {
+        font-size: 30px;
+        margin: 2rem 0;
+    }
+
+    /* Changes the font size of the stats number */
+    .statsnum {
+        font-size: 4rem;
+    }
+
+    /* Changes the font size of the stats text */
+    .statsinfo { 
+        font-size: 1rem;
+    }
+
+    /* Changes the orientation, alignment, text alignment, and padding on the 3 card containers */
+    .card {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-content: center;
+        text-align: left;
+        padding: 1.4rem 0 1rem 0;
+    }
+
+    /* Changes the width and padding on the image boxes in the card containers */
+    .cardimgbox {
+        width: 35%;
+        padding: 0;
+    }
+
+    /* Changes the width and padding on the text boxes in the card containers  */
+    .cardtext {
+        width: 39%;
+        padding-bottom: 0;
+    }
+
+    /* Changes the font size and padding of the rows in the footer */
+    .irp {
+        font-size: 0.7rem;
+        padding: 0 1rem 0.7rem 1rem;
+    }
+
+    /* Changes the size and margin of the icon boxes in the footer */
+    .icon {
+        height: 1.8em;
+        width: 1.8em;
+        margin: 0.5em;
+    }
+
+    /* Changes the width and padding of the box holding the top logo and Try It button */
+    #logobuttonbox {
+        width: 92%;
+        padding: 3rem 0;
+    }
+
+    /* Changes the width of the logo box at the top of the page */
+    #logobox {
+        width: 17%;
+    }
+
+    /* Changes the em base of the button */
+    #trybutton {
+        font-size: 24px;
+    }
+
+    /* Changes the width and padding of the top box */
+    #topinfomockbox {
+        width: 83%;
+        padding: 6rem 0 1rem 0;
+    }
+
+    /* Changes the width of the para text in the top box */
+    #topfirstp {
+        width: 50%;
+    }
+
+    /* Changes the orientation, alignment, width, and margin of the stats box */
+    #stats {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        margin: 3rem 0 5rem 0;
+    }
+
+    /* Changes the margin of the first stats box */
+    #statsbox1{
+        margin: 0;
+        
+    }
+
+    /* Changes the width of the first stats image box */
+    #statsimgbox1 {
+        width: 2rem;
+    }
+
+    /* Changes the margin of the second stats box */
+    #statsbox2{
+        margin: 0;
+    }
+
+    /* Changes the width of the second stats image box */
+    #statsimgbox2 {
+        width: 1.6rem;
+    }
+
+    /* Changes the background and height of the first wave */
+    #wave1 {
+        background: url(../images/bg-section-top-desktop-1.svg) no-repeat bottom;
+        height: 165px;
+    }
+
+    /* Changes the background and height of the second wave */
+    #wave2 {
+        background: url(../images/bg-section-bottom-desktop-1.svg) no-repeat top;
+        height: 139px;
+    }
+
+    /* Changes the orientation and margin of card 2 */
+    #card2 {
+        flex-direction: row;
+        margin: 5rem 0 2rem 0;
+    }
+    
+    /* Changes the background and height of the third wave */
+    #wave3 {
+        background: url(../images/bg-section-top-desktop-2.svg) no-repeat bottom;
+        height: 156px;
+    }
+
+    /* Changes the padding in the card 3 image box */
+    #card3imgbox {
+        padding: 0;
+    }
+
+    /* Changes the margin in card 3 text box */
+    #card3text {
+        margin-bottom: auto;
+    }
+
+    /* Changes the background and height of the fourth wave */
+    #wave4 {
+        background: url(../images/bg-section-bottom-desktop-2.svg) no-repeat top;
+        height: 139px;
+    }
+
+    /* Changes the padding in the invitation box */
+    #invitation {
+        padding: 6rem 0 5rem 0;
+    }
+
+    /* Changes the text size in the invitation box */
+    #invitationtext {
+        font-size: 1.7rem
+    }
+
+    /* Changes the margin in of the start button */
+    #startbtn2 {
+        margin: 1em 0;
+    }
+
+    /* Changes the background and height of the fifth wave */
+    #wave5 {
+        background: url(../images/bg-footer-top-desktop.svg) no-repeat bottom;
+        height: 158px;
+    }
+
+    /* Changes the orientation, alignment, and padding of the footer */
+    #footer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 6em 5em 5.5em 6em;
+    }
+
+    /* Changes the width of the newsletter box */
+    #newsletterbox {
+        width: 42%;
+    }
+
+    /* Changes the padding in the newsletter heading */
+    #newsletterh3 {
+        padding: 0.5rem 0;
+    }
+
+    /* Changes the font size and padding of the newsletter para text */
+    #newsletterp {
+        font-size: 0.6rem;
+        padding-right: 7rem;
+    }
+
+    /* Changes the orientation and padding in the email form */
+    #form {
+        flex-direction: row;
+        padding: 1rem 0;
+    }
+
+    /* Changes the width and margin of the box holding the logo and info */
+    #logoinfobox {
+        width: 30%;
+        margin-top: auto;
+    }
+
+    /* Changes the font size and padding in the footer para text */
+    #footerp {
+        font-size: 0.6rem;
+        padding-right: 1.5em;
+    }
+
+    /* Changes the margin of the first info row in the footer */
+    #inforow1 {
+        margin-top: 1em;
+    }
+
+    /* Changes the padding of the icon row of the footer */
+    #footerslnks {
+        padding: 3em 0 0 0;
+    }
+
+    /* Changes the size and position of the facebook icon */
+    #facebooklnk > i {
+        font-size: 1.5em;
+        top: 0.07em;
+        right: 0.08em;
+    }
+
+    /* Changes the size of the second icon icon box */
+    #iconbox2 {
+        height: 1.9em;
+        width: 1.9em;
+    }
+
+    /* Changes the size of the instagram icon */
+    #instagramlnk > i {
+        font-size: 1.9em; 
+    }
+
+    /* Changes the size of the twitter icon */
+    #twitterlnk > i {
+        font-size: 1.2em;
+    }
 }
