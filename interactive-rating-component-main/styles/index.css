@@ -1,0 +1,356 @@
+/* Imports Overpass font 400 & 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    --primary-color: hsl(25, 97%, 53%);
+    --secondary-color: hsl(216, 12%, 8%);
+    --tertiary-color: hsl(213, 19%, 18%);
+    --quaternary-color: hsl(216, 12%, 54%);
+    --quinary-color: hsl(217, 12%, 63%);
+    --senary-color: hsl(210, 26%, 13%);
+    --septenary-color: ;
+    --octonary-color: ;
+    --nonary-color: ;
+    --denary-color: ;
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    background-color: var(secondary-color);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+/* Formats all H1 elements */
+h1 {
+    color: var(--white);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/* Formats all p elements */
+p {
+    color: var(--quinary-color);
+    line-height: 1.6;
+    font-size: 0.92rem;
+}
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+  
+/* Formats the content of the start and end boxes so they are the same */
+.startend {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Formats the boxes inside the start and end boxes */
+.inside {
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* Formats the labels for all 5 buttons */
+.container {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hides the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Creates a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.75rem;
+    width: 2.75rem;
+    background-color: var(--tertiary-color);
+    border-radius: 50%;
+    color: var(--quinary-color);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+  
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: var(--quaternary-color);
+    color: var(--white);
+}
+
+/* Formats the numbers */
+.numbers {
+    text-align: center;
+    font-size: 0.92rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -40%);
+}
+
+/* Formats the headings in the start and end boxes */
+.heading {
+    
+}
+
+/* Formats the para text in the start and end boxes */
+.para {
+    
+}
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation for all other boxes */
+#everythingbox {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Formats the main container */
+#mainbox {    
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 85%;
+    height: 53%;
+    background-color:  var(--senary-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+/* Formats the box that's visible at the beginning */
+#startbox{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Formats the box inside the start box */
+#startinside {
+    justify-content: space-between;
+}
+
+/* Formats the circle around the star */
+#starcircle {
+    background-color: var(--tertiary-color);
+    border-radius: 50%;
+    width: 2.75rem;
+    height: 2.75rem;
+}
+
+/* Formats the star icon */
+#star {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+/* Formats the heading in the start box */
+#startheading {
+
+}
+
+/* Formats para text in the start box */
+#startpara {
+
+}
+
+/* Formats the rate form */
+#rateform {
+    
+}
+
+/* Formats the row of circles containing numbers */
+#raterow {
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+/* Formats the radio button with 1 in it */
+#rate1 {
+
+}
+
+/* Formats the radio button with 2 in it */
+#rate2 {
+    
+}
+
+/* Formats the radio button with 3 in it */
+#rate3 {
+    
+}
+
+/* Formats the radio button with 4 in it */
+#rate4 {
+    
+}
+
+/* Formats the radio button with 5 in it */
+#rate5 {
+    
+}
+
+/* Formats the submit button */
+#submitbtn {
+    background-color: var(--primary-color);
+    padding: 0.9rem 3rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 0.1rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 3.5rem;
+}
+
+/* Formats the hover state of the submit button */
+#submitbtn:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+/* Formats the box that's invisible at the beginning */
+#endbox {
+    display: none;
+}
+
+/* Formats the box inside the start box */
+#endinside {
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+/* Formats the box containing the thank you image */
+#thankyouimgbox {
+    height: 30%;
+}
+
+/* Formats the thank you image */
+#thankyouimg {
+    height: 100%;
+}
+
+/* Formats the box containing rating selection */
+#selectedbox {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 2rem;
+    padding: 0.25rem 1rem;
+    font-size: 0.75;
+}
+
+/* Formats the rating selection */
+#rating {
+
+}
+
+/* Formats the heading in the end box */
+#endheading {
+
+}
+
+/* Formats para text in the end box */
+#endpara {
+
+}
+
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Makes a flex row */
+.flexr {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Makes a flex column */
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Makes flex elements centered */
+.fcenter {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gives elements relative position */
+.rel {
+    position: relative;
+}
+
+/* Changes settings at 768px screen size to 1023px screen size*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Changes the height and width of the main box */
+    #mainbox {    
+        width: 50%;
+        height: 55%;
+    }
+}
+
+
+/* Changes settings at 1024px screen size */
+@media only screen and (min-width: 1024px) {
+
+    /* Changes the rem base and background image*/
+    html {
+        font-size: 20px;
+    }
+
+    /* Changes the height and width of the main box */
+    #mainbox {    
+        width: 38%;
+        height: 55%;
+    }
+}

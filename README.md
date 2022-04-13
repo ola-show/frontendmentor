@@ -6,7 +6,7 @@
 
 X https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H
 
-  https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U
+X https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U
   *Eye is supposed to be white.
 
 X https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj
@@ -41,4 +41,8 @@ X https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-lay
 
 X https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2
 
+### 4-12-22
 
+X https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI
+
+ https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam
