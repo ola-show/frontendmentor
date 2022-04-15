@@ -1,0 +1,371 @@
+/* Imports Kumbh Sans font 400 & 700 weight */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Sets universal CSS variables */
+:root {
+    /* Text color active: Very dark desaturated blue */
+    --primary-color: hsl(238, 29%, 16%);
+     /* Text color hover: Soft red */
+    --secondary-color: hsl(14, 88%, 65%);
+    /* Background gradient: Soft violet */
+    --tertiary-color: hsl(273, 75%, 66%);
+    /* Background gradient: Soft blue */
+    --quaternary-color: hsl(240, 73%, 65%);
+
+    /* Text normal question: Very dark grayish blue */
+    --quinary-color: hsl(237, 12%, 33%);
+    /* Text normal answer: Dark grayish blue */
+    --senary-color: hsl(240, 6%, 50%);
+    /* Dividers */
+    --septenary-color: hsl(240, 5%, 91%);
+    --octonary-color: ;
+    --nonary-color: ;
+    --denary-color: ;
+    --white: hsl(0, 0%, 100%);
+}
+
+/* Makes every element into a box that includes margins and padding. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ELEMENT FORMATTING */
+/* Place all element formatting here. */
+
+/* Effects all elements */
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+}
+
+/* Effects body elements */
+body {
+    position: relative;
+}
+
+/* Formats all H1 elements */
+h1 {
+    color: var(--primary-color);
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--senary-color);
+    font-size: 1.1rem;
+}
+
+/* Formats all p elements */
+p {
+    color: var(--senary-color);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* CLASS FORMATTING */
+/* Place all class formatting here. */
+
+.faqbox {
+    width: 100%;
+    border-bottom: 0.1rem solid var(--septenary-color);
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 1rem 0;
+}
+
+.faqbox:active .qh2 {
+    color: var(--primary-color);
+}
+
+.faqbox:active .arrow {
+    transform: scaleY(-1);
+}
+
+.faqbox:active .answer {
+    display: block;
+}
+
+.qb {
+    width: 100%;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.qh2 {
+
+}
+
+.qh2:hover {
+    color: var(--secondary-color);
+}
+
+.qh2:active {
+    color: var(--primary-color);
+}
+
+.abtn {
+
+}
+
+.arrow {
+    transform: scaleY(1);
+}
+
+.arrow:active {
+    transform: scaleY(-1);
+}
+
+.arrow {
+
+}
+
+.answer {
+    display: none;
+}
+
+.answer:active {
+    display: block;
+}
+
+.ap {
+
+}
+
+
+
+/* ID FORMATTING */
+/* Place all id formatting here. */
+
+/* Makes a foundation for all other boxes */
+#everythingbox {
+    background-image: linear-gradient(var(--tertiary-color), var(--quaternary-color));
+    width: 100%;
+    height: 100vh;
+}
+
+/* Formats the main container */
+#mainbox {   
+    width: 100%;
+    height: 100%; 
+    align-items: center;
+}
+
+/* Formats the  */
+#whitebox{
+    position: relative;
+    /* top: 50%; */
+    /* right: 50%; */
+    /* transform: translate(50%, -50%); */
+    width: 87%;
+    background-color:  var(--white);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 12rem 0 4rem 0;
+}
+
+#leftbox {
+    position: absolute;
+    top: -22%;
+    right: 50%;
+    transform: translateX(50%);
+    height: 18rem;
+    width: 20rem;
+    background-image: url("../images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    
+}
+
+#woman {
+    width: 20rem;
+    z-index: 3;
+
+}
+
+#shadow {
+
+}
+
+#box {
+    display: none;
+}
+
+#rightbox {
+    margin-top: 8rem;
+}
+
+#heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#q1box {
+
+}
+
+#q1h2 {
+
+}
+
+#a1 {
+
+}
+
+#a1a {
+
+}
+
+#a1b {
+
+}
+
+#a1p {
+
+}
+
+#q2box {
+
+}
+
+#q2h2 {
+
+}
+
+#a2 {
+
+}
+
+#a2a {
+
+}
+
+#a2b {
+
+}
+
+#a2p {
+
+}
+
+#q3box {
+
+}
+
+#q3h2 {
+
+}
+
+#a3 {
+
+}
+
+#a3a {
+
+}
+
+#a3b {
+
+}
+
+#a3p {
+
+}
+
+#q4box {
+
+}
+
+#q4h2 {
+
+}
+
+#a4 {
+
+}
+
+#a4a {
+
+}
+
+#a4b {
+
+}
+
+#a4p {
+
+}
+
+#q5box {
+
+}
+
+#q5h2 {
+
+}
+
+#a5 {
+
+}
+
+#a5a {
+
+}
+
+#a5b {
+
+}
+
+#a5p {
+
+}
+
+
+
+
+/* Responsive CSS */
+
+/* Allows elements to be stacked in rows without filling all 12 columns */
+.row::after,.row::before {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Makes a flex row */
+.flexr {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Makes a flex column */
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Makes flex elements centered */
+.fcenter {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gives elements relative position */
+.rel {
+    position: relative;
+}
+
+/* Changes settings at 768px screen size to 1023px screen size*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    
+}
+
+
+/* Changes settings at 1024px screen size */
+@media only screen and (min-width: 1024px) {
+
+    
+}

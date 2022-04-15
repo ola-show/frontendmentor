@@ -2,39 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+  <!-- Imports the CSS for the page --> 
+  <link rel="stylesheet" href="styles/index.css">
+
+  <!-- Imports the Javascript for the page --> 
+  <script src="scripts/index.js"></script> 
+
+  <!-- Icon and Title: Shows up in browser tab -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <title>Frontend Mentor | Katie Fox</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <!-- Makes an invisible box around everything -->
+  <div id="everythingbox" class="flexr row rel">
+    <!-- Main box: holds main content -->
+    <div id="mainbox" class="flexc row rel">
+      <div id="whitebox" class="rel row">
+        <div id="leftbox" class="rel">
+          <img src="images/illustration-woman-online-mobile.svg" alt="Ilustration of woman working" id="woman">
+          <img src="images/illustration-box-desktop.svg" alt="Illustration of box" id="box">
+        </div>
+        <div id="rightbox" class="flexc rel">
+          <h1 id="heading">
+            FAQ
+          </h1>
+          <article>
+            <div id="faqbox1" class="faqbox rel">
+              <div id="q1box" class="flexr rel qb">
+                <h2 id="q1h2" class="qh2">
+                  How many team members can I invite?
+                </h2>
+                <div id="a1" class='abtn'>
+                  <img src="images/icon-arrow-down.svg" alt="Down arrow" id="a1a" class="arrow">
+                </div>
+              </div>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+              <div id="a1b" class="answer">
+                <p id="a1p" class="ap">
+                You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div id="faqbox2" class="faqbox">
+              <div id="q2box" class="flexr rel qb">
+                <h2 id="q2h2" class="qh2">
+                  What is the maximum file upload size?
+                </h2>
+                <div id="a2" class='abtn'>
+                  <img src="images/icon-arrow-down.svg" alt="Down arrow" id="a2a" class="arrow">
+                </div>
+              </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+              <div id="a2b" class="answer">
+                <p id="a2p" class="ap">
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div id="faqbox3" class="faqbox">
+              <div id="q3box" class="flexr rel qb">
+                <h2 id="q3h2" class="qh2">
+                  How do I reset my password?
+                </h2>
+                <div id="a3" class='abtn'>
+                  <img src="images/icon-arrow-down.svg" alt="Down arrow" id="a3a" c3ass="arrow">
+                </div>
+              </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+              <div id="a3b" class="answer">
+                <p id="a3p" class="ap">
+                  Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div id="faqbox4" class="faqbox">
+              <div id="q4box" class="flexr rel qb">
+                <h2 id="q4h2" class="qh2">
+                  Can I cancel my subscription?
+                </h2>
+                <div id="a4" class='abtn'>
+                  <img src="images/icon-arrow-down.svg" alt="Down arrow" id="a4a" class="arrow">
+                </div>
+              </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+              <div id="a4b" class="answer">
+                <p id="a4p" class="ap">
+                  Yes! Send us a message and we’ll process your request no questions asked.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div id="faqbox5" class="faqbox">
+              <div id="q5box" class="flexr rel qb">
+                <h2 id="q5h2" class="qh2">
+                  Do you provide additional support?
+                </h2>
+                <div id="a5" class='abtn'>
+                  <img src="images/icon-arrow-down.svg" alt="Down arrow" id="a5a" class="arrow">
+                </div>
+              </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+              <div id="a5b" class="answer ab">
+                <p id="a5p" class="ap">
+                  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
-</html>
+</html> 
