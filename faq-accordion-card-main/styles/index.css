@@ -79,14 +79,14 @@ p {
     color: var(--primary-color);
 }
 
-.faqbox:active .arrow {
+.faqbox:active . {
     transform: scaleY(-1);
 }
-
+/*
 .faqbox:active .answer {
     display: block;
 }
-
+*/
 .qb {
     width: 100%;
     justify-content: space-between;
@@ -110,23 +110,21 @@ p {
 }
 
 .arrow {
-    transform: scaleY(1);
+    cursor: pointer;
 }
 
-.arrow:active {
+.arrow.active {
     transform: scaleY(-1);
 }
 
-.arrow {
-
-}
 
 .answer {
-    display: none;
+   display: none;
 }
 
-.answer:active {
+.answer.active {
     display: block;
+    padding: 15px 0;
 }
 
 .ap {
@@ -146,9 +144,9 @@ p {
 }
 
 /* Formats the main container */
-#mainbox {   
+#mainbox {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     align-items: center;
 }
 
@@ -176,7 +174,7 @@ p {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
-    
+
 }
 
 #woman {
@@ -360,12 +358,12 @@ p {
 /* Changes settings at 768px screen size to 1023px screen size*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-    
+
 }
 
 
 /* Changes settings at 1024px screen size */
 @media only screen and (min-width: 1024px) {
 
-    
+
 }

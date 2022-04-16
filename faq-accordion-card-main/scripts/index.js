@@ -1,3 +1,21 @@
+// Modal Open
+
+
+/*
+    // Modal Close
+    let closeModal = document.querySelector("#close" + i);
+    closeModal.onclick = function() {
+      if (modalContent[i].classList.toggle("active") == true) {
+        closeModal.classList.toggle("!active")
+      } else {
+        closeModal.classList.toggle("active")
+      }
+
+    }
+  }
+}
+
+/*
 // document.getElementsByClassName('#demo').addEventListener('click', third);
 
 var arrows = document.getElementsByClassName("arrow");
@@ -24,7 +42,7 @@ for (var i = 0; i < arrows.length; i++) {
 // var a4c = false;
 // var a5c = false;
 
-// 
+//
 
 
 function showFAQ(bid) {
@@ -49,7 +67,7 @@ function showFAQ(bid) {
 // // Toggle by class name, value="active", in CSS
     // switch (bid) {
 
-    //     case 'a1': 
+    //     case 'a1':
     //         document.getElementById("faqbox1").toggleClass('active');
 //             if (a1c === true) {
 //                 // Make a1c false
@@ -64,8 +82,8 @@ function showFAQ(bid) {
 //                 return;
 //             }
         //     break;
-        
-        // case 'a2': 
+
+        // case 'a2':
         //     document.getElementById("faqbox2").toggleClass('active');
 //             if (a2c === true) {
 //                 // Make a2c false
@@ -82,7 +100,7 @@ function showFAQ(bid) {
         //     break;
 
         // case 'a3':
-        //     document.getElementById("faqbox3").toggleClass('active'); 
+        //     document.getElementById("faqbox3").toggleClass('active');
 //             if (a3c === true) {
 //                 // Make a3c false
 //                 a3c = false;
@@ -98,7 +116,7 @@ function showFAQ(bid) {
         //     break;
 
         // case 'a4':
-        //     document.getElementById("faqbox4").toggleClass('active'); 
+        //     document.getElementById("faqbox4").toggleClass('active');
 //             if (a4c === true) {
 //                 // Make a4c false
 //                 a4c = false;
@@ -113,7 +131,7 @@ function showFAQ(bid) {
 //             }
         //     break;
 
-        // case 'a5': 
+        // case 'a5':
         //     document.getElementById("faqbox5").toggleClass('active');
 //             if (a5c === true) {
 //                 // Make a5c false
@@ -138,3 +156,5 @@ function showFAQ(bid) {
 
     //  }
 }
+
+*/
