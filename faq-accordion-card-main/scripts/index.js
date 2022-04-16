@@ -1,19 +1,3 @@
-// Modal Open
-
-
-/*
-    // Modal Close
-    let closeModal = document.querySelector("#close" + i);
-    closeModal.onclick = function() {
-      if (modalContent[i].classList.toggle("active") == true) {
-        closeModal.classList.toggle("!active")
-      } else {
-        closeModal.classList.toggle("active")
-      }
-
-    }
-  }
-}
 
 /*
 // document.getElementsByClassName('#demo').addEventListener('click', third);
