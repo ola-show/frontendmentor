@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <!-- displays site properly based on user's device -->
@@ -16,6 +17,7 @@
   <title>Frontend Mentor | Katie Fox</title>
 
 </head>
+
 <body>
   <!-- Makes an invisible box around everything -->
   <div id="everythingbox" class="flexr row rel">
@@ -44,7 +46,7 @@
 
               <div id="a1b" class="answer">
                 <p id="a1p" class="ap">
-                You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+                  You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
                 </p>
               </div>
             </div>
@@ -137,21 +139,23 @@
   </div>
   <script>
 
-  /* Returns an array of all the elements with the class of answer */
-  let answer = document.querySelectorAll(".answer");
-  /* Returns an array of all the elements with the class of arrow */
-  let arrow = document.querySelectorAll(".arrow");
+    /* Returns an array of all the elements with the class of answer */
+    var answer = document.querySelectorAll(".answer");
+    /* Returns an array of all the elements with the class of arrow */
+    var arrow = document.querySelectorAll(".arrow");
 
     /* Determine the clicked arrow */
-  for (let i = 0; i < arrow.length; i++) {
-  arrow[i].onclick = function() {
-    /* Toggle the ccs class for the arrow: CSS line 116*/
-  arrow[i].classList.toggle("active");
-    /* Toggle the ccs class for the answer: CSS line 125 */
-  answer[i].classList.toggle("active");
-  }
-}
+    for (let i = 0; i < arrow.length; i++) {
 
+      arrow[i].onclick = function() {
+        prompt(i);
+      /* Toggle the ccs class for the arrow: CSS line 116 */
+      arrow[i].classList.toggle("active");
+      /* Toggle the ccs class for the answer: CSS line 125 */
+      answer[i].classList.toggle("active");
+      }
+    }
   </script>
 </body>
+
 </html>
