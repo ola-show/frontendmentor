@@ -109,7 +109,7 @@ p {
 
 }
 
-.arrow {
+.arrow, .faqbox {
     cursor: pointer;
 }
 
@@ -119,12 +119,17 @@ p {
 
 
 .answer {
+   padding: 15px 0;
    display: none;
+   background-color: blue;
 }
 
+
+
 .answer.active {
-    display: block;
+    display: flex;
     padding: 15px 0;
+    background-color: red;
 }
 
 

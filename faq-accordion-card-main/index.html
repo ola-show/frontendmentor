@@ -138,24 +138,33 @@
     </div>
   </div>
   <script>
-
     /* Returns an array of all the elements with the class of answer */
     var answer = document.querySelectorAll(".answer");
     /* Returns an array of all the elements with the class of arrow */
     var arrow = document.querySelectorAll(".arrow");
+    var faqbox = document.querySelectorAll(".faqbox");
+
 
     /* Determine the clicked arrow */
-    for (let i = 0; i < arrow.length; i++) {
-
-      arrow[i].onclick = function() {
-        prompt(i);
-      /* Toggle the ccs class for the arrow: CSS line 116 */
-      arrow[i].classList.toggle("active");
-      /* Toggle the ccs class for the answer: CSS line 125 */
-      answer[i].classList.toggle("active");
+    for (let i = 0; i < faqbox.length; i++) {
+      faqbox[i].onclick = function() {
+        /* Close all open answer box */
+        for (let i = 0; i < faqbox.length; i++) {
+          if (arrow[i].classList.toggle("active") == true ||
+            answer[i].classList.toggle("active") == true) {
+            arrow[i].classList = "arrow";
+            answer[i].classList = "answer";
+          }
+        }
+        /* Toggle the ccs class for the arrow: CSS line 116 */
+        arrow[i].classList.toggle("active");
+        /* Toggle the ccs class for the answer: CSS line 125 */
+        answer[i].classList.toggle("active");
       }
     }
+
   </script>
 </body>
+
 
 </html>
