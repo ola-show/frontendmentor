@@ -108,9 +108,12 @@ p {
 .abtn {
 
 }
-
+.arrow{
+  transform: scaleY();
+}
 .arrow, .faqbox {
     cursor: pointer;
+
 }
 
 .arrow.active {
